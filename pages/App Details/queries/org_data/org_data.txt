@@ -1,0 +1,3 @@
+select apps.id as app_id, apps.name as app_name,apps.purpose as Alias, apps.created_at as creation_date, app_bins.bin_number as app_channel from apps
+full outer join app_bins on app_bins.app_id = apps.id
+where apps.id = '{{Table1Copy.selectedRow.app_id}}'

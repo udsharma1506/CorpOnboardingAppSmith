@@ -1,0 +1,6 @@
+select distinct(beneficial_owners.id) as "BO ID", beneficial_owners.name as "BO Name", beneficial_owners.email_id as "BO Email ID", beneficial_owners.mobile_number as "BO Mobile Number", beneficial_owners.percentage as "BO%", beneficial_owners.designation as "BO Designation", beneficial_owners.card_holder_name as "Card Holder Name", beneficial_owners.din_number as "DIN Number",
+(case when SUM (case when kyc_docs.status = 'Approved by Maker' then 1 else 0 end) >0 then 'Pending' else 'Completed' end) as "Scrutiny Status"
+from beneficial_owners
+left join kyc_docs on beneficial_owners.id = kyc_docs.bo_id
+where application_id = '{{appsmith.store.temp_hpy_req_id}}'
+group by beneficial_owners.id

@@ -1,0 +1,5 @@
+{
+    "id":"{{Fetch_Reqs.selectedRow.Id}}",
+    "action" : "APPROVE",
+    "emailId" : "{{appsmith.user.email}}"
+}

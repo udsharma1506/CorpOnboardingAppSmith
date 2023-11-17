@@ -1,0 +1,2 @@
+select corporates.id as crp_id, corporates.name as crp_name from corporates
+where corporates.id = cast('{{Input1.text}}' as text) or (lower(corporates.name) LIKE lower('%{{Input1.text}}%')) and json_extract_path_text(corporates.meta_data::json,'channel') not in ('529186','466130')

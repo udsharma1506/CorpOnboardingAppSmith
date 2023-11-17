@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "session_token_check",
+    "pageId": "Corporate Details",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Corporate Details_session_token_check",
+  "deleted": false,
+  "gitSyncId": "63d76535285dc00849ba9c5c_6419a5c2298409701c1e63c5"
+}

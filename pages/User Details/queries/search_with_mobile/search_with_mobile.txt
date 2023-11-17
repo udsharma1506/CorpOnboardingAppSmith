@@ -1,0 +1,5 @@
+select distinct(users.id), first_name, last_name, mobile, email, apps.name as app_name, corporates.name as corporate_name from users
+left join apps on apps.id = users.app_id
+left join corporates on corporates.id = users.corporate_id
+left join app_bins on app_bins.app_id = users.app_id
+where mobile = (cast('{{Input1.text}}' as text)) and (users.app_id not in ('app_846d1418-074a-11e9-8d0f-0242ac110004'))

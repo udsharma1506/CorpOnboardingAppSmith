@@ -1,0 +1,10 @@
+select distinct(users.id) as user_id, users.created_at as creation_date, users.state as user_status, apps.name as app_name, corporates.name as corporate_name, apps.id as app_id, corporates.id as corporate_id, json_extract_path_text(users.meta_data::json,'cif') as cif, users.first_name as first_name, users.middle_name as middle_name, users.last_name as last_name, users.country_code as c_code, users.mobile as mobile, users.email as email_id, users.kyc_status as kyc_status, addresses.addr1 as addr1, addresses.addr2 as addr2, addresses.city as city, addresses.state as state, addresses.pin as pincode, json_extract_path_text(metadata::json,'ckyc_details','ckyc_no') as ckyc_number, video_kycs.pan as pan from users
+left join addresses
+on addresses.id = users.address_id
+left join apps on apps.id = users.app_id
+left join app_bins on app_bins.app_id = users.app_id
+left join accounts on accounts.user_id = users.id
+left join account_selections on account_selections.account_id = accounts.id
+left join corporates on corporates.id = users.corporate_id
+left join video_kycs on video_kycs.user_id = users.id
+where users.id = '{{Table1Copy3.selectedRow.id}}' or users.id = '{{Table1Copy2.selectedRow.id}}' or users.id = '{{Table1CopyCopy.selectedRow.id}}' or users.id = '{{Table1CopyCopyCopy.selectedRow.id}}' or users.id = '{{Table1Copy1.selectedRow.id}}'

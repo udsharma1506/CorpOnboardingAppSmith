@@ -1,0 +1,101 @@
+{
+  "unpublishedPage": {
+    "name": "Details for Saved Requests",
+    "slug": "details-for-saved-requests",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2420,
+          "containerStyle": "none",
+          "snapRows": 64,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 660,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Details for Saved Requests_get_bo_kyc_docs",
+              "name": "get_bo_kyc_docs",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table1Copy.selectedRow[\"BO ID\"]"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Details for Saved Requests_get_org_data",
+              "name": "get_org_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_hpy_req_id"
+              ],
+              "timeoutInMillisecond": 60000
+            }
+          ],
+          [
+            {
+              "id": "Details for Saved Requests_get_bo_details",
+              "name": "get_bo_details",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_hpy_req_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Details for Saved Requests_get_org_kyc_docs",
+              "name": "get_org_kyc_docs",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_hpy_req_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Details for Saved Requests_get_corporate_signed_url",
+              "name": "get_corporate_signed_url",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table1.triggeredRow[\"Document Link\"]",
+                "appsmith.store.temp_hpy_req_id.toLowerCase()"
+              ],
+              "timeoutInMillisecond": 60000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Details for Saved Requests",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64f8568385ebf35f63123db3_6555d60b33f2bd4cbe0137b1"
+}

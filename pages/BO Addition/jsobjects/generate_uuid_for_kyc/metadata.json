@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "generate_uuid_for_kyc",
+    "pageId": "BO Addition",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "BO Addition_generate_uuid_for_kyc",
+  "deleted": false,
+  "gitSyncId": "64f8568385ebf35f63123db3_6502d5d033f2bd4cbe01364d"
+}

@@ -1,0 +1,2 @@
+select * from corporates
+where corporates.id = '{{Text1Copy1.text}}'

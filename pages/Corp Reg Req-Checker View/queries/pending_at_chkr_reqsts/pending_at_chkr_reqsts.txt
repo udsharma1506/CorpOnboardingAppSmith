@@ -1,0 +1,3 @@
+select application_id as "Application ID", requestor_email as "Requestor Email", registered_name as "Registered Entity Name", created_at as "Request Raised Date",status as "Status" from new_org_requests
+where status = 'Pending At Checker'
+order by created_at DESC

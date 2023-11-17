@@ -1,0 +1,3 @@
+select corporates.id as corp_id, corporates.name as corp_name, corporates.corp_type as corp_type, json_extract_path_text(corporates.meta_data::json,'channel') as corp_channel from corporates
+full outer join apps on apps.id = corporates.app_id
+where corporates.id = '{{Table1CopyCopy.selectedRow.crp_id}}'

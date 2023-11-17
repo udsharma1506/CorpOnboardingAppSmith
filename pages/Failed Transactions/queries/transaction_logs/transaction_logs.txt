@@ -1,0 +1,8 @@
+select transaction_logs.created_at as created_at, transaction_logs.trans_type as trans_type, transaction_logs.response_code as response_code, transaction_logs.txn_amount as txn_amount, transaction_logs.txn_currency_code as txn_curreny_code, transaction_logs.settlement_amount as settlement_amount, transaction_logs.transmission_date_time as transmission_date_time, transaction_logs.stan as stan, transaction_logs.mcc as mcc, transaction_logs.channel as channel, transaction_logs.a_id as a_id, transaction_logs.m_id as m_id, transaction_logs.t_id as t_id, transaction_logs.rrn as rrn, transaction_logs.auth_code as auth_code, transaction_logs.remark as remark, transaction_logs.location as location, transaction_logs.bin_number as bin_number, transaction_logs.happay_fee_amount as happay_fee_amount, cards.kit_id as kit_id from transaction_logs
+left join accounts
+on accounts.id = transaction_logs.source_account_id
+left join users
+on accounts.user_id = users.id
+left join cards
+on transaction_logs.card_pan = cards.pan	
+where users.id = '{{Table1Copy.selectedRow.user_id}}' and transaction_logs.response_code <> '0'

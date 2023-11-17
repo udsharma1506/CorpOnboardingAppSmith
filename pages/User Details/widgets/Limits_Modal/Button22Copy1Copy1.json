@@ -1,0 +1,48 @@
+{
+    "resetFormOnClick": false,
+    "boxShadow": "none",
+    "widgetName": "Button22Copy1Copy1",
+    "onClick": "{{MC_SET_LIMIT_DOM_ECOM.run(()=>{\n\tshowAlert('Your Request has been sent to the Approver. The status will change once actioned by the Approver.','success')\n},()=>{\nshowAlert(MC_SET_LIMIT_DOM_ECOM.data.slice(8,-2).toUpperCase(),'error')\n})}}",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [
+        {"key": "isDisabled"},
+        {"key": "onClick"}
+    ],
+    "displayName": "Button",
+    "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 27,
+    "bottomRow": 31,
+    "parentRowSpace": 10,
+    "type": "BUTTON_WIDGET",
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 16.5625,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 53,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"},
+        {"key": "isDisabled"}
+    ],
+    "text": "Set-ECOM",
+    "isDisabled": "{{Text22Copy2Copy1Copy1.text=='true'?'false':'true'}}",
+    "key": "cvksfpn8yh",
+    "isDeprecated": false,
+    "rightColumn": 63,
+    "isDefaultClickDisabled": true,
+    "widgetId": "dylgnfj8fl",
+    "isVisible": true,
+    "recaptchaType": "V3",
+    "version": 1,
+    "parentId": "9h15sv0eo7",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "disabledWhenInvalid": false,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "buttonVariant": "PRIMARY",
+    "placement": "CENTER"
+}

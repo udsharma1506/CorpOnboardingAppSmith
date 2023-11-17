@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "Corp Registration For Scrutiny",
+    "slug": "corp-registration-for-scrutiny",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1700,
+          "containerStyle": "none",
+          "snapRows": 64,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 660,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Corp Registration For Scrutiny_generate_uuid.generateUUID",
+              "name": "generate_uuid.generateUUID",
+              "collectionId": "Corp Registration For Scrutiny_generate_uuid",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  function create_UUID() {\n    var dt = new Date().getTime();\n    var uuid = ('xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx').replace(/[xy]/g, function (c) {\n      var r = (dt + Math.random() * 16) % 16 | 0;\n      dt = Math.floor(dt / 16);\n      return (c == 'x' ? r : r & 0x3 | 0x8).toString(16);\n    });\n    return uuid;\n  }\n  return create_UUID();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Corp Registration For Scrutiny",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64ad1c8cc2866666ed2960be_64b0fcbec2866666ed297b02"
+}

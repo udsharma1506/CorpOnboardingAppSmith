@@ -1,0 +1,2 @@
+select * from beneficial_owners
+where id = '{{appsmith.store.temp_bo_id}}'

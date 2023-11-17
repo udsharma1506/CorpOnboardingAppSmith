@@ -1,0 +1,3 @@
+SELECT *
+FROM "public"."Organisation_organisation"
+WHERE "public"."Organisation_organisation"."corp_id" = '{{org_data.data[0]['corp_id']}}'

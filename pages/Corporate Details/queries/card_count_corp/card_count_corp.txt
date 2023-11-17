@@ -1,0 +1,5 @@
+select
+count(case when "public"."Card_card"."status" = '0' then card_id end) as CardActive,
+count(case when "public"."Card_card"."status" = '1' then card_id end) as CardInactive
+from "public"."Card_card"
+where "public"."Card_card"."issuer_id" = '{{finding_org_id.data[0]['org_id']}}'

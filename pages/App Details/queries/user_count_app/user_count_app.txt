@@ -1,0 +1,5 @@
+select
+count(case when users.state = 'Active' then id end) as active_count,
+count(case	when users.state = 'Deleted' then id end) as deleted_count
+from users
+where users.app_id = '{{Table1Copy.selectedRow.app_id}}'

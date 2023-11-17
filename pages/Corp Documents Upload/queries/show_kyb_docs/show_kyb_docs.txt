@@ -1,0 +1,2 @@
+select * from kyc_docs
+where bo_id = '{{appsmith.store.temp_application_id}}';

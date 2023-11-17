@@ -1,0 +1,103 @@
+{
+  "unpublishedPage": {
+    "name": "Checker Dashboard",
+    "slug": "checker-dashboard",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 770,
+          "containerStyle": "none",
+          "snapRows": 99,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 1010,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Checker Dashboard_Fetch_CardDetails_UserDetails",
+              "name": "Fetch_CardDetails_UserDetails",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Fetch_Reqs.selectedRow.EntityId"
+              ],
+              "timeoutInMillisecond": 60000
+            },
+            {
+              "id": "Checker Dashboard_Fetch_all_requests",
+              "name": "Fetch_all_requests",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Math.random().toString(36).substring(2, 15)",
+                "appsmith.store.OPS_TOKEN",
+                "appsmith.store.EMP_ID"
+              ],
+              "timeoutInMillisecond": 60000
+            },
+            {
+              "id": "Checker Dashboard_SessionToken_OnPageLoad.SessionActive",
+              "name": "SessionToken_OnPageLoad.SessionActive",
+              "collectionId": "Checker Dashboard_SessionToken_OnPageLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n    navigateTo('LoginEmail');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Checker Dashboard_session_token_check.SessionActive",
+              "name": "session_token_check.SessionActive",
+              "collectionId": "Checker Dashboard_session_token_check",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  setInterval(async function () {\n    await Fetch_Session_Token.run();\n    if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n      (navigateTo('LoginEmail'), showAlert('Session Expired! Please re-login.'));\n    }\n  }, 120000);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Checker Dashboard_Fetch_Session_Token",
+              "name": "Fetch_Session_Token",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.EMP_ID"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Checker Dashboard",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "63d76535285dc00849ba9c5c_641943a7298409701c1e5b8b"
+}

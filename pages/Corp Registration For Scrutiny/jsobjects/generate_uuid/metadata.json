@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "generate_uuid",
+    "pageId": "Corp Registration For Scrutiny",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Corp Registration For Scrutiny_generate_uuid",
+  "deleted": false,
+  "gitSyncId": "64f8568385ebf35f63123db3_64ff1d9533f2bd4cbe0135ae"
+}

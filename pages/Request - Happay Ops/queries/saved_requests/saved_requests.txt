@@ -1,0 +1,1 @@
+select application_id as "Request ID", requestor_email as "Requestor Email", registered_name as "Organization Name", status as "Request Status" from new_org_requests where status = 'Saved'

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "generate_uuid_for_bo",
+    "pageId": "BO Addition",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "BO Addition_generate_uuid_for_bo",
+  "deleted": false,
+  "gitSyncId": "64f8568385ebf35f63123db3_6500a3a433f2bd4cbe0135e7"
+}

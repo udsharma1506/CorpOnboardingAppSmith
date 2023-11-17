@@ -1,0 +1,2 @@
+INSERT INTO public.beneficial_owners (id,name,email_id,mobile_number,percentage,designation,card_holder_name,din_number,created_at,updated_at,application_id)
+VALUES ('bo_{{Text4.text}}','{{Input1.text}}','{{Input1Copy1.text}}','{{Input1Copy3.text}}','{{Input1Copy5.text}}','{{Input1Copy4.text}}','{{Input1Copy2Copy.text}}','{{Input1Copy2.text}}','{{new Date()}}','{{new Date()}}','{{appsmith.store.temp_hpy_req_id}}')

@@ -1,0 +1,8 @@
+select coalesce(users.first_name,'')||coalesce(' ')|| coalesce(users.middle_name,'')|| coalesce(' ')||coalesce(users.last_name,'') as name, users.email, users.mobile,
+cards.kit_id, cards.last4_digits , cards.card_token, CASE WHEN cards.status = '0' THEN 'ACTIVE' WHEN cards.status = '5' THEN 'BLOCKED' END as Status
+from cards 
+join account_selections on account_selections.card_id = cards.pan
+join accounts on accounts.id = account_selections.account_id
+join users on users.id = accounts.user_id
+where card_token = {{Fetch_Reqs.selectedRow.EntityId}}
+limit 1

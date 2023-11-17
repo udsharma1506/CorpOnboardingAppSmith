@@ -1,0 +1,99 @@
+{
+  "unpublishedPage": {
+    "name": "Reports",
+    "slug": "reports",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1790,
+          "containerStyle": "none",
+          "snapRows": 100,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 1010,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Reports_auth_report",
+              "name": "auth_report",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 60000
+            },
+            {
+              "id": "Reports_card_balances",
+              "name": "card_balances",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 60000
+            }
+          ],
+          [
+            {
+              "id": "Reports_Fetch_Session_Token",
+              "name": "Fetch_Session_Token",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.EMP_ID"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Reports_SessionToken_OnPageLoad.SessionActive",
+              "name": "SessionToken_OnPageLoad.SessionActive",
+              "collectionId": "Reports_SessionToken_OnPageLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n    navigateTo('LoginEmail');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Reports_session_token_check.SessionActive",
+              "name": "session_token_check.SessionActive",
+              "collectionId": "Reports_session_token_check",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  setInterval(async function () {\n    await Fetch_Session_Token.run();\n    if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n      (navigateTo('LoginEmail'), showAlert('Session Expired! Please re-login.'));\n    }\n  }, 120000);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Reports",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "63d76535285dc00849ba9c5c_63d9123a285dc00849ba9d9e"
+}

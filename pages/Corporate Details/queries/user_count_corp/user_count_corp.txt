@@ -1,0 +1,6 @@
+select
+count(case when "public"."AccessControl_happayuser"."status" = '0' then happay_id end) as active_count,
+count(case when "public"."AccessControl_happayuser"."status" = '1' then happay_id end) as deleted_count,
+count(case when "public"."AccessControl_happayuser"."status" = '2' then happay_id end) as deactivated_count
+from "public"."AccessControl_happayuser"
+where "public"."AccessControl_happayuser"."org_id" = '{{finding_org_id.data[0]['org_id']}}'

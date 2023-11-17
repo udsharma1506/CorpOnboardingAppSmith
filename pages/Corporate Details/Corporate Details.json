@@ -1,0 +1,118 @@
+{
+  "unpublishedPage": {
+    "name": "Corporate Details",
+    "slug": "corporate-details",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1297,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2790,
+          "containerStyle": "none",
+          "snapRows": 129,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 1820,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Corporate Details_Fetch_Session_Token",
+              "name": "Fetch_Session_Token",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.EMP_ID"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Corporate Details_SessionToken_OnPageLoad.SessionActive",
+              "name": "SessionToken_OnPageLoad.SessionActive",
+              "collectionId": "Corporate Details_SessionToken_OnPageLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n    navigateTo('LoginEmail');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Corporate Details_session_token_check.SessionActive",
+              "name": "session_token_check.SessionActive",
+              "collectionId": "Corporate Details_session_token_check",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  setInterval(async function () {\n    await Fetch_Session_Token.run();\n    if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n      (navigateTo('LoginEmail'), showAlert('Session Expired! Please re-login.'));\n    }\n  }, 120000);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Corporate Details_card_details_query",
+              "name": "card_details_query",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "org_data.data[0].corp_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Corporate Details_corp_data",
+              "name": "corp_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Text1Copy1.text"
+              ],
+              "timeoutInMillisecond": 1000000000
+            }
+          ],
+          [
+            {
+              "id": "Corporate Details_user_count_corp",
+              "name": "user_count_corp",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "finding_org_id.data[0]['org_id']"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Corporate Details",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "63bc466c42a8cf4350317eb0_63bdb1fc42a8cf4350317fea"
+}

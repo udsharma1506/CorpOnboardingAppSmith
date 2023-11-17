@@ -1,0 +1,11 @@
+select
+count(case when cards.status = '0' then kit_id end) as CardActive,
+count(case when cards.status = '1' then kit_id end) as CardInactive,
+count(case when cards.status = '2' then kit_id end) as CardOrdered,
+count(case when cards.status = '5' then kit_id end) as CardBlocked,
+count(case when cards.status = '6' then kit_id end) as CardTerminated,
+count(case when cards.status = '7' then kit_id end) as CardIssued,
+count(case when cards.status = '8' then kit_id end) as CardLost,
+count(case when cards.status = '9' then kit_id end) as CardStolen
+from cards
+where cards.app_id = '{{Table1Copy.selectedRow.app_id}}'

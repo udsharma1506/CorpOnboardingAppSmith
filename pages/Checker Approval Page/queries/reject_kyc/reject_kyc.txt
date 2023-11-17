@@ -1,0 +1,1 @@
+update kyc_docs set status = 'Rejected by Maker', updated_at = '{{new Date()}}', comment = {{Input1.text}} where id = '{{appsmith.store.temp_reject_kyc_id}}'

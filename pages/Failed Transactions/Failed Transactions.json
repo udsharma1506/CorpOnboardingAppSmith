@@ -1,0 +1,91 @@
+{
+  "unpublishedPage": {
+    "name": "Failed Transactions",
+    "slug": "failed-transactions",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1297,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 890,
+          "containerStyle": "none",
+          "snapRows": 70,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 850,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Failed Transactions_Fetch_Session_Token",
+              "name": "Fetch_Session_Token",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.EMP_ID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Failed Transactions_search_user",
+              "name": "search_user",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "emp_search.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Failed Transactions_SessionToken_OnPageLoad.SessionActive",
+              "name": "SessionToken_OnPageLoad.SessionActive",
+              "collectionId": "Failed Transactions_SessionToken_OnPageLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n    navigateTo('LoginEmail');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Failed Transactions_session_token_check.SessionActive",
+              "name": "session_token_check.SessionActive",
+              "collectionId": "Failed Transactions_session_token_check",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  setInterval(async function () {\n    await Fetch_Session_Token.run();\n    if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n      (navigateTo('LoginEmail'), showAlert('Session Expired! Please re-login.'));\n    }\n  }, 120000);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Failed Transactions",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "63bc466c42a8cf4350317eb0_63bc466d42a8cf4350317ec6"
+}

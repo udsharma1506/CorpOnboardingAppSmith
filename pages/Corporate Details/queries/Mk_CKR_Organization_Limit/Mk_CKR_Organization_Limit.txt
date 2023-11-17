@@ -1,0 +1,26 @@
+{
+	"url": "https://api-v2.happay.in/operation/v1/update-credit-line/",
+	"requestorId": "",
+	"apiReqBody": {
+		"org_id":"{{finding_org_id.data[0].org_id}}",
+		"new_limit":"{{Input2.text}}"
+	},
+	"apiHeaders": {
+		"Content-Type": "application/x-www-form-urlencoded",
+		"emp-Id": "{{appsmith.store.EMP_ID}}",
+		"ops-token": "SBM2e8fb44808d742f2a08315008fdc6bb0HP",
+		"App-ID": "{{corp_data.data[0].app_id}}",
+				"Request-ID":"AppSmith_{{Math.random().toString(36).substring(2, 15)}}_{{Math.random().toString(36).substring(2, 15)}}_EMAILID_{{appsmith.user.email}}"
+	},
+	"changedReqBody": {
+		"crp_id": "{{Text1Copy1.text}}",
+		"corp_name": "{{Text1Copy1CopyCopyCopyCopy.text}}",
+		"current_limit": "{{Text6Copy2.text}}",
+		"requested_limit": "{{Input2.text}}"
+	},
+	"emailId": "{{appsmith.user.email}}",
+	"event": "OrgLimitUpdate",
+	"entityName": "Corporate",
+	"entityId": "{{Text1Copy1.text}}",
+	"apiMethod":"POST"
+}

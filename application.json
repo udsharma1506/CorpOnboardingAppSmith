@@ -1,0 +1,127 @@
+{
+  "pages": [
+    {
+      "id": "LoginEmail",
+      "isDefault": true
+    },
+    {
+      "id": "LoginPassword",
+      "isDefault": false
+    },
+    {
+      "id": "LoginOTP",
+      "isDefault": false
+    },
+    {
+      "id": "Landing Page",
+      "isDefault": false
+    },
+    {
+      "id": "User Details",
+      "isDefault": false
+    },
+    {
+      "id": "App Details",
+      "isDefault": false
+    },
+    {
+      "id": "Failed Transactions",
+      "isDefault": false
+    },
+    {
+      "id": "Corporate Details",
+      "isDefault": false
+    },
+    {
+      "id": "Reports",
+      "isDefault": false
+    },
+    {
+      "id": "Checker Dashboard",
+      "isDefault": false
+    },
+    {
+      "id": "Corp Registration For Scrutiny",
+      "isDefault": false
+    },
+    {
+      "id": "BO Addition",
+      "isDefault": false
+    },
+    {
+      "id": "Corp Documents Upload",
+      "isDefault": false
+    },
+    {
+      "id": "Corp Reg Req-Maker View",
+      "isDefault": false
+    },
+    {
+      "id": "Maker Approval Page",
+      "isDefault": false
+    },
+    {
+      "id": "Corp Reg Req-Checker View",
+      "isDefault": false
+    },
+    {
+      "id": "Request - Happay Ops",
+      "isDefault": false
+    },
+    {
+      "id": "Request Tracking View Page",
+      "isDefault": false
+    },
+    {
+      "id": "Checker Approval Page",
+      "isDefault": false
+    },
+    {
+      "id": "Details for Saved Requests",
+      "isDefault": false
+    },
+    {
+      "id": "Saved Orgs Corp Docs Upload",
+      "isDefault": false
+    },
+    {
+      "id": "Saved Orgs BO Addition",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "63a01f5a709f3a5e047ba4a4",
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": true
+    }
+  },
+  "color": "#EAEDFB",
+  "icon": "file",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "applicationVersion": 1,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
+  "isManualUpdate": false,
+  "deleted": false
+}

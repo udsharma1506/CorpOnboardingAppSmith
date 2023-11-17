@@ -1,0 +1,5 @@
+{
+    "id":"{{Fetch_Reqs.selectedRow.Id}}",
+    "action" : "DECLINE",
+    "emailId" : "udit.sharma@happay.in}"
+}

@@ -1,0 +1,5 @@
+select distinct(kit_id), cards.status, users.id from cards
+left join account_selections on account_selections.card_id = cards.pan
+left join accounts on accounts.id = account_selections.account_id
+left join users on accounts.user_id = users.id
+where kit_id = (cast('{{Input1.text}}' as text))

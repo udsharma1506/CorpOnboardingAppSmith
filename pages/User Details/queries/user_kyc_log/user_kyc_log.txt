@@ -1,0 +1,4 @@
+SELECT "public"."user_kyc_histories"."created_at" AS "created_at", "public"."user_kyc_histories"."curr_status" AS "curr_status", "public"."user_kyc_histories"."prev_status" AS "prev_status", "public"."user_kyc_histories"."remarks" AS "remarks"
+FROM "public"."user_kyc_histories"
+WHERE ("public"."user_kyc_histories"."user_id" = '{{Text1Copy1CopyCopy.text}}'
+   AND "public"."user_kyc_histories"."deleted_at" IS NULL);

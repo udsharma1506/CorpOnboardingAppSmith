@@ -1,0 +1,7 @@
+select distinct(users.id) as user_id, users.first_name, users.last_name, users.email, users.mobile, corporates.name from users
+left join apps
+on users.app_id = apps.id
+full outer join corporates
+on users.corporate_id = corporates.id
+left join app_bins on app_bins.app_id = users.app_id
+where users.mobile = cast('{{emp_search.text}}' as text) and (users.app_id not in ('app_846d1418-074a-11e9-8d0f-0242ac110004'))

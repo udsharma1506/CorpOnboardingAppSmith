@@ -1,0 +1,4 @@
+SELECT "public"."cards"."kit_id" AS "kit_id", "public"."cards"."last4_digits" AS "l4d", "public"."cards"."status" AS "status", "Corporates"."corp_type" AS "corp_type", "Bins"."program_type" AS "app_type"
+FROM "public"."cards"
+LEFT JOIN "public"."corporates" "Corporates" ON "public"."cards"."corporate_id" = "Corporates"."id" LEFT JOIN "public"."card_programs" "Card Programs" ON "public"."cards"."card_program_id" = "Card Programs"."id" LEFT JOIN "public"."bins" "Bins" ON "Card Programs"."bin_id" = "Bins"."bin_number"
+WHERE "public"."cards"."kit_id" = '{{cardlist.selectedRow.kit_id}}'
