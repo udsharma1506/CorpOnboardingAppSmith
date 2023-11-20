@@ -25,7 +25,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Add KYC Documents",
+    "text": "Add KYB Documents",
     "key": "60led54h0l",
     "isDeprecated": false,
     "rightColumn": 31,
