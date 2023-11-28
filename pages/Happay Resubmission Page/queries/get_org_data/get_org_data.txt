@@ -1,0 +1,2 @@
+select * from new_org_requests
+where application_id = '{{appsmith.store.temp_hpy_resubmit_req_id}}'

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select application_id as \"Request ID\", requestor_email as \"Requestor Email\", registered_name as \"Organization Name\", status as \"Request Status\" from new_org_requests where status = 'Pending At Happay'",
+      "body": "select application_id as \"Request ID\", requestor_email as \"Requestor Email\", registered_name as \"Organization Name\", status as \"Request Status\", updated_count as \"Iteration Count\", reason as \"Reason(If Rejected)\" from new_org_requests where status = 'Pending At Happay'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

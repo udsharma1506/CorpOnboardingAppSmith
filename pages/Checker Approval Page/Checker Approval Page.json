@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2620,
+          "bottomRow": 2740,
           "containerStyle": "none",
           "snapRows": 64,
           "parentRowSpace": 1,
@@ -40,24 +40,12 @@
           ],
           [
             {
-              "id": "Checker Approval Page_get_bo_kyc_docs",
-              "name": "get_bo_kyc_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table1Copy.selectedRow[\"BO ID\"]"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Checker Approval Page_get_bo_details",
               "name": "get_bo_details",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.store.mkr_app_id"
+                "appsmith.store.chkr_app_id"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -67,7 +55,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.store.mkr_app_id"
+                "appsmith.store.chkr_app_id"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -79,7 +67,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.store.mkr_app_id"
+                "appsmith.store.chkr_app_id"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -91,8 +79,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.store.mkr_app_id.toLowerCase()",
-                "Table1.triggeredRow[\"Document Link\"]"
+                "Table1.triggeredRow[\"Document Link\"]",
+                "appsmith.store.mkr_app_id.toLowerCase()"
               ],
               "timeoutInMillisecond": 60000
             }

@@ -1,3 +1,0 @@
-select count(*) from kyc_docs
-left join beneficial_owners on kyc_docs.bo_id = beneficial_owners.id
-where (kyc_docs.bo_id = '{{appsmith.store.mkr_app_id}}') or (beneficial_owners.application_id = '{{appsmith.store.mkr_app_id}}')

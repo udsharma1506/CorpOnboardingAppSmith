@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update kyc_docs set status = 'Rejected by Maker', updated_at = '{{new Date()}}', comment = {{Input1.text}} where id = '{{appsmith.store.temp_reject_kyc_id}}'",
+      "body": "update kyc_docs set sbm_status = 'Rejected by Maker', updated_at = '{{new Date()}}', comment = {{Input1.text}} where id = '{{appsmith.store.temp_reject_kyc_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

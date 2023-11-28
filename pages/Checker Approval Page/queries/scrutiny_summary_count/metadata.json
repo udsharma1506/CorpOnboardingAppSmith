@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select \ncount(case when NOT (kyc_docs.status = '') then kyc_docs.id end) as \"Total\",\ncount(case when kyc_docs.status = 'pending' then kyc_docs.id end) as \"Pending\",\ncount(case when kyc_docs.status = 'Approved by Maker' then kyc_docs.id end) as \"Approved by Maker\",\ncount(case when kyc_docs.status = 'Rejected by Maker' then kyc_docs.id end) as \"Rejected by Maker\"\nfrom kyc_docs\nleft join beneficial_owners on kyc_docs.bo_id = beneficial_owners.id\nwhere kyc_docs.bo_id = '{{appsmith.store.mkr_app_id}}' or beneficial_owners.application_id = '{{appsmith.store.mkr_app_id}}'",
+      "body": "select \ncount(case when NOT (kyc_docs.sbm_status = '') then kyc_docs.id end) as \"Total\",\ncount(case when kyc_docs.sbm_status = 'pending' then kyc_docs.id end) as \"Pending\",\ncount(case when kyc_docs.sbm_status = 'Approved by Maker' then kyc_docs.id end) as \"Approved by Maker\",\ncount(case when kyc_docs.sbm_status = 'Rejected by Maker' then kyc_docs.id end) as \"Rejected by Maker\",\ncount(case when kyc_docs.sbm_status = 'Approved by Checker' then kyc_docs.id end) as \"Approved by Checker\",\ncount(case when kyc_docs.sbm_status = 'Rejected by Checker' then kyc_docs.id end) as \"Rejected by Checker\"\nfrom kyc_docs\nleft join beneficial_owners on kyc_docs.bo_id = beneficial_owners.id\nwhere kyc_docs.bo_id = '{{appsmith.store.chkr_app_id}}' or beneficial_owners.application_id = '{{appsmith.store.chkr_app_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.mkr_app_id"
+      "appsmith.store.chkr_app_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

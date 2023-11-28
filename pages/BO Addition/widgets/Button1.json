@@ -21,10 +21,7 @@
     "parentColumnSpace": 12.609375,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Add Director/Authorized Signatory",
     "isDisabled": false,
     "key": "6jpdl7k8it",
@@ -42,7 +39,7 @@
     "mobileTopRow": 25,
     "responsiveBehavior": "hug",
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 1,
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"

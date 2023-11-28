@@ -1,0 +1,3 @@
+update kyc_docs
+set happay_status = 'Resubmitted'
+where id = '{{Table1Copy1.triggeredRow["Doc ID"]}}'

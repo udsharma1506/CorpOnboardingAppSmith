@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select distinct(beneficial_owners.id) as \"BO ID\", beneficial_owners.name as \"BO Name\", beneficial_owners.email_id as \"BO Email ID\", beneficial_owners.mobile_number as \"BO Mobile Number\", beneficial_owners.percentage as \"BO%\", beneficial_owners.designation as \"BO Designation\", beneficial_owners.card_holder_name as \"Card Holder Name\", beneficial_owners.din_number as \"DIN Number\",\n(case when SUM (case when kyc_docs.status = 'Approved by Maker' then 1 else 0 end) >0 then 'Pending' else 'Completed' end) as \"Scrutiny Status\"\nfrom beneficial_owners\nleft join kyc_docs on beneficial_owners.id = kyc_docs.bo_id\nwhere application_id = '{{appsmith.store.mkr_app_id}}'\ngroup by beneficial_owners.id",
+      "body": "select distinct(beneficial_owners.id) as \"BO ID\", beneficial_owners.name as \"BO Name\", beneficial_owners.email_id as \"BO Email ID\", beneficial_owners.mobile_number as \"BO Mobile Number\", beneficial_owners.percentage as \"BO%\", beneficial_owners.designation as \"BO Designation\", beneficial_owners.card_holder_name as \"Card Holder Name\", beneficial_owners.din_number as \"DIN Number\",\n(case when SUM (case when kyc_docs.sbm_status = 'Approved by Maker' then 1 else 0 end) >0 then 'Pending' else 'Completed' end) as \"Scrutiny Status\"\nfrom beneficial_owners\nleft join kyc_docs on beneficial_owners.id = kyc_docs.bo_id\nwhere application_id = '{{appsmith.store.chkr_app_id}}'\ngroup by beneficial_owners.id",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.mkr_app_id"
+      "appsmith.store.chkr_app_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

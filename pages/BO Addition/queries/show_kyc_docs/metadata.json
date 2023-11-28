@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"public\".\"kyc_docs\".\"id\" AS \"id\", \"public\".\"kyc_docs\".\"doc_type\" AS \"doc_type\", \"public\".\"kyc_docs\".\"doc_number\" AS \"doc_number\", \"public\".\"kyc_docs\".\"doc_link\" AS \"doc_link\", \"public\".\"kyc_docs\".\"status\" AS \"status\", \"public\".\"kyc_docs\".\"comment\" AS \"comment\", \"public\".\"kyc_docs\".\"bo_id\" AS \"bo_id\", \"public\".\"kyc_docs\".\"kyc_owner\" AS \"kyc_owner\"\nFROM \"public\".\"kyc_docs\"\nwhere \"kyc_docs\".\"bo_id\" = '{{appsmith.store.temp_bo_id}}';",
+      "body": "SELECT \"public\".\"kyc_docs\".\"id\" AS \"id\", \"public\".\"kyc_docs\".\"doc_type\" AS \"doc_type\", \"public\".\"kyc_docs\".\"doc_number\" AS \"doc_number\", \"public\".\"kyc_docs\".\"doc_link\" AS \"doc_link\", \"public\".\"kyc_docs\".\"happay_status\" AS \"happay status\", \"public\".\"kyc_docs\".\"sbm_status\" AS \"sbm status\", \"public\".\"kyc_docs\".\"comment\" AS \"comment\", \"public\".\"kyc_docs\".\"bo_id\" AS \"bo_id\", \"public\".\"kyc_docs\".\"kyc_owner\" AS \"kyc_owner\"\nFROM \"public\".\"kyc_docs\"\nwhere \"kyc_docs\".\"bo_id\" = '{{appsmith.store.temp_bo_id}}';",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

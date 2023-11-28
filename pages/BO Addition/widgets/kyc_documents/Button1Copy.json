@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 29,
     "widgetName": "Button1Copy",
-    "onClick": "{{showModal('upload_kyc_documents');}}",
+    "onClick": "{{showModal('upload_kyc_documents').then(() => {\n  generate_uuid_for_doc.generateUUID();\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",

@@ -22,7 +22,6 @@
     "leftColumn": 41,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
-        {"key": "borderRadius"},
         {"key": "isDisabled"}
     ],
     "text": "Confirm",
@@ -44,7 +43,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 37,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 47,
     "originalBottomRow": 41,
     "buttonVariant": "PRIMARY",

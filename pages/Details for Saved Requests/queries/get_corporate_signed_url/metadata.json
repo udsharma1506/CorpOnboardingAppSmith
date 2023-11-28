@@ -39,7 +39,7 @@
         },
         "list": {
           "prefix": {
-            "data": "sbm_appsmith_test/{{appsmith.store.temp_hpy_req_id.toLowerCase()}}/"
+            "data": "sbm_appsmith_test/{{appsmith.store.temp_hpy_saved_req_id.toLowerCase()}}/"
           },
           "where": {
             "data": {
@@ -98,7 +98,7 @@
     "messages": [],
     "jsonPathKeys": [
       "Table1.triggeredRow[\"Document Link\"]",
-      "appsmith.store.temp_hpy_req_id.toLowerCase()"
+      "appsmith.store.temp_hpy_saved_req_id.toLowerCase()"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

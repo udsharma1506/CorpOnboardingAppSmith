@@ -21,10 +21,7 @@
     "parentColumnSpace": 19.8125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 48,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "+ Raise New Requests",
     "isDisabled": false,
     "key": "2j37vdrxbc",
@@ -43,7 +40,7 @@
     "mobileTopRow": 25,
     "responsiveBehavior": "hug",
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 47,
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"

@@ -1,2 +1,1 @@
-select * from kyc_docs
-where bo_id = '{{appsmith.store.temp_hpy_req_id}}';
+select id as "Doc ID", created_at as "Creation Date", updated_at as "Updation Date", doc_type as "Document Type", doc_number as "Document Number", right(doc_link,length(doc_link)-69) as "Document Link", sbm_status as "SBM Status", happay_status as "Happay Status" from kyc_docs where bo_id = '{{appsmith.store.temp_hpy_saved_req_id}}'

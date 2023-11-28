@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 61,
     "widgetName": "Button4",
-    "onClick": "{{navigateTo('Corp Documents Upload', {}, 'SAME_WINDOW').then(() => {\n  showAlert('Svaed Successfully', 'success');\n  resetWidget(\"Table1\", true);\n});}}",
+    "onClick": "{{navigateTo('Corp Documents Upload', {}, 'SAME_WINDOW').then(() => {\n  showAlert('Svaed Successfully', 'success');\n  resetWidget(\"Table1\", true);\n  navigateTo('Details for Saved Requests', {}, 'SAME_WINDOW');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
@@ -21,10 +21,7 @@
     "parentColumnSpace": 12.609375,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 47,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Submit",
     "isDisabled": false,
     "key": "6jpdl7k8it",
@@ -42,7 +39,7 @@
     "mobileTopRow": 57,
     "responsiveBehavior": "hug",
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 28,
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"

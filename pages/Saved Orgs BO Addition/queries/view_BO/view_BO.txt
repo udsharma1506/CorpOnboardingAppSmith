@@ -1,4 +1,4 @@
 SELECT "public"."beneficial_owners"."id" AS "id", "public"."beneficial_owners"."name" AS "name", "public"."beneficial_owners"."email_id" AS "email_id", "public"."beneficial_owners"."mobile_number" AS "mobile_number", "public"."beneficial_owners"."percentage" AS "percentage", "public"."beneficial_owners"."designation" AS "designation", "public"."beneficial_owners"."card_holder_name" AS "card_holder_name", "public"."beneficial_owners"."din_number" AS "din_number", "public"."beneficial_owners"."application_id" AS "application_id"
 FROM "public"."beneficial_owners"
 WHERE
-  application_id = '{{appsmith.store.temp_hpy_req_id}}'
+  application_id = '{{appsmith.store.temp_hpy_saved_req_id}}'

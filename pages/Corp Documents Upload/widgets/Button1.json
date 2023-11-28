@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 29,
     "widgetName": "Button1",
-    "onClick": "{{showModal('upload_kyc_documents');}}",
+    "onClick": "{{showModal('upload_kyc_documents').then(() => {\n  generate_uuid_for_doc.generateUUID();\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
@@ -21,10 +21,7 @@
     "parentColumnSpace": 12.609375,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Add KYC Documents",
     "isDisabled": false,
     "key": "6jpdl7k8it",
@@ -42,7 +39,7 @@
     "mobileTopRow": 25,
     "responsiveBehavior": "hug",
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 1,
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"

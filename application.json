@@ -2,7 +2,7 @@
   "pages": [
     {
       "id": "LoginEmail",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "LoginPassword",
@@ -14,7 +14,7 @@
     },
     {
       "id": "Landing Page",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "User Details",
@@ -69,10 +69,6 @@
       "isDefault": false
     },
     {
-      "id": "Request Tracking View Page",
-      "isDefault": false
-    },
-    {
       "id": "Checker Approval Page",
       "isDefault": false
     },
@@ -86,6 +82,10 @@
     },
     {
       "id": "Saved Orgs BO Addition",
+      "isDefault": false
+    },
+    {
+      "id": "Happay Resubmission Page",
       "isDefault": false
     }
   ],

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO public.beneficial_owners (id,name,email_id,mobile_number,percentage,designation,card_holder_name,din_number,created_at,updated_at,application_id)\nVALUES ('bo_{{Text4.text}}','{{Input1.text}}','{{Input1Copy1.text}}','{{Input1Copy3.text}}','{{Input1Copy5.text}}','{{Input1Copy4.text}}','{{Input1Copy2Copy.text}}','{{Input1Copy2.text}}','{{new Date()}}','{{new Date()}}','{{appsmith.store.temp_hpy_req_id}}')",
+      "body": "INSERT INTO public.beneficial_owners (id,name,email_id,mobile_number,percentage,designation,card_holder_name,din_number,created_at,updated_at,application_id)\nVALUES ('bo_{{Text4.text}}','{{Input1.text}}','{{Input1Copy1.text}}','{{Input1Copy3.text}}','{{Input1Copy5.text}}','{{Input1Copy4.text}}','{{Input1Copy2Copy.text}}','{{Input1Copy2.text}}','{{new Date()}}','{{new Date()}}','{{appsmith.store.temp_hpy_saved_req_id}}')",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -44,7 +44,7 @@
       "Input1Copy4.text",
       "Input1Copy5.text",
       "Text4.text",
-      "appsmith.store.temp_hpy_req_id",
+      "appsmith.store.temp_hpy_saved_req_id",
       "new Date()"
     ],
     "userSetOnLoad": false,

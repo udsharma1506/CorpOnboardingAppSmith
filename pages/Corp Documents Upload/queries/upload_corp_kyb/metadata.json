@@ -70,7 +70,7 @@
           }
         },
         "path": {
-          "data": "sbm_appsmith_test/{{appsmith.store.temp_application_id.toLowerCase()}}/{{Select1.selectedOptionValue.toLowerCase()}}_{{FilePicker1.files[0].name.toLowerCase().replaceAll(\" \",\"_\")}}"
+          "data": "sbm_appsmith_test/{{appsmith.store.temp_application_id.toLowerCase()}}/{{Select1.selectedOptionValue.toLowerCase()}}_{{generate_uuid_for_doc.generateUUID.data}}"
         },
         "read": {
           "dataType": {
@@ -96,9 +96,9 @@
     "messages": [],
     "jsonPathKeys": [
       "FilePicker1.files[0]",
-      "FilePicker1.files[0].name.toLowerCase().replaceAll(\" \",\"_\")",
       "Select1.selectedOptionValue.toLowerCase()",
-      "appsmith.store.temp_application_id.toLowerCase()"
+      "appsmith.store.temp_application_id.toLowerCase()",
+      "generate_uuid_for_doc.generateUUID.data"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

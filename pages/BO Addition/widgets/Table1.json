@@ -25,7 +25,6 @@
         {"key": "primaryColumns.din_number.computedValue"},
         {"key": "primaryColumns.application_id.computedValue"},
         {"key": "primaryColumns.customColumn1.buttonColor"},
-        {"key": "primaryColumns.customColumn1.borderRadius"},
         {"key": "primaryColumns.customColumn1.boxShadow"}
     ],
     "needsHeightForContent": true,
@@ -280,7 +279,7 @@
             "columnType": "button",
             "horizontalAlignment": "LEFT",
             "isCellEditable": false,
-            "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+            "borderRadius": "1.5rem",
             "width": 150,
             "enableFilter": true,
             "sticky": "",

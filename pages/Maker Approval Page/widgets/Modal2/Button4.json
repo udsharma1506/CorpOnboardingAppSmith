@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 22,
     "widgetName": "Button4",
-    "onClick": "{{reject_kyc.run().then(() => {\n  get_bo_kyc_docs.run().then(() => {\n    // showAlert('success');\n    scrutiny_summary_count.run();\n  });\n  closeModal('Modal2');\n  removeValue('temp_reject_kyc_id');\n  // showAlert('success');\n  // showAlert('success');\n}).catch(() => {\n  showAlert('Failed to update. Please try after sometime.', 'error');\n});}}",
+    "onClick": "{{reject_kyc.run().then(() => {\n  get_org_kyc_docs.run();\n  closeModal('Modal2');\n  get_bo_details.run();\n  scrutiny_summary_count.run();\n  resetWidget(\"Input1\", true);\n}).catch(() => {\n  showAlert('Failed to update. Please try after sometime.', 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [],
     "displayName": "Button",

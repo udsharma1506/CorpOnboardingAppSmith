@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 80,
     "widgetName": "Button1Copy",
-    "onClick": "{{Select1Copy.selectedOptionValue=='Approve'?final_org_status_approve.run().then(() => {\n  navigateTo('Corp Reg Req-Maker View', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert(final_org_status_approve.responseMeta[0].isExecutionSuccess, 'error');\n}):final_org_status_reject.run().then(() => {\n  navigateTo('Corp Reg Req-Maker View', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert(final_org_status_approve.responseMeta[0].isExecutionSuccess, 'error');\n})}}",
+    "onClick": "{{Select1Copy.selectedOptionValue==\"Approve\"?final_org_status_approve.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch():final_org_status_reject.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch()}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [
         {"key": "isDisabled"},
@@ -15,8 +15,8 @@
         "click",
         "submit"
     ],
-    "topRow": 256,
-    "bottomRow": 262,
+    "topRow": 268,
+    "bottomRow": 274,
     "parentRowSpace": 10,
     "type": "BUTTON_WIDGET",
     "hideCard": false,
@@ -27,7 +27,6 @@
     "leftColumn": 45,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
-        {"key": "borderRadius"},
         {"key": "isDisabled"}
     ],
     "text": "Submit",
@@ -48,7 +47,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 256,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 23,
     "originalBottomRow": 262,
     "buttonVariant": "PRIMARY",

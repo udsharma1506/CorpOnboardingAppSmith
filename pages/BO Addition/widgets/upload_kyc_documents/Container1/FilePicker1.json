@@ -16,7 +16,7 @@
     "animateLoading": true,
     "parentColumnSpace": 12.0355224609375,
     "dynamicTriggerPathList": [{"key": "onFilesSelected"}],
-    "leftColumn": 49.77777777777777,
+    "leftColumn": 50,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
         {"key": "borderRadius"}

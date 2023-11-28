@@ -1,0 +1,103 @@
+{
+  "unpublishedPage": {
+    "name": "Happay Resubmission Page",
+    "slug": "happay-resubmission-page",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2440,
+          "containerStyle": "none",
+          "snapRows": 64,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 660,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Happay Resubmission Page_get_org_data",
+              "name": "get_org_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_hpy_resubmit_req_id"
+              ],
+              "timeoutInMillisecond": 60000
+            }
+          ],
+          [
+            {
+              "id": "Happay Resubmission Page_get_bo_details",
+              "name": "get_bo_details",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_hpy_resubmit_req_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Happay Resubmission Page_get_org_kyc_docs",
+              "name": "get_org_kyc_docs",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_hpy_resubmit_req_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Happay Resubmission Page_scrutiny_summary_count",
+              "name": "scrutiny_summary_count",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_hpy_resubmit_req_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Happay Resubmission Page_get_corporate_signed_url",
+              "name": "get_corporate_signed_url",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_hpy_resubmit_req_id.toLowerCase()",
+                "Table1.triggeredRow[\"Document Link\"]"
+              ],
+              "timeoutInMillisecond": 60000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Happay Resubmission Page",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64f8568385ebf35f63123db3_655dbea533f2bd4cbe013acd"
+}

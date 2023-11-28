@@ -4,7 +4,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
-    "topRow": 163,
+    "topRow": 169,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -22,7 +22,10 @@
         {"key": "primaryColumns.BO_Mobile_Number.computedValue"},
         {"key": "primaryColumns.BO_Designation.computedValue"},
         {"key": "primaryColumns.Card_Holder_Name.computedValue"},
-        {"key": "primaryColumns.DIN_Number.computedValue"}
+        {"key": "primaryColumns.DIN_Number.computedValue"},
+        {"key": "primaryColumns.Scrutiny_Status.cellBackground"},
+        {"key": "primaryColumns.customColumn1.boxShadow"},
+        {"key": "primaryColumns.customColumn1.buttonColor"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 1,
@@ -59,7 +62,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1697641437293,
+    "columnUpdatedAt": 1700662445672,
     "originalBottomRow": 193,
     "defaultSelectedRowIndices": [0],
     "mobileBottomRow": 89,
@@ -74,23 +77,30 @@
         "BO_Designation",
         "Card_Holder_Name",
         "DIN_Number",
-        "BO_ID"
+        "BO_ID",
+        "customColumn1"
     ],
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "primaryColumns.Scrutiny_Status.cellBackground"}],
     "displayName": "Table",
-    "bottomRow": 193,
+    "bottomRow": 199,
     "columnWidthMap": {
-        "BO_": 70,
-        "Scrutiny_Status": 184,
-        "Card_Holder_Name": 168,
-        "BO_Mobile_Number": 173,
-        "BO_Email_ID": 170
+        "DIN_Number": 203,
+        "BO_": 150,
+        "Scrutiny_Status": 182,
+        "Card_Holder_Name": 184,
+        "BO_Name": 210,
+        "BO_Mobile_Number": 195,
+        "BO_Designation": 193,
+        "BO_Email_ID": 274
     },
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 24,
     "parentColumnSpace": 12.578125,
-    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
+    "dynamicTriggerPathList": [
+        {"key": "onRowSelected"},
+        {"key": "primaryColumns.customColumn1.onClick"}
+    ],
     "borderWidth": "1",
     "primaryColumns": {
         "DIN_Number": {
@@ -180,7 +190,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Scrutiny Status",
-            "cellBackground": "",
+            "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Scrutiny Status\"]=='Completed'?\"#dcfce7\":\"#fef9c3\"))}}",
             "verticalAlignment": "CENTER"
         },
         "BO_Name": {
@@ -331,6 +341,41 @@
             "sticky": "",
             "originalId": "BO Designation",
             "cellBackground": "",
+            "verticalAlignment": "CENTER"
+        },
+        "customColumn1": {
+            "boxShadow": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+            "computedValue": "",
+            "onClick": "{{get_bo_kyc_docs.run()}}",
+            "buttonColor": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+            "isEditable": false,
+            "alias": "Action",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "customColumn1",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": true,
+            "textSize": "0.875rem",
+            "buttonStyle": "rgb(3, 179, 101)",
+            "allowCellWrapping": false,
+            "index": 9,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "Action",
+            "labelColor": "#FFFFFF",
+            "buttonLabel": "Click to List Documents Below",
+            "columnType": "button",
+            "horizontalAlignment": "CENTER",
+            "isCellEditable": false,
+            "borderRadius": "1.5rem",
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "customColumn1",
+            "customAlias": "",
             "verticalAlignment": "CENTER"
         },
         "BO_Email_ID": {

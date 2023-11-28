@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select id as \"Doc ID\", created_at as \"Creation Date\", updated_at as \"Updation Date\", doc_type as \"Document Type\", doc_number as \"Document Number\", right(doc_link,length(doc_link)-69) as \"Document Link\", status as \"Status\" from kyc_docs where bo_id = '{{appsmith.store.mkr_app_id}}'",
+      "body": "select id as \"Doc ID\", created_at as \"Creation Date\", updated_at as \"Updation Date\", doc_type as \"Document Type\", doc_number as \"Document Number\", right(doc_link,length(doc_link)-69) as \"Document Link\", sbm_status as \"SBM Status\", happay_status as \"Happay Status\", comment as \"Comment\" from kyc_docs where bo_id = '{{appsmith.store.chkr_app_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.mkr_app_id"
+      "appsmith.store.chkr_app_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update new_org_requests\nset status = 'Pending At Happay' and reason = '{{Input1Copy.text}}'\nwhere application_id = '{{appsmith.store.mkr_app_id}}'",
+      "body": "update new_org_requests\nset status = 'Pending At Happay', reason = '{{Input1Copy.text}}'\nwhere application_id = '{{appsmith.store.chkr_app_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "messages": [],
     "jsonPathKeys": [
       "Input1Copy.text",
-      "appsmith.store.mkr_app_id"
+      "appsmith.store.chkr_app_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

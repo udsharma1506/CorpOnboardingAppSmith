@@ -1,1 +1,1 @@
-update kyc_docs set status = 'Approved by Maker', updated_at = '{{new Date()}}' where id = '{{appsmith.store.temp_approve_kyc_id}}'
+update kyc_docs set sbm_status = 'Approved by Maker', updated_at = '{{new Date()}}' where id = '{{appsmith.store.temp_approve_kyc_id}}'

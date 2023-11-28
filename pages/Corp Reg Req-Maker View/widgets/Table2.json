@@ -75,7 +75,7 @@
         "Status",
         "customColumn1"
     ],
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "primaryColumns.customColumn1.onClick"}],
     "displayName": "Table",
     "bottomRow": 81,
     "columnWidthMap": {

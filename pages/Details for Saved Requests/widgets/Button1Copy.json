@@ -5,7 +5,7 @@
     "widgetName": "Button1Copy",
     "onClick": "{{submit_request.run().then(() => {\n  showAlert('Request Saved Successfully', 'success');\n  navigateTo('Request - Happay Ops', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert(submit_request.data, 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "isDisabled"}],
+    "dynamicPropertyPathList": [],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
     "searchTags": [
@@ -22,13 +22,9 @@
     "parentColumnSpace": 12.609375,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 47,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"},
-        {"key": "isDisabled"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Submit",
-    "isDisabled": "{{(Select1Copy.selectedOptionValue==\"Reject\" && Input1Copy.text==\"\")||(Select1Copy.selectedOptionValue==\"\")}}",
+    "isDisabled": false,
     "key": "6jpdl7k8it",
     "isDeprecated": false,
     "rightColumn": 63,
@@ -45,7 +41,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 256,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 23,
     "originalBottomRow": 262,
     "buttonVariant": "PRIMARY",

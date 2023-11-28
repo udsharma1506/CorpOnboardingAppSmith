@@ -24,7 +24,6 @@
     "leftColumn": 43,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
-        {"key": "borderRadius"},
         {"key": "isDisabled"}
     ],
     "text": "Save",
@@ -46,7 +45,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 17,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 43,
     "originalBottomRow": 22,
     "buttonVariant": "PRIMARY",

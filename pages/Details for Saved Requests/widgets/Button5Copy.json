@@ -21,10 +21,7 @@
     "parentColumnSpace": 19.8125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 47,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "+ Add BO Info",
     "isDisabled": false,
     "key": "wm2k03qrhf",
@@ -43,7 +40,7 @@
     "mobileTopRow": 123,
     "responsiveBehavior": "hug",
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 47,
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"

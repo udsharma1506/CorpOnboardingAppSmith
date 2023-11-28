@@ -28,22 +28,12 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Details for Saved Requests_get_bo_kyc_docs",
-              "name": "get_bo_kyc_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table1Copy.selectedRow[\"BO ID\"]"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Details for Saved Requests_get_org_data",
               "name": "get_org_data",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.store.temp_hpy_req_id"
+                "appsmith.store.temp_hpy_saved_req_id"
               ],
               "timeoutInMillisecond": 60000
             }
@@ -55,7 +45,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.store.temp_hpy_req_id"
+                "appsmith.store.temp_hpy_saved_req_id"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -65,7 +55,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.store.temp_hpy_req_id"
+                "appsmith.store.temp_hpy_saved_req_id"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -78,7 +68,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "Table1.triggeredRow[\"Document Link\"]",
-                "appsmith.store.temp_hpy_req_id.toLowerCase()"
+                "appsmith.store.temp_hpy_saved_req_id.toLowerCase()"
               ],
               "timeoutInMillisecond": 60000
             }

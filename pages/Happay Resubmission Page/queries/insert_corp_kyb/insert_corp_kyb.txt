@@ -1,0 +1,3 @@
+insert into kyc_docs(id,created_at,updated_at,doc_type,doc_number,doc_link,bo_id,kyc_owner,sbm_status,happay_status)
+values
+('{{'kyc_'+generate_uuid_for_kyb.generateUUID()}}','{{new Date()}}','{{new Date()}}','{{Select1Copy.selectedOptionValue}}','{{Input2Copy.text}}','{{upload_corp_kyb.data.signedUrl.substring(0,upload_corp_kyb.data.signedUrl.indexOf("?X-Amz")).toLowerCase()}}','{{appsmith.store.temp_hpy_resubmit_req_id}}','corporate','pending','submitted')

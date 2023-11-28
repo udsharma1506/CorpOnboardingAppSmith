@@ -78,11 +78,11 @@
     "displayName": "Table",
     "bottomRow": 82,
     "columnWidthMap": {
-        "Status": 156,
-        "Requestor_Email": 259,
-        "Request_Raised_Date": 196,
-        "Registered_Entity_Name": 258,
-        "Application_ID": 209
+        "Status": 314,
+        "Requestor_Email": 322,
+        "Request_Raised_Date": 236,
+        "Registered_Entity_Name": 375,
+        "Application_ID": 381
     },
     "parentRowSpace": 10,
     "hideCard": false,

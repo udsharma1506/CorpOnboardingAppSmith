@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "generate_uuid_for_kyb",
+    "pageId": "Happay Resubmission Page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Happay Resubmission Page_generate_uuid_for_kyb",
+  "deleted": false,
+  "gitSyncId": "64f8568385ebf35f63123db3_655e1a6233f2bd4cbe013b3b"
+}

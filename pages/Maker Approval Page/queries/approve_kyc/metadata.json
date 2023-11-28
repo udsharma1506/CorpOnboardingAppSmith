@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update kyc_docs set status = 'Approved by Maker', updated_at = '{{new Date()}}' where id = '{{appsmith.store.temp_approve_kyc_id}}'",
+      "body": "update kyc_docs set sbm_status = 'Approved by Maker', updated_at = '{{new Date()}}' where id = '{{appsmith.store.temp_approve_kyc_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
