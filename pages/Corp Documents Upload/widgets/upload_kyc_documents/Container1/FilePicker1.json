@@ -17,10 +17,7 @@
     "parentColumnSpace": 12.0355224609375,
     "dynamicTriggerPathList": [{"key": "onFilesSelected"}],
     "leftColumn": 50,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "isDisabled": false,
     "key": "iuiqd16gq3",
     "onFilesSelected": "{{upload_corp_kyb.run()}}",
@@ -43,7 +40,7 @@
     "isLoading": false,
     "mobileTopRow": 8,
     "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 38,
     "files": [],
     "maxNumFiles": 1

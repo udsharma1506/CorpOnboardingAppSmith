@@ -19,7 +19,6 @@
         {"key": "primaryColumns.Request_Raised_Date.computedValue"},
         {"key": "primaryColumns.Status.computedValue"},
         {"key": "primaryColumns.customColumn1.buttonColor"},
-        {"key": "primaryColumns.customColumn1.borderRadius"},
         {"key": "primaryColumns.customColumn1.boxShadow"}
     ],
     "needsHeightForContent": true,
@@ -262,7 +261,7 @@
             "columnType": "button",
             "horizontalAlignment": "CENTER",
             "isCellEditable": false,
-            "borderRadius": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+            "borderRadius": "1.5rem",
             "width": 150,
             "enableFilter": true,
             "sticky": "",

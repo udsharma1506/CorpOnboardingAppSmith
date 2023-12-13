@@ -28,7 +28,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{get_org_data.data[0].networth}}",
+    "text": "{{get_org_data.data[0].networth.toLocaleString(\"en-IN\")}}",
     "key": "lmrwvou6gr",
     "isDeprecated": false,
     "rightColumn": 43,

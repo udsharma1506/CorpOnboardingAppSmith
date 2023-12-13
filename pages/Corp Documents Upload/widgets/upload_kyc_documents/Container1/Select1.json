@@ -40,7 +40,7 @@
     "parentColumnSpace": 12.0355224609375,
     "dynamicTriggerPathList": [],
     "labelPosition": "Top",
-    "sourceData": "[\n  {\n    \"name\": \"CORPORATE PAN\",\n    \"code\": \"corporate_pan\"\n  },\n  {\n    \"name\": \"CERTIFICATE OF INCORPORATION\",\n    \"code\": \"certificate_of_incorporation\"\n  },\n  {\n    \"name\": \"MEMORANDUM OF UNDERSTANDING\",\n    \"code\": \"memorandum_of_understanding\"\n  }\n]",
+    "sourceData": "[\n  {\n    \"name\": \"CORPORATE PAN\",\n    \"code\": \"corporate_pan\"\n  },\n  {\n    \"name\": \"CERTIFICATE OF INCORPORATION\",\n    \"code\": \"certificate_of_incorporation\"\n  },\n  {\n    \"name\": \"MEMORANDUM OF UNDERSTANDING\",\n    \"code\": \"memorandum_of_understanding\"\n  },\n  {\n    \"name\": \"GST CERTIFICATE\",\n    \"code\": \"gst_certificate\"\n  },\n  {\n    \"name\": \"ARTICLE OF ASSOCIATION\",\n    \"code\": \"article_of_association\"\n  },\n  {\n    \"name\": \"MEMORANDUM OF ASSOCIATION\",\n    \"code\": \"memorandum_of_association\"\n  },\n  {\n    \"name\": \"BOARD RESOLUTION\",\n    \"code\": \"board_resolution\"\n  },\n  {\n    \"name\": \"DIRECTORS LIST\",\n    \"code\": \"directors_list\"\n  },\n  {\n    \"name\": \"LATEST AUDITTED FINANCIALS\",\n    \"code\": \"latest_auditted_financials\"\n  },\n  {\n    \"name\": \"SHAREHOLDING DOCUMENT\",\n    \"code\": \"shareholding_document\"\n  }\n]",
     "key": "k6vlqkyvxp",
     "labelTextSize": "1.25rem",
     "isDeprecated": false,
