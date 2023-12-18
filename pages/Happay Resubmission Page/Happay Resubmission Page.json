@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2440,
+          "bottomRow": 2470,
           "containerStyle": "none",
           "snapRows": 64,
           "parentRowSpace": 1,
@@ -52,18 +52,6 @@
             {
               "id": "Happay Resubmission Page_get_org_kyc_docs",
               "name": "get_org_kyc_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_hpy_resubmit_req_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Happay Resubmission Page_scrutiny_summary_count",
-              "name": "scrutiny_summary_count",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

@@ -5,15 +5,15 @@
     "widgetName": "Button1Copy",
     "onClick": "{{submit_request.run().then(() => {\n  showAlert('Request Saved Successfully', 'success');\n  navigateTo('Request - Happay Ops', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert(submit_request.data, 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "isDisabled"}],
+    "dynamicPropertyPathList": [],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
     "searchTags": [
         "click",
         "submit"
     ],
-    "topRow": 238,
-    "bottomRow": 244,
+    "topRow": 241,
+    "bottomRow": 247,
     "parentRowSpace": 10,
     "type": "BUTTON_WIDGET",
     "hideCard": false,
@@ -22,12 +22,9 @@
     "parentColumnSpace": 12.609375,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 47,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "isDisabled"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Submit",
-    "isDisabled": "{{scrutiny_summary_count.data[0].Pending<scrutiny_summary_count.data[0][\"Rejected by Maker\"]}}",
+    "isDisabled": false,
     "key": "6jpdl7k8it",
     "isDeprecated": false,
     "rightColumn": 63,
@@ -42,11 +39,11 @@
     "isLoading": false,
     "mobileTopRow": 76,
     "responsiveBehavior": "hug",
-    "originalTopRow": 256,
+    "originalTopRow": 238,
     "disabledWhenInvalid": false,
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 23,
-    "originalBottomRow": 262,
+    "originalBottomRow": 244,
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"
 }
