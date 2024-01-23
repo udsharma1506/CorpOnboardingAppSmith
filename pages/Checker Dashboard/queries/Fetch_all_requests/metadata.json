@@ -29,7 +29,7 @@
       "queryParameters": [
         {
           "key": "page",
-          "value": "1"
+          "value": "{{Fetch_Reqs.pageNo}}"
         },
         {
           "key": "pageSize",
@@ -49,11 +49,16 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "queryParameters[0].value"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "Fetch_Reqs.pageNo",
       "Math.random().toString(36).substring(2, 15)",
       "appsmith.store.EMP_ID",
       "appsmith.store.OPS_TOKEN"

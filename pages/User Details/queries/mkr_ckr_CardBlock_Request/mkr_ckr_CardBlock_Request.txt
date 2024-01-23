@@ -1,17 +1,17 @@
 {
-	"url": "https://cms-prd-sbm-api.matrix.cards/ops/card/{{cardlist.selectedRow.card_id}}/block-card",
+	"url": "http://13.126.195.44:8000/ops/card/{{cardlist.selectedRow.card_id}}/block-card",
 	"requestorId": "",
 	"apiReqBody": {},
 	"apiHeaders": {
 		"Content-Type": "application/json",
 		"empId": "{{appsmith.store.EMP_ID}}",
 		"App-ID": "{{Text1Copy1.text}}",
-				"Request-ID":"AppSmith_{{Math.random().toString(36).substring(2, 15)}}_{{Math.random().toString(36).substring(2, 15)}}_EMAILID_{{appsmith.user.email}}"
+		"Request-ID":"AppSmith_{{Math.random().toString(36).substring(2, 15)}}_{{Math.random().toString(36).substring(2, 15)}}_EMAILID_{{appsmith.user.email}}"
 	},
 	"changedReqBody": {
 		"status": "BLOCK"
 	},
-	"emailId": "{{appsmith.user.email}}",
+	"emailId": "abc@happay.in",
 	"event": "CardStatusChange",
 	"entityName": "CARD",
 	"entityId": "{{cardlist.selectedRow.card_id}}",

@@ -1,5 +1,5 @@
 {
-    "resetFormOnClick": true,
+    "resetFormOnClick": false,
     "boxShadow": "none",
     "mobileBottomRow": 37,
     "widgetName": "Button2",

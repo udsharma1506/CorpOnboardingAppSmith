@@ -2,7 +2,7 @@
     "boxShadow": "none",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "topRow": 211,
+    "topRow": 218,
     "isSortable": true,
     "onPageChange": "{{fetch_txn_details.run()}}",
     "type": "TABLE_WIDGET",
@@ -64,7 +64,7 @@
         }
     },
     "borderRadius": "0px",
-    "originalBottomRow": 279,
+    "originalBottomRow": 286,
     "columnSizeMap": {
         "txn_id": 184,
         "txn_date": 107,
@@ -105,7 +105,7 @@
     ],
     "dynamicPropertyPathList": [{"key": "onPageChange"}],
     "displayName": "Table",
-    "bottomRow": 279,
+    "bottomRow": 286,
     "parentRowSpace": 10,
     "defaultSelectedRow": "0",
     "hideCard": false,
@@ -641,7 +641,7 @@
     "renderMode": "CANVAS",
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": true,
-    "originalTopRow": 211,
+    "originalTopRow": 218,
     "isVisiblePagination": true,
     "verticalAlignment": "CENTER"
 }

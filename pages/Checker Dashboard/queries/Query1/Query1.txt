@@ -1,0 +1,2 @@
+select * from maker_checker_requests where status = 0
+order by updated_at DESC

@@ -6,8 +6,8 @@
     "isCanvas": true,
     "displayName": "Container",
     "iconSVG": "/static/media/icon.1977dca3.svg",
-    "topRow": 9,
-    "bottomRow": 15,
+    "topRow": 13,
+    "bottomRow": 23,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -23,7 +23,7 @@
         "detachFromLayout": true,
         "widgetId": "pvnod4qo8v",
         "containerStyle": "none",
-        "bottomRow": 60,
+        "bottomRow": 100,
         "topRow": 0,
         "parentRowSpace": 1,
         "isVisible": true,
@@ -48,7 +48,7 @@
     "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isDeprecated": false,
     "rightColumn": 62,
-    "dynamicHeight": "FIXED",
+    "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "bx6rvjqmsg",
     "containerStyle": "card",
     "isVisible": true,
@@ -56,6 +56,8 @@
     "parentId": "0",
     "renderMode": "CANVAS",
     "isLoading": false,
+    "originalTopRow": 13,
     "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+    "originalBottomRow": 23,
+    "minDynamicHeight": 10
 }

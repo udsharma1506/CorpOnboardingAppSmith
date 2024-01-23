@@ -2,7 +2,7 @@
     "boxShadow": "none",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "topRow": 108,
+    "topRow": 115,
     "isSortable": true,
     "onPageChange": "{{fetch_user_details.run()}}",
     "type": "TABLE_WIDGET",
@@ -62,7 +62,7 @@
         }
     },
     "borderRadius": "0px",
-    "originalBottomRow": 196,
+    "originalBottomRow": 203,
     "columnSizeMap": {
         "kyc_status": 161,
         "email_id": 307,
@@ -107,7 +107,7 @@
     ],
     "dynamicPropertyPathList": [{"key": "onPageChange"}],
     "displayName": "Table",
-    "bottomRow": 196,
+    "bottomRow": 203,
     "parentRowSpace": 10,
     "defaultSelectedRow": "0",
     "hideCard": false,
@@ -495,7 +495,7 @@
     "renderMode": "CANVAS",
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": true,
-    "originalTopRow": 108,
+    "originalTopRow": 115,
     "isVisiblePagination": true,
     "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
     "verticalAlignment": "CENTER"

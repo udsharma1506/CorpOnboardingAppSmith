@@ -33,12 +33,12 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Table1CopyCopyCopy.selectedRow.id",
+                "Table1Copy1.selectedRow.id",
                 "Table1Copy1Copy.selectedRow.id",
                 "Table1Copy2.selectedRow.id",
                 "Table1Copy3.selectedRow.id",
-                "Table1Copy1.selectedRow.id",
-                "Table1CopyCopy.selectedRow.id"
+                "Table1CopyCopy.selectedRow.id",
+                "Table1CopyCopyCopy.selectedRow.id"
               ],
               "timeoutInMillisecond": 60000
             }

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "update_BO_kyc",
+    "name": "Query1",
     "datasource": {
       "name": "mkrchkr_uat",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Happay Resubmission Page",
+    "pageId": "Checker Dashboard",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update kyc_docs\nset happay_status = 'Resubmitted'\nwhere id = '{{Table1Copy1.triggeredRow[\"Doc ID\"]}}'",
+      "body": "select * from maker_checker_requests where status = 0\norder by updated_at DESC",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -31,16 +31,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Table1Copy1.triggeredRow[\"Doc ID\"]"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-11-22T12:21:56Z"
+    "userPermissions": []
   },
-  "id": "Happay Resubmission Page_update_BO_kyc",
+  "id": "Checker Dashboard_Query1",
   "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_655df26433f2bd4cbe013b18"
+  "gitSyncId": "64f8568385ebf35f63123db3_658bd49233f2bd4cbe013be0"
 }

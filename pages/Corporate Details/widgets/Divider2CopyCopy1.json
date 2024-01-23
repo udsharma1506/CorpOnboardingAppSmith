@@ -4,8 +4,8 @@
     "thickness": 2,
     "displayName": "Divider",
     "iconSVG": "/static/media/icon.cbe8f608.svg",
-    "topRow": 196,
-    "bottomRow": 200,
+    "topRow": 203,
+    "bottomRow": 207,
     "parentRowSpace": 10,
     "type": "DIVIDER_WIDGET",
     "capType": "nc",
@@ -27,7 +27,7 @@
     "parentId": "0",
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 196,
+    "originalTopRow": 203,
     "borderRadius": "0px",
-    "originalBottomRow": 200
+    "originalBottomRow": 207
 }
