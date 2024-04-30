@@ -7,7 +7,10 @@
     "animateLoading": true,
     "resetOnSubmit": true,
     "leftColumn": 1,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "regex"}
+    ],
     "labelStyle": "BOLD",
     "inputType": "TEXT",
     "isDisabled": false,
@@ -18,6 +21,7 @@
     "isVisible": true,
     "version": 2,
     "isLoading": false,
+    "regex": "{{Select6.selectedOptionLabel==='Private Limited Company'?'[A-Z]{3}[C]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}':Select6.selectedOptionLabel==='Public Limited Company'?'[A-Z]{3}[C]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}':Select6.selectedOptionLabel==='Limited Liability Partnership'?'[A-Z]{3}[F]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}':Select6.selectedOptionLabel==='PARTNERSHIP FIRMS'?'[A-Z]{3}[F]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}':Select6.selectedOptionLabel==='Sole Proprietorship'?'[A-Z]{3}[P]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}':''}}",
     "borderRadius": "0px",
     "originalBottomRow": 94,
     "mobileBottomRow": 42,
@@ -42,6 +46,7 @@
     "isDeprecated": false,
     "rightColumn": 32,
     "widgetId": "1wky3a8nkd",
+    "errorMessage": "Not a Valid PAN Number",
     "minWidth": 450,
     "label": "Corporate PAN*:",
     "parentId": "bkscj2iujp",

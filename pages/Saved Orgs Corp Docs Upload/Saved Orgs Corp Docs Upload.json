@@ -28,6 +28,16 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Saved Orgs Corp Docs Upload_list_of_corp_docs",
+              "name": "list_of_corp_docs",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [
+                "(get_org_constitution.data[0].constitution===\"85 - Private Limited Company\" || get_org_constitution.data[0].constitution===\"86 - Public Limited Company\")?\"list_of_corp_docs_Private/Publc/OPC Limited\":get_org_constitution.data[0].constitution===\"89 - Limited Liability Partnership\"?\"list_of_corp_docs_LLP\":get_org_constitution.data[0].constitution===\"53 - PARTNERSHIP FIRMS\"?\"list_of_corp_docs_partnership\":get_org_constitution.data[0].constitution===\"84 - Sole Proprietorship\"?\"list_of_corp_docs_sole_proprietor\":\"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Saved Orgs Corp Docs Upload_show_kyb_docs",
               "name": "show_kyb_docs",
               "confirmBeforeExecute": false,

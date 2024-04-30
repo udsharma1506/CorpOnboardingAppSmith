@@ -9,7 +9,8 @@
     "leftColumn": 24.38095238095238,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "regex"}
     ],
     "labelStyle": "BOLD",
     "inputType": "TEXT",
@@ -25,6 +26,7 @@
         "Inputs"
     ],
     "isLoading": false,
+    "regex": "{{(Select1.selectedOptionValue==='PAN' && (get_org_constitution.data[0].constitution==='85 - Private Limited Company' || get_org_constitution.data[0].constitution==='86 - Public Limited Company'))?'[A-Z]{3}[C]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}':(Select1.selectedOptionValue==='PAN' && (get_org_constitution.data[0].constitution==='53 - PARTNERSHIP FIRMS' || get_org_constitution.data[0].constitution==='89 - Limited Liability Partnership'))?'[A-Z]{3}[F]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}':(Select1.selectedOptionValue==='PAN' && get_org_constitution.data[0].constitution==='84 - Sole Proprietorship')?'[A-Z]{3}[P]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}':''}}",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileBottomRow": 25,
     "widgetName": "Input2",
@@ -48,6 +50,7 @@
     "isDeprecated": false,
     "rightColumn": 48.76190476190476,
     "widgetId": "hje34unswh",
+    "errorMessage": "Not a Valid PAN Number",
     "minWidth": 450,
     "label": "Document Number",
     "parentId": "z9jv2inger",

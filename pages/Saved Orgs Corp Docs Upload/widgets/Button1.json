@@ -3,8 +3,9 @@
     "boxShadow": "none",
     "mobileBottomRow": 29,
     "widgetName": "Button1",
-    "onClick": "{{showModal('upload_kyc_documents').then(() => {\n  generate_uuid_for_doc.generateUUID();\n});}}",
+    "onClick": "{{get_org_constitution.run().then(() => {\n  generate_uuid_for_doc.generateUUID();\n  showModal('upload_kyc_documents');\n  list_of_corp_docs.run();\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
     "searchTags": [

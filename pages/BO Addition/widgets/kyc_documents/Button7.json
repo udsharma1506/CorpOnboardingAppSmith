@@ -19,10 +19,7 @@
     "animateLoading": true,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 49,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Close & Save",
     "isDisabled": false,
     "key": "q595ol0800",
@@ -43,7 +40,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 47,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 47,
     "originalBottomRow": 51,
     "buttonVariant": "PRIMARY",

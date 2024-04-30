@@ -24,11 +24,10 @@
     "leftColumn": 43,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
-        {"key": "borderRadius"},
         {"key": "isDisabled"}
     ],
     "text": "Save",
-    "isDisabled": "{{Select1.selectedOptionLabel!=''?Input2.text!=\"\"?FilePicker1.files[0]!=undefined?false:true:true:true}}",
+    "isDisabled": "{{Select1.selectedOptionLabel!=''?(Input2.text!=\"\" && Input2.isValid)?FilePicker1.files[0]!=undefined?false:true:true:true}}",
     "key": "fcp1vxzufo",
     "isDeprecated": false,
     "rightColumn": 63,
@@ -46,7 +45,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 17,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 43,
     "originalBottomRow": 22,
     "buttonVariant": "PRIMARY",

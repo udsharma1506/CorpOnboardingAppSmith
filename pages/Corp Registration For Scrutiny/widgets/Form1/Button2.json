@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 37,
     "widgetName": "Button2",
-    "onClick": "{{insert_value.run().then(() => {\n  showAlert('Record Saved Successfully', 'success');\n  storeValue('temp_application_id', Text1Copy.text);\n  navigateTo('BO Addition', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert(insert_value.data, 'error');\n});}}",
+    "onClick": "{{insert_value.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  navigateTo('BO Addition', {}, 'SAME_WINDOW');\n  storeValue('temp_application_id', Text1Copy.text);\n}).catch(() => {\n  showAlert(insert_value.data, 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [],
     "displayName": "Button",
@@ -12,8 +12,8 @@
         "click",
         "submit"
     ],
-    "topRow": 140,
-    "bottomRow": 144,
+    "topRow": 141,
+    "bottomRow": 145,
     "type": "BUTTON_WIDGET",
     "hideCard": false,
     "mobileRightColumn": 62,
@@ -38,11 +38,11 @@
     "isLoading": false,
     "mobileTopRow": 33,
     "responsiveBehavior": "hug",
-    "originalTopRow": 140,
+    "originalTopRow": 141,
     "disabledWhenInvalid": true,
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 46,
-    "originalBottomRow": 144,
+    "originalBottomRow": 145,
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"
 }

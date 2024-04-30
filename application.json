@@ -87,6 +87,18 @@
     {
       "id": "Happay Resubmission Page",
       "isDefault": false
+    },
+    {
+      "id": "Vendor Approval",
+      "isDefault": false
+    },
+    {
+      "id": "Vendor Approval - Maker",
+      "isDefault": false
+    },
+    {
+      "id": "Vendor Approval - Checker",
+      "isDefault": false
     }
   ],
   "viewMode": false,

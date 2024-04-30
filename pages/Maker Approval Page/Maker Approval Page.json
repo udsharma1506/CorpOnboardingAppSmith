@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2630,
+          "bottomRow": 2650,
           "containerStyle": "none",
           "snapRows": 64,
           "parentRowSpace": 1,
@@ -68,6 +68,18 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "appsmith.store.mkr_app_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Maker Approval Page_get_bo_complete_details",
+              "name": "get_bo_complete_details",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table1Copy.triggeredRow[\"BO ID\"]"
               ],
               "timeoutInMillisecond": 10000
             }

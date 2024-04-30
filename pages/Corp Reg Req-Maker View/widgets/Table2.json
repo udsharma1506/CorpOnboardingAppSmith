@@ -78,11 +78,11 @@
     "displayName": "Table",
     "bottomRow": 81,
     "columnWidthMap": {
-        "Status": 284,
-        "Requestor_Email": 364,
+        "Status": 236,
+        "Requestor_Email": 236,
         "Request_Raised_Date": 228,
-        "Registered_Entity_Name": 383,
-        "Application_ID": 379
+        "Registered_Entity_Name": 311,
+        "Application_ID": 323
     },
     "parentRowSpace": 10,
     "hideCard": false,
@@ -190,7 +190,7 @@
             "isCellVisible": true,
             "isDerived": false,
             "textSize": "0.875rem",
-            "allowCellWrapping": false,
+            "allowCellWrapping": true,
             "index": 2,
             "isDiscardVisible": true,
             "isVisible": true,
@@ -218,7 +218,7 @@
             "isCellVisible": true,
             "isDerived": false,
             "textSize": "0.875rem",
-            "allowCellWrapping": false,
+            "allowCellWrapping": true,
             "index": 0,
             "isDiscardVisible": true,
             "isVisible": true,

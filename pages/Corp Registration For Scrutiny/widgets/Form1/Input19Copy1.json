@@ -6,15 +6,16 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 1,
+    "leftColumn": 18,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "defaultText"}
     ],
     "labelStyle": "",
     "inputType": "TEXT",
     "placeholderText": "City",
-    "isDisabled": false,
+    "isDisabled": true,
     "isRequired": true,
     "dynamicHeight": "AUTO_HEIGHT",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -49,7 +50,7 @@
     "key": "0feui6nf4b",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 17,
+    "rightColumn": 36,
     "widgetId": "f4tz522kj6",
     "minWidth": 450,
     "label": "",
@@ -62,6 +63,6 @@
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "",
+    "defaultText": "{{get_pincode_details_registered.data.records[0].districtname}}",
     "minDynamicHeight": 4
 }

@@ -6,17 +6,16 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 1,
+    "leftColumn": 18,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "defaultText"},
-        {"key": "isDisabled"}
+        {"key": "defaultText"}
     ],
     "labelStyle": "",
     "inputType": "TEXT",
     "placeholderText": "City",
-    "isDisabled": "{{Checkbox1.isChecked}}",
+    "isDisabled": true,
     "isRequired": true,
     "dynamicHeight": "AUTO_HEIGHT",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -32,7 +31,7 @@
     "originalBottomRow": 84,
     "mobileBottomRow": 48,
     "widgetName": "Input19Copy1Copy2",
-    "dynamicPropertyPathList": [{"key": "isDisabled"}],
+    "dynamicPropertyPathList": [],
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -52,7 +51,7 @@
     "key": "0feui6nf4b",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 17,
+    "rightColumn": 36,
     "widgetId": "yjwgqa59pv",
     "minWidth": 450,
     "label": "",
@@ -65,6 +64,6 @@
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{Checkbox1.isChecked===true?Input19Copy1.text:\"\"}}",
+    "defaultText": "{{Checkbox1.isChecked===true?Input19Copy1.text:get_pincode_details_comm.data.records[0].districtname}}",
     "minDynamicHeight": 4
 }

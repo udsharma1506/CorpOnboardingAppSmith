@@ -74,6 +74,18 @@
           ],
           [
             {
+              "id": "Checker Approval Page_get_bo_complete_details",
+              "name": "get_bo_complete_details",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table1Copy.triggeredRow[\"BO ID\"]"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Checker Approval Page_get_corporate_signed_url",
               "name": "get_corporate_signed_url",
               "confirmBeforeExecute": false,

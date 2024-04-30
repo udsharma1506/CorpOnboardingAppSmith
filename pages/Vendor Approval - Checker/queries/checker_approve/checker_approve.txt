@@ -1,0 +1,6 @@
+{
+    "vendor_id": "{{Text2Copy.text}}",
+    "action": "Approve",
+    "comments": "",
+    "approver_email": "{{appsmith.user.email}}"
+}

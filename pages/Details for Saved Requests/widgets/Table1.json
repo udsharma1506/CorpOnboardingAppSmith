@@ -4,7 +4,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
-    "topRow": 127,
+    "topRow": 129,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -90,7 +90,7 @@
     ],
     "dynamicPropertyPathList": [{"key": "onSearchTextChanged"}],
     "displayName": "Table",
-    "bottomRow": 154,
+    "bottomRow": 156,
     "columnWidthMap": {
         "Document_Link": 363,
         "SBM_Status": 214,

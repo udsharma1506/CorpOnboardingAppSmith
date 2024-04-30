@@ -84,14 +84,14 @@
     "displayName": "Table",
     "bottomRow": 199,
     "columnWidthMap": {
-        "DIN_Number": 203,
-        "BO_": 150,
+        "DIN_Number": 156,
+        "BO_": 81,
         "Scrutiny_Status": 182,
-        "Card_Holder_Name": 184,
-        "BO_Name": 210,
-        "BO_Mobile_Number": 195,
-        "BO_Designation": 193,
-        "BO_Email_ID": 274
+        "Card_Holder_Name": 175,
+        "BO_Name": 182,
+        "BO_Mobile_Number": 173,
+        "BO_Designation": 155,
+        "BO_Email_ID": 213
     },
     "parentRowSpace": 10,
     "hideCard": false,
@@ -346,7 +346,7 @@
         "customColumn1": {
             "boxShadow": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
             "computedValue": "",
-            "onClick": "{{get_bo_kyc_docs.run()}}",
+            "onClick": "{{get_bo_kyc_docs.run();\nget_bo_complete_details.run().then(() => {\n  showModal('details_modal');\n});}}",
             "buttonColor": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
             "isEditable": false,
             "alias": "Action",
