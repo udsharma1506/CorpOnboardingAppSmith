@@ -7,7 +7,11 @@
     "type": "DATE_PICKER_WIDGET2",
     "animateLoading": true,
     "leftColumn": 1,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "defaultDate"},
+        {"key": "maxDate"}
+    ],
     "labelStyle": "BOLD",
     "isDisabled": false,
     "isRequired": true,
@@ -24,6 +28,10 @@
     "mobileBottomRow": 62,
     "widgetName": "DatePicker1",
     "minDate": "1920-12-31T18:30:00.000Z",
+    "dynamicPropertyPathList": [
+        {"key": "defaultDate"},
+        {"key": "maxDate"}
+    ],
     "displayName": "DatePicker",
     "searchTags": ["calendar"],
     "bottomRow": 81,
@@ -39,6 +47,7 @@
     "labelTextSize": "1.25rem",
     "isDeprecated": false,
     "rightColumn": 32,
+    "defaultDate": "{{Date()}}",
     "widgetId": "cfwxqnn3bk",
     "minWidth": 450,
     "label": "Incorporation Date*:",
@@ -51,6 +60,6 @@
     "mobileLeftColumn": 28,
     "maxDynamicHeight": 9000,
     "firstDayOfWeek": 0,
-    "maxDate": "2121-12-31T18:29:00.000Z",
+    "maxDate": "{{Date()}}",
     "minDynamicHeight": 4
 }

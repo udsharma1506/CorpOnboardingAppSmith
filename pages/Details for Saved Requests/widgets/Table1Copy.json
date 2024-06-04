@@ -59,7 +59,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1697641437293,
+    "columnUpdatedAt": 1717482093193,
     "originalBottomRow": 193,
     "defaultSelectedRowIndices": [0],
     "mobileBottomRow": 89,
@@ -111,7 +111,7 @@
             "allowCellWrapping": false,
             "index": 8,
             "isDiscardVisible": true,
-            "isVisible": true,
+            "isVisible": false,
             "label": "DIN Number",
             "fontStyle": "",
             "textColor": "",

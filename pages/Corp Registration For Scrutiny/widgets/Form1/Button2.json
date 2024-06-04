@@ -3,9 +3,9 @@
     "boxShadow": "none",
     "mobileBottomRow": 37,
     "widgetName": "Button2",
-    "onClick": "{{insert_value.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  navigateTo('BO Addition', {}, 'SAME_WINDOW');\n  storeValue('temp_application_id', Text1Copy.text);\n}).catch(() => {\n  showAlert(insert_value.data, 'error');\n});}}",
+    "onClick": "{{reg_addr_pincode_check.data[0]===undefined?comm_addr_pincode_check.data[0]===undefined?(insert_value.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  navigateTo('BO Addition', {}, 'SAME_WINDOW');\n  storeValue('temp_application_id', Text1Copy.text);\n}).catch(() => {\n  showAlert(insert_value.data, 'error');\n})):showAlert(\"The Communication Address belongs to be blocked regions of SBM list and cannot proceed for onboarding\",'error'):showAlert(\"The registered Address belongs to be blocked regions of SBM list and cannot proceed for onboarding\",'error')}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [

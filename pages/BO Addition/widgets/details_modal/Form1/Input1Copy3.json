@@ -9,11 +9,13 @@
     "leftColumn": 36,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "validation"}
     ],
     "labelStyle": "BOLD",
-    "inputType": "NUMBER",
+    "inputType": "TEXT",
     "isDisabled": false,
+    "validation": "{{Input7.text.length==10}}",
     "isRequired": true,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -21,6 +23,7 @@
     "isVisible": true,
     "version": 2,
     "isLoading": false,
+    "regex": "^[6789]\\d{9}$",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 16,
     "mobileBottomRow": 31,
@@ -45,6 +48,7 @@
     "isDeprecated": false,
     "rightColumn": 64,
     "widgetId": "zz9755ip5d",
+    "errorMessage": "Please enter a valid mobile number",
     "minWidth": 450,
     "label": "Mobile:",
     "parentId": "ndruhh5a7y",

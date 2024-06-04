@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 670,
+          "bottomRow": 980,
           "containerStyle": "none",
           "snapRows": 133,
           "parentRowSpace": 1,
@@ -42,6 +42,16 @@
             {
               "id": "Corp Documents Upload_get_org_constitution",
               "name": "get_org_constitution",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_application_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Corp Documents Upload_uploaded_doc_count",
+              "name": "uploaded_doc_count",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

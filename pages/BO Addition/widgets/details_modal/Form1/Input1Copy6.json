@@ -16,7 +16,7 @@
     "inputType": "TEXT",
     "isDisabled": false,
     "validation": "{{Input1Copy6.text.length==10}}",
-    "isRequired": false,
+    "isRequired": true,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "showStepArrows": false,

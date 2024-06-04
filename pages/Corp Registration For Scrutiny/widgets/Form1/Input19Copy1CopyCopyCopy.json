@@ -51,7 +51,7 @@
     "labelPosition": "Top",
     "key": "0feui6nf4b",
     "labelTextSize": "0.875rem",
-    "onTextChanged": "{{get_pincode_details_comm.run()}}",
+    "onTextChanged": "{{get_pincode_details_comm.run().then(() => {\n  comm_addr_pincode_check.run();\n});}}",
     "isDeprecated": false,
     "rightColumn": 17,
     "widgetId": "d7ovanfiew",

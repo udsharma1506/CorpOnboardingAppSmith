@@ -29,7 +29,7 @@
     "shouldTruncate": false,
     "borderWidth": "",
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "KYC Documents of BO/Authorized Signatory: ",
+    "text": "KYC Documents of BO/Authorized Signatory: (Select a BO to see the KYC documents)",
     "key": "lmrwvou6gr",
     "isDeprecated": false,
     "rightColumn": 33,

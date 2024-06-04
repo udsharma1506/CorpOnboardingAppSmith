@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 22,
     "widgetName": "Button8",
-    "onClick": "{{insert_corp_kyb.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  closeModal('upload_kyc_documents');\n  resetWidget(\"Container1\", true);\n  show_kyb_docs.run();\n}).catch(() => {\n  showAlert(insert_corp_kyb.data, 'error');\n});}}",
+    "onClick": "{{insert_corp_kyb.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  closeModal('upload_kyc_documents');\n  resetWidget(\"Container1\", true);\n  show_kyb_docs.run();\n  uploaded_doc_count.run();\n}).catch(() => {\n  showAlert(insert_corp_kyb.data, 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [{"key": "isDisabled"}],
     "displayName": "Button",

@@ -50,7 +50,7 @@
     "labelPosition": "Top",
     "key": "0feui6nf4b",
     "labelTextSize": "0.875rem",
-    "onTextChanged": "{{get_pincode_details_home.run()}}",
+    "onTextChanged": "{{get_pincode_details_home.run().then(() => {\n  home_addr_pincode_check.run();\n});}}",
     "isDeprecated": false,
     "rightColumn": 16,
     "widgetId": "fd7dkc6f52",

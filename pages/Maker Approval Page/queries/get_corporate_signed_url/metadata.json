@@ -47,7 +47,6 @@
               "children": [
                 {
                   "condition": "EQ",
-                  "key": "fileName",
                   "value": "sbm_appsmith_test/{{Table1.triggeredRow[\"Document Link\"]}}"
                 }
               ]

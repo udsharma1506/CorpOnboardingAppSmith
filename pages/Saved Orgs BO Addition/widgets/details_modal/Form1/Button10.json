@@ -16,11 +16,9 @@
     "hideCard": false,
     "mobileRightColumn": 46,
     "animateLoading": true,
+    "dynamicTriggerPathList": [],
     "leftColumn": 34,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Reset",
     "isDisabled": false,
     "key": "ndu2pgsnhk",
@@ -40,7 +38,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 85,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 30,
     "originalBottomRow": 89,
     "buttonVariant": "SECONDARY",

@@ -12,7 +12,7 @@
         {"key": "borderRadius"}
     ],
     "labelStyle": "BOLD",
-    "inputType": "NUMBER",
+    "inputType": "TEXT",
     "isDisabled": false,
     "isRequired": true,
     "dynamicHeight": "AUTO_HEIGHT",

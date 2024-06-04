@@ -24,7 +24,7 @@
     "isDisabled": false,
     "key": "pepnbi7cbv",
     "labelTextSize": "1.25rem",
-    "isRequired": true,
+    "isRequired": false,
     "isDeprecated": false,
     "rightColumn": 64,
     "dynamicHeight": "AUTO_HEIGHT",

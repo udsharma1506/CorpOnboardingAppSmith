@@ -9,7 +9,9 @@
     "leftColumn": 33,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "maxDate"},
+        {"key": "defaultDate"}
     ],
     "labelStyle": "BOLD",
     "isDisabled": false,
@@ -27,6 +29,10 @@
     "mobileBottomRow": 14,
     "widgetName": "DatePicker1",
     "minDate": "1920-12-31T18:30:00.000Z",
+    "dynamicPropertyPathList": [
+        {"key": "maxDate"},
+        {"key": "defaultDate"}
+    ],
     "displayName": "DatePicker",
     "searchTags": ["calendar"],
     "bottomRow": 8,
@@ -41,6 +47,7 @@
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
     "rightColumn": 63,
+    "defaultDate": "{{Date()}}",
     "widgetId": "l3zc0ncqln",
     "minWidth": 450,
     "label": "Date of Birth:",
@@ -52,6 +59,6 @@
     "mobileLeftColumn": 36,
     "maxDynamicHeight": 9000,
     "firstDayOfWeek": 0,
-    "maxDate": "2121-12-31T18:29:00.000Z",
+    "maxDate": "{{Date()}}",
     "minDynamicHeight": 4
 }

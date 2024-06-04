@@ -118,6 +118,30 @@
               ],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "Saved Orgs BO Addition_get_pincode_details_mailing",
+              "name": "get_pincode_details_mailing",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Input19Copy1CopyCopyCopy.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Saved Orgs BO Addition_get_pincode_details_home",
+              "name": "get_pincode_details_home",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Input19Copy1CopyCopy2.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
         "layoutOnLoadActionErrors": [],

@@ -54,7 +54,7 @@
     "labelPosition": "Top",
     "key": "0feui6nf4b",
     "labelTextSize": "0.875rem",
-    "onTextChanged": "{{get_pincode_details_registered.run()}}",
+    "onTextChanged": "{{get_pincode_details_registered.run().then(() => {\n  reg_addr_pincode_check.run();\n});}}",
     "isDeprecated": false,
     "rightColumn": 17,
     "widgetId": "uenuiyfbs9",

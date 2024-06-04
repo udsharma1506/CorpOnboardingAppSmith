@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 127,
     "widgetName": "Button5",
-    "onClick": "{{navigateTo('Saved Orgs Corp Docs Upload', {}, 'SAME_WINDOW');}}",
+    "onClick": "{{storeValue('temp_hpy_saved_req_id', appsmith.store.temp_hpy_resubmit_req_id).then(() => {\n  navigateTo('Saved Orgs Corp Docs Upload', {}, 'SAME_WINDOW');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
