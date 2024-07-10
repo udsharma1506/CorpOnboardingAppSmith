@@ -8,8 +8,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 241,
-    "bottomRow": 245,
+    "topRow": 332,
+    "bottomRow": 336,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -19,7 +19,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 12.578125,
     "dynamicTriggerPathList": [],
-    "leftColumn": 1,
+    "leftColumn": 2,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -30,7 +30,7 @@
     "text": "Total Documents Submitted:",
     "key": "lmrwvou6gr",
     "isDeprecated": false,
-    "rightColumn": 15,
+    "rightColumn": 16,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "u71ud5kyja",
@@ -44,11 +44,11 @@
     "isLoading": false,
     "mobileTopRow": 24,
     "responsiveBehavior": "fill",
-    "originalTopRow": 236,
+    "originalTopRow": 332,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 240,
+    "originalBottomRow": 336,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }

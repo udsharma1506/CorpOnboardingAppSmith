@@ -1,0 +1,3 @@
+SELECT count(distinct "public"."beneficial_owners"."id") AS "count"
+FROM "public"."beneficial_owners"
+WHERE "public"."beneficial_owners"."application_id" = '{{appsmith.store.temp_hpy_saved_req_id}}'

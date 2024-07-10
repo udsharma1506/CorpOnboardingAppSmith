@@ -15,7 +15,7 @@
     "labelStyle": "BOLD",
     "inputType": "TEXT",
     "isDisabled": false,
-    "validation": "{{Input7.text.length==10}}",
+    "validation": "{{Input1Copy3.text.length==10}}",
     "isRequired": true,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",

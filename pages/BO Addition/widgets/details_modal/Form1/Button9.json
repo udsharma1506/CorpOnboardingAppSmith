@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 37,
     "widgetName": "Button9",
-    "onClick": "{{home_addr_pincode_check.data[0]===undefined?mailing_addr_pincode_check.data[0]===undefined?(insert_BO.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  view_BO.run();\n  storeValue('temp_bo_id', 'bo_' + Text4.text);\n  showModal('kyc_documents');\n  resetWidget(\"Container2\", true);\n  show_details_of_particular_bo.run();\n  show_kyc_docs.run();\n}).catch(() => {\n  showAlert(insert_BO.data, 'error');\n})):showAlert(\"The Communication Address belongs to the blocked regions of SBM list and cannot proceed with onboarding\",'error'):showAlert(\"The registered Address belongs to the blocked regions of SBM list and cannot proceed with onboarding\",'error')}}",
+    "onClick": "{{home_addr_pincode_check.data[0]===undefined?mailing_addr_pincode_check.data[0]===undefined?(insert_BO.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  view_BO.run();\n  storeValue('temp_bo_id', 'bo_' + Text4.text);\n  showModal('kyc_documents');\n  show_details_of_particular_bo.run();\n  show_kyc_docs.run();\n}).catch(() => {\n  showAlert(insert_BO.data, 'error');\n})):showAlert(\"The Communication Address belongs to the blocked regions of SBM list and cannot proceed with onboarding\",'error'):showAlert(\"The registered Address belongs to the blocked regions of SBM list and cannot proceed with onboarding\",'error')}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",

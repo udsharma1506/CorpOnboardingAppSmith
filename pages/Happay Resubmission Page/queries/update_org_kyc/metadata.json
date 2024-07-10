@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update kyc_docs\nset happay_status = 'Resubmitted'\nwhere id = '{{Table1.triggeredRow[\"Doc ID\"]}}'",
+      "body": "update kyc_docs\nset happay_status = 'resubmitted'\nwhere id = '{{Table1.triggeredRow[\"Doc ID\"]}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,7 +27,11 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],

@@ -4,7 +4,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
-    "topRow": 168,
+    "topRow": 193,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -25,7 +25,17 @@
         {"key": "primaryColumns.DIN_Number.computedValue"},
         {"key": "primaryColumns.Scrutiny_Status.cellBackground"},
         {"key": "primaryColumns.customColumn1.boxShadow"},
-        {"key": "primaryColumns.customColumn1.buttonColor"}
+        {"key": "primaryColumns.customColumn1.buttonColor"},
+        {"key": "cellBackground"},
+        {"key": "primaryColumns.DIN_Number.cellBackground"},
+        {"key": "primaryColumns.BO_.cellBackground"},
+        {"key": "primaryColumns.BO_Name.cellBackground"},
+        {"key": "primaryColumns.Card_Holder_Name.cellBackground"},
+        {"key": "primaryColumns.BO_Mobile_Number.cellBackground"},
+        {"key": "primaryColumns.BO_ID.cellBackground"},
+        {"key": "primaryColumns.BO_Designation.cellBackground"},
+        {"key": "primaryColumns.BO_Email_ID.cellBackground"},
+        {"key": "primaryColumns.customColumn1.cellBackground"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 1,
@@ -82,7 +92,7 @@
     ],
     "dynamicPropertyPathList": [{"key": "primaryColumns.Scrutiny_Status.cellBackground"}],
     "displayName": "Table",
-    "bottomRow": 198,
+    "bottomRow": 223,
     "columnWidthMap": {
         "DIN_Number": 137,
         "BO_": 70,
@@ -131,7 +141,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "DIN Number",
-            "cellBackground": "",
+            "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
             "verticalAlignment": "CENTER"
         },
         "BO_": {
@@ -161,7 +171,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "BO%",
-            "cellBackground": "",
+            "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
             "verticalAlignment": "CENTER"
         },
         "Scrutiny_Status": {
@@ -191,7 +201,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Scrutiny Status",
-            "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Scrutiny Status\"]=='Completed'?\"#dcfce7\":\"#fef9c3\"))}}",
+            "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Scrutiny Status\"].includes(\"Completed\")?\"#dcfce7\":\"#fef9c3\"))}}",
             "verticalAlignment": "CENTER"
         },
         "BO_Name": {
@@ -221,7 +231,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "BO Name",
-            "cellBackground": "",
+            "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
             "verticalAlignment": "CENTER"
         },
         "Card_Holder_Name": {
@@ -251,7 +261,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Card Holder Name",
-            "cellBackground": "",
+            "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
             "verticalAlignment": "CENTER"
         },
         "BO_Mobile_Number": {
@@ -281,7 +291,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "BO Mobile Number",
-            "cellBackground": "",
+            "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
             "verticalAlignment": "CENTER"
         },
         "BO_ID": {
@@ -311,7 +321,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "BO ID",
-            "cellBackground": "",
+            "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
             "verticalAlignment": "CENTER"
         },
         "BO_Designation": {
@@ -341,7 +351,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "BO Designation",
-            "cellBackground": "",
+            "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
             "verticalAlignment": "CENTER"
         },
         "customColumn1": {
@@ -377,6 +387,7 @@
             "sticky": "",
             "originalId": "customColumn1",
             "customAlias": "",
+            "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
             "verticalAlignment": "CENTER"
         },
         "BO_Email_ID": {
@@ -406,7 +417,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "BO Email ID",
-            "cellBackground": "",
+            "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
             "verticalAlignment": "CENTER"
         }
     },
@@ -430,5 +441,6 @@
     "originalTopRow": 163,
     "mobileLeftColumn": 0,
     "isVisiblePagination": true,
+    "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
     "verticalAlignment": "CENTER"
 }

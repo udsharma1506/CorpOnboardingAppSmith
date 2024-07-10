@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 22,
     "widgetName": "Button8",
-    "onClick": "{{insert_BO_kyc.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  update_BO_kyc.run();\n  closeModal('upload_bo_kyc_documents');\n  resetWidget(\"Container1\", true);\n  get_bo_kyc_docs.run();\n  get_bo_details.run();\n  scrutiny_summary_count.run();\n}).catch(() => {\n  showAlert(insert_BO_kyc.data, 'error');\n});}}",
+    "onClick": "{{insert_BO_kyc.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  update_BO_kyc.run();\n\tget_bo_kyc_docs.run();\n  get_bo_details.run();\n  closeModal('upload_bo_kyc_documents');\n  resetWidget(\"Container1\", true);\n  \n  scrutiny_summary_count.run();\n}).catch(() => {\n  showAlert(insert_BO_kyc.data, 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [{"key": "isDisabled"}],
     "displayName": "Button",
@@ -24,7 +24,6 @@
     "leftColumn": 43,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
-        {"key": "borderRadius"},
         {"key": "isDisabled"}
     ],
     "text": "Save",
@@ -46,7 +45,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 17,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 43,
     "originalBottomRow": 22,
     "buttonVariant": "PRIMARY",

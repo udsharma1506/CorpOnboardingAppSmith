@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2650,
+          "bottomRow": 3610,
           "containerStyle": "none",
           "snapRows": 64,
           "parentRowSpace": 1,
@@ -58,12 +58,42 @@
                 "appsmith.store.mkr_app_id"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Maker Approval Page_list_of_bank_uploads",
+              "name": "list_of_bank_uploads",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Maker Approval Page_show_kyb_docs",
+              "name": "show_kyb_docs",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.mkr_app_id"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Maker Approval Page_scrutiny_summary_count",
-              "name": "scrutiny_summary_count",
+              "id": "Maker Approval Page_scrutiny_summary_count_non_sbm",
+              "name": "scrutiny_summary_count_non_sbm",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.mkr_app_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Maker Approval Page_scrutiny_summary_count_sbm_doc",
+              "name": "scrutiny_summary_count_sbm_doc",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

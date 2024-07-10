@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select \ncount(case when NOT (kyc_docs.sbm_status = '') then kyc_docs.id end) as \"Total\",\ncount(case when kyc_docs.sbm_status = 'pending' then kyc_docs.id end) as \"Pending\",\ncount(case when kyc_docs.sbm_status = 'Approved by Maker' then kyc_docs.id end) as \"Approved by Maker\",\ncount(case when kyc_docs.sbm_status = 'Rejected by Maker' then kyc_docs.id end) as \"Rejected by Maker\"\nfrom kyc_docs\nleft join beneficial_owners on kyc_docs.bo_id = beneficial_owners.id\nwhere kyc_docs.bo_id = '{{appsmith.store.temp_hpy_resubmit_req_id}}' or beneficial_owners.application_id = '{{appsmith.store.temp_hpy_resubmit_req_id}}'",
+      "body": "select \ncount(case when NOT (kyc_docs.sbm_status = '') then kyc_docs.id end) as \"Total\",\ncount(case when kyc_docs.sbm_status = 'pending' then kyc_docs.id end) as \"Pending\",\ncount(case when kyc_docs.sbm_status like 'Approved%' then kyc_docs.id end) as \"Approved\",\ncount(case when kyc_docs.sbm_status like 'Rejected%' then kyc_docs.id end) as \"Rejected\",\ncount(case when kyc_docs.happay_status = 'resubmitted' then kyc_docs.id end) as \"Resubmitted\"\nfrom kyc_docs\nleft join beneficial_owners on kyc_docs.bo_id = beneficial_owners.id\nwhere (kyc_docs.bo_id = '{{appsmith.store.temp_hpy_resubmit_req_id}}' or beneficial_owners.application_id = '{{appsmith.store.temp_hpy_resubmit_req_id}}') and kyc_docs.kyc_owner <> 'sbm_bank'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,8 +26,12 @@
         }
       ]
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],

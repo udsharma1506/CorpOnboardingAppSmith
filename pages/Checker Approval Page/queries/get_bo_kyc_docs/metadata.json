@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select id as \"Doc ID\", created_at as \"Creation Date\", updated_at as \"Updation Date\", doc_type as \"Document Type\", doc_number as \"Document Number\", right(doc_link,length(doc_link)-69) as \"Document Link\", sbm_status as \"SBM Status\", happay_status as \"Happay Status\", comment as \"Comment\" from kyc_docs where bo_id = '{{Table1Copy.triggeredRow[\"BO ID\"]}}'",
+      "body": "select id as \"Doc ID\", created_at as \"Creation Date\", updated_at as \"Updation Date\", doc_type as \"Document Type\", doc_number as \"Document Number\", right(doc_link,length(doc_link)-69) as \"Document Link\", sbm_status as \"SBM Status\", happay_status as \"Happay Status\", comment as \"Comment\", json_extract_path_text(status_metadata::json,'happay','remarks') as \"Happay Comment\", json_extract_path_text(status_metadata::json,'maker','remarks') as \"Maker Comment\", json_extract_path_text(status_metadata::json,'checker','remarks') as \"Checker Comment\", kyc_status as \"KYC Status\" from kyc_docs where bo_id = '{{Table1Copy.triggeredRow[\"BO ID\"]}}'\norder by created_at DESC",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,7 +27,11 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],

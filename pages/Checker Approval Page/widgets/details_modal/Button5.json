@@ -21,10 +21,7 @@
     "parentColumnSpace": 17.5,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 45,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Close",
     "isDisabled": false,
     "key": "7u1niv4qsm",
@@ -44,7 +41,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 137,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 45,
     "originalBottomRow": 141,
     "buttonVariant": "PRIMARY",

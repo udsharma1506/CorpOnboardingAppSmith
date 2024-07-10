@@ -19,10 +19,7 @@
     "animateLoading": true,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 29,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Cancel",
     "isDisabled": false,
     "key": "2ypq2arx2p",
@@ -43,7 +40,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 18,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "mobileLeftColumn": 47,
     "originalBottomRow": 22,
     "buttonVariant": "PRIMARY",

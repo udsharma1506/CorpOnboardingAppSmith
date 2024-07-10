@@ -1,8 +1,0 @@
-select 
-count(case when NOT (kyc_docs.sbm_status = '') then kyc_docs.id end) as "Total",
-count(case when kyc_docs.sbm_status = 'pending' then kyc_docs.id end) as "Pending",
-count(case when kyc_docs.sbm_status = 'Approved by Maker' then kyc_docs.id end) as "Approved by Maker",
-count(case when kyc_docs.sbm_status = 'Rejected by Maker' then kyc_docs.id end) as "Rejected by Maker"
-from kyc_docs
-left join beneficial_owners on kyc_docs.bo_id = beneficial_owners.id
-where kyc_docs.bo_id = '{{appsmith.store.mkr_app_id}}' or beneficial_owners.application_id = '{{appsmith.store.mkr_app_id}}'

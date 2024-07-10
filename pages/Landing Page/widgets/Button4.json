@@ -19,10 +19,7 @@
     "parentColumnSpace": 22.875,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 51,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "buttonColor"}],
     "text": "Logout",
     "isDisabled": false,
     "key": "fm7pzbzy9i",
@@ -37,7 +34,7 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "1.5rem",
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"
 }

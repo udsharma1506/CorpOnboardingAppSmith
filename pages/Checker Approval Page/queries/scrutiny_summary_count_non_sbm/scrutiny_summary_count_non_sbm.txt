@@ -1,0 +1,9 @@
+select 
+count(case when NOT (kyc_docs.sbm_status = '') then kyc_docs.id end) as "Total",
+count(case when kyc_docs.kyc_status = 'pending' then kyc_docs.id end) as "Pending",
+count(case when kyc_docs.sbm_status like 'Approved%' then kyc_docs.id end) as "Approved",
+count(case when kyc_docs.sbm_status like 'Rejected%' then kyc_docs.id end) as "Rejected",
+count(case when kyc_docs.happay_status = 'resubmitted' then kyc_docs.id end) as "Resubmitted"
+from kyc_docs
+left join beneficial_owners on kyc_docs.bo_id = beneficial_owners.id
+where (kyc_docs.bo_id = '{{appsmith.store.chkr_app_id}}' or beneficial_owners.application_id = '{{appsmith.store.chkr_app_id}}') and kyc_docs.kyc_owner <> 'sbm_bank'

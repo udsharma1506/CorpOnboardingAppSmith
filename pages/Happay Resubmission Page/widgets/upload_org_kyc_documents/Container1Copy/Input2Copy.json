@@ -6,7 +6,7 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 24.38095238095238,
+    "leftColumn": 16,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"}
@@ -46,7 +46,7 @@
     "key": "b2qcru0um9",
     "labelTextSize": "1.25rem",
     "isDeprecated": false,
-    "rightColumn": 48.76190476190476,
+    "rightColumn": 32,
     "widgetId": "40mxd498yy",
     "minWidth": 450,
     "label": "Document Number",

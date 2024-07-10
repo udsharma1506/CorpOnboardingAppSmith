@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into kyc_docs(id,created_at,updated_at,doc_type,doc_number,doc_link,bo_id,kyc_owner,sbm_status,happay_status)\nvalues\n('{{'kyc_'+generate_uuid_for_kyc.generateUUID()}}','{{new Date()}}','{{new Date()}}','{{Select1.selectedOptionValue}}','{{Input2.text}}','{{upload_bo_kyc.data.signedUrl.substring(0,upload_bo_kyc.data.signedUrl.indexOf(\"?X-Amz\")).toLowerCase()}}','{{appsmith.store.temp_bo_id.toLowerCase()}}','user','pending','submitted')",
+      "body": "insert into kyc_docs(id,created_at,updated_at,doc_type,doc_number,doc_link,bo_id,kyc_owner,sbm_status,happay_status,status_metadata)\nvalues\n('{{'kyc_'+generate_uuid_for_kyc.generateUUID()}}','{{new Date()}}','{{new Date()}}','{{Select1.selectedOptionLabel}}','{{Input2.text}}','{{upload_bo_kyc.data.signedUrl.substring(0,upload_bo_kyc.data.signedUrl.indexOf(\"?X-Amz\")).toLowerCase()}}','{{appsmith.store.temp_bo_id.toLowerCase()}}','user','pending','submitted','{\n        \"happay\": {\n            \"status\": \"submitted\",\n            \"updated_at\": \"{{new Date()}}\",\n            \"remarks\": \"submitted\"\n        }\n    }'::jsonb)",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,14 +27,18 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
       "'kyc_'+generate_uuid_for_kyc.generateUUID()",
       "Input2.text",
-      "Select1.selectedOptionValue",
+      "Select1.selectedOptionLabel",
       "appsmith.store.temp_bo_id.toLowerCase()",
       "new Date()",
       "upload_bo_kyc.data.signedUrl.substring(0,upload_bo_kyc.data.signedUrl.indexOf(\"?X-Amz\")).toLowerCase()"

@@ -9,8 +9,8 @@
     "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "defaultDate"},
-        {"key": "maxDate"}
+        {"key": "maxDate"},
+        {"key": "defaultDate"}
     ],
     "labelStyle": "BOLD",
     "isDisabled": false,
@@ -47,7 +47,7 @@
     "labelTextSize": "1.25rem",
     "isDeprecated": false,
     "rightColumn": 32,
-    "defaultDate": "{{Date()}}",
+    "defaultDate": "{{new Date(new Date().setDate(new Date().getDate()-1))}}",
     "widgetId": "cfwxqnn3bk",
     "minWidth": 450,
     "label": "Incorporation Date*:",
@@ -60,6 +60,6 @@
     "mobileLeftColumn": 28,
     "maxDynamicHeight": 9000,
     "firstDayOfWeek": 0,
-    "maxDate": "{{Date()}}",
+    "maxDate": "{{new Date(new Date().setDate(new Date().getDate()-1))}}",
     "minDynamicHeight": 4
 }

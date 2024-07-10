@@ -34,7 +34,7 @@
         "canExtend": true,
         "hideCard": true,
         "shouldScrollContents": false,
-        "minHeight": 316,
+        "minHeight": 240,
         "mobileRightColumn": 475.5,
         "parentColumnSpace": 1,
         "leftColumn": 0,
@@ -76,6 +76,6 @@
     "mobileLeftColumn": 18,
     "maxDynamicHeight": 9000,
     "originalBottomRow": 271,
-    "width": 806,
+    "width": 1396,
     "minDynamicHeight": 10
 }

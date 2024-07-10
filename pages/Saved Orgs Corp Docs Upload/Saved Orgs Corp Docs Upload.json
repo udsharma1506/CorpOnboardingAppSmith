@@ -38,6 +38,18 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "Saved Orgs Corp Docs Upload_uploaded_doc_count",
+              "name": "uploaded_doc_count",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_hpy_saved_req_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Saved Orgs Corp Docs Upload_list_of_corp_docs",
               "name": "list_of_corp_docs",
               "confirmBeforeExecute": false,

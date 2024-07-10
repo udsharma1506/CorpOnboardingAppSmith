@@ -75,7 +75,7 @@
         }
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "formData.where.data.children[0].value"
@@ -87,7 +87,7 @@
     "jsonPathKeys": [
       "Input19Copy1CopyCopy2.text"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],

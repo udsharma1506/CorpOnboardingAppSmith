@@ -1,1 +1,9 @@
-update kyc_docs set sbm_status = 'Approved by Checker', updated_at = '{{new Date()}}' where id = '{{appsmith.store.temp_approve_kyc_id}}'
+update kyc_docs set sbm_status = 'Approved by Checker', updated_at = '{{new Date()}}', status_metadata = jsonb_set(
+    status_metadata,
+    '{checker}',
+    '{
+        "status": "approve",
+        "updated_at": "{{new Date()}}",
+        "remarks": "approved"
+    }'::jsonb
+), kyc_status = 'Completed' where id = '{{appsmith.store.temp_approve_kyc_id}}'
