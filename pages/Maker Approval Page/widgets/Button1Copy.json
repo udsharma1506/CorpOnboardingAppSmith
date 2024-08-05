@@ -30,7 +30,7 @@
         {"key": "isDisabled"}
     ],
     "text": "Submit",
-    "isDisabled": "{{((Select1Copy.selectedOptionValue==\"Reject\" && Input1Copy.text==\"\")?\"true\":(scrutiny_summary_count_sbm_doc.data[0].Total==0?(scrutiny_summary_count_non_sbm.data[0].Total==(scrutiny_summary_count_non_sbm.data[0].Approved+scrutiny_summary_count_non_sbm.data[0].Rejected)?\"false\":\"true\"):(scrutiny_summary_count_sbm_doc.data[0].Pending==0?\"true\":(scrutiny_summary_count_sbm_doc.data[0].Total==(scrutiny_summary_count_sbm_doc.data[0].Approved+scrutiny_summary_count_sbm_doc.data[0].Rejected+scrutiny_summary_count_sbm_doc.data[0].Resubmitted)?\"false\":\"true\"))))}}",
+    "isDisabled": "{{((Select1Copy.selectedOptionValue==\"Reject\" && Input1Copy.text==\"\")?\"true\":(scrutiny_summary_count_sbm_doc.data[0].Total==0?(scrutiny_summary_count_non_sbm.data[0].Total==(scrutiny_summary_count_non_sbm.data[0].Approved+scrutiny_summary_count_non_sbm.data[0].Rejected)?\"false\":\"true\"):(scrutiny_summary_count_sbm_doc.data[0].Pending==scrutiny_summary_count_sbm_doc.data[0].Total?\"false\":(scrutiny_summary_count_sbm_doc.data[0].Rejected==scrutiny_summary_count_sbm_doc.data[0].Resubmitted?\"false\":\"true\"))))}}",
     "key": "6jpdl7k8it",
     "isDeprecated": false,
     "rightColumn": 61,

@@ -3,7 +3,7 @@ values
 ('{{'kyc_'+generate_uuid_for_kyb.generateUUID()}}','{{new Date()}}','{{new Date()}}','{{Select1.selectedOptionLabel}}','{{Input2.text}}','{{upload_corp_kyb.data.signedUrl.substring(0,upload_corp_kyb.data.signedUrl.indexOf("?X-Amz")).toLowerCase()}}','{{appsmith.store.temp_hpy_saved_req_id}}','corporate','pending','submitted','{
         "happay": {
             "status": "submitted",
-            "updated_at": {{new Date()}},
+            "updated_at": "{{new Date()}}",
             "remarks": "submitted"
         }
     }'::jsonb)
