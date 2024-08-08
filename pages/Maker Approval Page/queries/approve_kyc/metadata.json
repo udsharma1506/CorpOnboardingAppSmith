@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update kyc_docs set sbm_status = 'Approved by Maker', updated_at = '{{new Date()}}', status_metadata = jsonb_set(\n    status_metadata,\n    '{maker}',\n    '{\n        \"status\": \"approve\",\n        \"updated_at\": \"{{new Date()}}\",\n        \"remarks\": \"approved\"\n    }'::jsonb\n) where id = '{{appsmith.store.temp_approve_kyc_id}}'",
+      "body": "update kyc_docs set sbm_status = 'Approved by Maker', updated_at = '{{new Date().toLocaleString()}}', status_metadata = jsonb_set(\n    status_metadata,\n    '{maker}',\n    '{\n        \"status\": \"approve\",\n        \"updated_at\": \"{{new Date().toLocaleString()}}\",\n        \"remarks\": \"approved\"\n    }'::jsonb\n) where id = '{{appsmith.store.temp_approve_kyc_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.temp_approve_kyc_id",
-      "new Date()"
+      "new Date().toLocaleString()"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

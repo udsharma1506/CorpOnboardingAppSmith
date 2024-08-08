@@ -1,9 +1,9 @@
-update kyc_docs set sbm_status = 'Rejected by Checker', updated_at = '{{new Date()}}', comment = '{{Input1.text}}', status_metadata = jsonb_set(
+update kyc_docs set sbm_status = 'Rejected by Checker', updated_at = '{{new Date().toLocaleString()}}', comment = '{{Input1.text}}', status_metadata = jsonb_set(
     status_metadata,
     '{checker}',
     '{
         "status": "reject",
-        "updated_at": "{{new Date()}}",
+        "updated_at": "{{new Date().toLocaleString()}}",
         "remarks": "{{Input1.text}}"
     }'::jsonb
 ), kyc_status = 'Completed' where id = '{{appsmith.store.temp_reject_kyc_id}}'

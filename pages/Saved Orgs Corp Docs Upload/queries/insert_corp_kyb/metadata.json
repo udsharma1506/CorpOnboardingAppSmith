@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into kyc_docs(id,created_at,updated_at,doc_type,doc_number,doc_link,bo_id,kyc_owner,sbm_status,happay_status,status_metadata)\nvalues\n('{{'kyc_'+generate_uuid_for_kyb.generateUUID()}}','{{new Date()}}','{{new Date()}}','{{Select1.selectedOptionLabel}}','{{Input2.text}}','{{upload_corp_kyb.data.signedUrl.substring(0,upload_corp_kyb.data.signedUrl.indexOf(\"?X-Amz\")).toLowerCase()}}','{{appsmith.store.temp_hpy_saved_req_id}}','corporate','pending','submitted','{\n        \"happay\": {\n            \"status\": \"submitted\",\n            \"updated_at\": \"{{new Date()}}\",\n            \"remarks\": \"submitted\"\n        }\n    }'::jsonb)",
+      "body": "insert into kyc_docs(id,created_at,updated_at,doc_type,doc_number,doc_link,bo_id,kyc_owner,sbm_status,happay_status,status_metadata)\nvalues\n('{{'kyc_'+generate_uuid_for_kyb.generateUUID()}}','{{new Date().toLocaleString()}}','{{new Date().toLocaleString()}}','{{Select1.selectedOptionLabel}}','{{Input2.text}}','{{upload_corp_kyb.data.signedUrl.substring(0,upload_corp_kyb.data.signedUrl.indexOf(\"?X-Amz\")).toLowerCase()}}','{{appsmith.store.temp_hpy_saved_req_id}}','corporate','pending','submitted','{\n        \"happay\": {\n            \"status\": \"submitted\",\n            \"updated_at\": \"{{new Date().toLocaleString()}}\",\n            \"remarks\": \"submitted\"\n        }\n    }'::jsonb)",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -40,7 +40,7 @@
       "Input2.text",
       "Select1.selectedOptionLabel",
       "appsmith.store.temp_hpy_saved_req_id",
-      "new Date()",
+      "new Date().toLocaleString()",
       "upload_corp_kyb.data.signedUrl.substring(0,upload_corp_kyb.data.signedUrl.indexOf(\"?X-Amz\")).toLowerCase()"
     ],
     "userSetOnLoad": false,
