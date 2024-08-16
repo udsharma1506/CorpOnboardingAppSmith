@@ -1,0 +1,1 @@
+select updated_count, status_metadata from new_org_requests where application_id = '{{appsmith.store.temp_corp_detail_view_sbm}}'

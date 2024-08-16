@@ -18,21 +18,27 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update new_org_requests\nset status = 'Pending At Maker', updated_count=updated_count+1\nwhere application_id = '{{appsmith.store.temp_hpy_resubmit_req_id}}'",
+      "body": "update new_org_requests\nset status = 'Pending At Maker', status_metadata['{{get_org_data.data[0].updated_count}}']['happay'] = '{\"Status\": \"submitted\",\"remarks\": \"submitted\",\"updated_at\": \"{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}\"}'\nwhere application_id = '{{appsmith.store.temp_hpy_resubmit_req_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.temp_hpy_resubmit_req_id"
+      "appsmith.store.temp_hpy_resubmit_req_id",
+      "get_org_data.data[0].updated_count",
+      "new Date(new Date().getTime() + (5.5*60 * 60 * 1000))"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -19,7 +19,9 @@
     "shouldScrollContents": true,
     "animateLoading": true,
     "parentColumnSpace": 12.0355224609375,
+    "dynamicTriggerPathList": [],
     "leftColumn": 1,
+    "dynamicBindingPathList": [],
     "children": [{
         "rightColumn": 770.2734375,
         "widgetName": "Canvas4",

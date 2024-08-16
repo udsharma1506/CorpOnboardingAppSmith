@@ -43,7 +43,11 @@
         {"key": "primaryColumns.Maker_Comment.computedValue"},
         {"key": "primaryColumns.Checker_Comment.computedValue"},
         {"key": "primaryColumns.KYC_Status.computedValue"},
-        {"key": "primaryColumns.KYC_Status.cellBackground"}
+        {"key": "primaryColumns.KYC_Status.cellBackground"},
+        {"key": "primaryColumns.EditActions1.saveButtonColor"},
+        {"key": "primaryColumns.EditActions1.isSaveDisabled"},
+        {"key": "primaryColumns.EditActions1.isDiscardDisabled"},
+        {"key": "primaryColumns.EditActions1.cellBackground"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 1,
@@ -82,7 +86,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1720469852778,
+    "columnUpdatedAt": 1723459944591,
     "originalBottomRow": 180,
     "defaultSelectedRowIndices": "[\n  0\n]",
     "mobileBottomRow": 89,
@@ -103,13 +107,17 @@
         "Maker_Comment",
         "Checker_Comment",
         "customColumn1",
-        "customColumn2"
+        "customColumn2",
+        "EditActions1"
     ],
     "dynamicPropertyPathList": [
         {"key": "onSearchTextChanged"},
         {"key": "primaryColumns.customColumn2.isDisabled"},
         {"key": "primaryColumns.SBM_Status.cellBackground"},
-        {"key": "primaryColumns.KYC_Status.cellBackground"}
+        {"key": "primaryColumns.KYC_Status.cellBackground"},
+        {"key": "primaryColumns.EditActions1.isSaveDisabled"},
+        {"key": "primaryColumns.EditActions1.isDiscardDisabled"},
+        {"key": "primaryColumns.EditActions1.onSave"}
     ],
     "displayName": "Table",
     "bottomRow": 178,
@@ -135,7 +143,8 @@
     "dynamicTriggerPathList": [
         {"key": "primaryColumns.customColumn1.onClick"},
         {"key": "primaryColumns.customColumn2.menuItems.menuItem6vvitxdxbv.onClick"},
-        {"key": "primaryColumns.customColumn2.menuItems.menuItem7eufkhop9v.onClick"}
+        {"key": "primaryColumns.customColumn2.menuItems.menuItem7eufkhop9v.onClick"},
+        {"key": "primaryColumns.EditActions1.onSave"}
     ],
     "borderWidth": "1",
     "primaryColumns": {
@@ -199,6 +208,45 @@
             "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SBM Status\"].includes(\"Approved\")?\"#dcfce7\":currentRow[\"SBM Status\"].includes(\"Rejected\")?\"#fee2e2\":\"#fef9c3\"))}}",
             "verticalAlignment": "CENTER"
         },
+        "EditActions1": {
+            "computedValue": "",
+            "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+            "discardIconAlign": "left",
+            "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+            "isEditable": false,
+            "alias": "EditActions1",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "EditActions1",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "discardButtonColor": "#F22B2B",
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": true,
+            "onSave": "{{currentRow[\"SBM Status\"]==\"Rejected by Checker\"?(update_comment_for_org.run().then(() => {\n  get_org_kyc_docs.run();\n})):showAlert('Cannot update comment for approved cases.','error')\n}}",
+            "discardButtonVariant": "PRIMARY",
+            "buttonStyle": "rgb(3, 179, 101)",
+            "allowCellWrapping": false,
+            "index": 10,
+            "isDiscardVisible": true,
+            "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+            "isVisible": true,
+            "label": "Save / Discard",
+            "discardActionLabel": "Discard",
+            "saveButtonVariant": "PRIMARY",
+            "columnType": "editActions",
+            "saveActionLabel": "Save",
+            "isCellEditable": false,
+            "saveBorderRadius": "1.5rem",
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "right",
+            "saveIconAlign": "left",
+            "originalId": "EditActions1",
+            "discardBorderRadius": "1.5rem",
+            "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.backgroundColor)))}}"
+        },
         "Updation_Date": {
             "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Updation Date\"]))}}",
             "isEditable": false,
@@ -234,7 +282,7 @@
         "customColumn1": {
             "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
             "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( get_corporate_signed_url.data))}}",
-            "onClick": "{{get_corporate_signed_url.run().then(() => {\n  showModal('Modal1');\n});}}",
+            "onClick": "{{get_corporate_signed_url.run().then(() => {\n  showModal('corporate_modal');\n});}}",
             "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
             "isEditable": false,
             "alias": "Document Viewer",
@@ -511,14 +559,14 @@
         },
         "Checker_Comment": {
             "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Checker Comment\"]))}}",
-            "isEditable": false,
+            "isEditable": true,
             "alias": "Checker Comment",
             "enableSort": true,
             "isSaveVisible": true,
             "id": "Checker_Comment",
             "isDisabled": false,
             "allowSameOptionsInNewRow": true,
-            "validation": {},
+            "validation": {"isColumnEditableCellRequired": true},
             "isCellVisible": true,
             "isDerived": false,
             "textSize": "0.875rem",
@@ -531,7 +579,7 @@
             "textColor": "",
             "columnType": "text",
             "horizontalAlignment": "CENTER",
-            "isCellEditable": false,
+            "isCellEditable": true,
             "width": 150,
             "enableFilter": true,
             "sticky": "",

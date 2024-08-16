@@ -113,8 +113,21 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Table1.triggeredRow[\"Document Link\"]",
-                "appsmith.store.mkr_app_id.toLowerCase()"
+                "appsmith.store.mkr_app_id.toLowerCase()",
+                "Table1.triggeredRow[\"Document Link\"]"
+              ],
+              "timeoutInMillisecond": 60000
+            }
+          ],
+          [
+            {
+              "id": "Checker Approval Page_get_sbm_doc_signed_url",
+              "name": "get_sbm_doc_signed_url",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.mkr_app_id.toLowerCase()",
+                "Table1Copy2.triggeredRow[\"Document Link\"]"
               ],
               "timeoutInMillisecond": 60000
             }

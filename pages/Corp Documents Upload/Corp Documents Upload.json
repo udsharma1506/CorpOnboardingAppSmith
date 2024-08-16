@@ -28,6 +28,16 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Corp Documents Upload_get_org_data",
+              "name": "get_org_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.temp_application_id"
+              ],
+              "timeoutInMillisecond": 60000
+            },
+            {
               "id": "Corp Documents Upload_show_kyb_docs",
               "name": "show_kyb_docs",
               "confirmBeforeExecute": false,

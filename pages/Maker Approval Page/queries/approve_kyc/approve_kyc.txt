@@ -1,9 +1,9 @@
-update kyc_docs set sbm_status = 'Approved by Maker', updated_at = '{{new Date().toLocaleString()}}', status_metadata = jsonb_set(
+update kyc_docs set sbm_status = 'Approved by Maker', updated_at = '{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}', status_metadata = jsonb_set(
     status_metadata,
     '{maker}',
     '{
         "status": "approve",
-        "updated_at": "{{new Date().toLocaleString()}}",
+        "updated_at": "{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}",
         "remarks": "approved"
     }'::jsonb
 ) where id = '{{appsmith.store.temp_approve_kyc_id}}'

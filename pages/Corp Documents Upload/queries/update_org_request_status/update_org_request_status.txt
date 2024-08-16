@@ -1,3 +1,11 @@
 update new_org_requests
-set status = 'Pending At Maker'
+set status = 'Pending At Maker', status_metadata = '{
+        "{{get_org_data.data[0].updated_count}}": {
+        "happay": {
+            "status": "submitted",
+            "remarks": "submitted",
+            "updated_at": "{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}"
+        	}
+    	}
+    }'::jsonb
 where application_id = '{{appsmith.store.temp_application_id}}'

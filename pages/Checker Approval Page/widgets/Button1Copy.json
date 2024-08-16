@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 80,
     "widgetName": "Button1Copy",
-    "onClick": "{{Select1Copy.selectedOptionValue==\"Approve\"?final_org_status_approve.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch():final_org_status_reject.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch()}}",
+    "onClick": "{{Select1Copy.selectedOptionValue==\"Approve\"?final_org_status_approve.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch():((scrutiny_summary_count_non_sbm.data[0].Rejected-scrutiny_summary_count_non_sbm.data[0].Resubmitted)>0?(final_org_status_reject_happay.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch()):(final_org_status_reject_maker.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch()))}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [
         {"key": "isDisabled"},

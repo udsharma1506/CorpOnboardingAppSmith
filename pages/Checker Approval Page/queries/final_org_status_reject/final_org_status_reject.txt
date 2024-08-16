@@ -1,3 +1,0 @@
-update new_org_requests
-set status = 'Pending At Happay', reason = '{{Input1Copy.text}}'
-where application_id = '{{appsmith.store.chkr_app_id}}'

@@ -65,7 +65,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1700673517527,
+    "columnUpdatedAt": 1723450843700,
     "originalBottomRow": 228,
     "defaultSelectedRowIndices": "[\n  0\n]",
     "mobileBottomRow": 89,

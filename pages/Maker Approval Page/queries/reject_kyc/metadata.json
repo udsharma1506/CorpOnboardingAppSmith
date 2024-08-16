@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update kyc_docs set sbm_status = 'Rejected by Maker', updated_at = '{{new Date().toLocaleString()}}', comment = '{{Input1.text}}', status_metadata = jsonb_set(\n    status_metadata,\n    '{maker}',\n    '{\n        \"status\": \"rejected\",\n        \"updated_at\": \"{{new Date().toLocaleString()}}\",\n        \"remarks\": \"{{Input1.text}}\"\n    }'::jsonb\n) where id = '{{appsmith.store.temp_reject_kyc_id}}'",
+      "body": "update kyc_docs set sbm_status = 'Rejected by Maker', updated_at = '{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}', comment = '{{Input1.text}}', status_metadata = jsonb_set(\n    status_metadata,\n    '{maker}',\n    '{\n        \"status\": \"rejected\",\n        \"updated_at\": \"{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}\",\n        \"remarks\": \"{{Input1.text}}\"\n    }'::jsonb\n) where id = '{{appsmith.store.temp_reject_kyc_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -38,7 +38,7 @@
     "jsonPathKeys": [
       "Input1.text",
       "appsmith.store.temp_reject_kyc_id",
-      "new Date().toLocaleString()"
+      "new Date(new Date().getTime() + (5.5*60 * 60 * 1000))"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

@@ -70,7 +70,7 @@
           }
         },
         "path": {
-          "data": "sbm_appsmith_test/{{appsmith.store.temp_hpy_resubmit_req_id.toLowerCase()}}/{{Select1.selectedOptionValue.toLowerCase()}}_{{generate_uuid_for_doc.generateUUID.data}}"
+          "data": "sbm_appsmith_test/{{appsmith.store.mkr_app_id.toLowerCase()}}/{{Select1.selectedOptionValue.toLowerCase()}}_{{generate_uuid_for_doc.generateUUID.data}}"
         },
         "read": {
           "dataType": {
@@ -97,7 +97,7 @@
     "jsonPathKeys": [
       "FilePicker1.files[0]",
       "Select1.selectedOptionValue.toLowerCase()",
-      "appsmith.store.temp_hpy_resubmit_req_id.toLowerCase()",
+      "appsmith.store.mkr_app_id.toLowerCase()",
       "generate_uuid_for_doc.generateUUID.data"
     ],
     "userSetOnLoad": false,

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into kyc_docs(id,created_at,updated_at,doc_type,doc_number,doc_link,bo_id,kyc_owner,sbm_status,happay_status,status_metadata, kyc_status)\nvalues\n('{{'kyc_'+generate_uuid_for_kyb.generateUUID()}}','{{new Date().toLocaleString()}}','{{new Date().toLocaleString()}}','{{Select1.selectedOptionLabel}}','{{Input2.text}}','{{upload_corp_kyb.data.signedUrl.substring(0,upload_corp_kyb.data.signedUrl.indexOf(\"?X-Amz\")).toLowerCase()}}','{{appsmith.store.temp_application_id}}','corporate','pending','submitted','{\n        \"happay\": {\n            \"status\": \"submitted\",\n            \"updated_at\": \"{{new Date().toLocaleString()}}\",\n            \"remarks\": \"submitted\"\n        }\n    }'::jsonb,'pending')",
+      "body": "insert into kyc_docs(id,created_at,updated_at,doc_type,doc_number,doc_link,bo_id,kyc_owner,sbm_status,happay_status,status_metadata, kyc_status)\nvalues\n('{{'kyc_'+generate_uuid_for_kyb.generateUUID()}}','{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}','{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}','{{Select1.selectedOptionLabel}}','{{Input2.text}}','{{upload_corp_kyb.data.signedUrl.substring(0,upload_corp_kyb.data.signedUrl.indexOf(\"?X-Amz\")).toLowerCase()}}','{{appsmith.store.temp_application_id}}','corporate','pending','submitted','{\n        \"happay\": {\n            \"status\": \"submitted\",\n            \"updated_at\": \"{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}\",\n            \"remarks\": \"submitted\"\n        }\n    }'::jsonb,'pending')",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -40,7 +40,7 @@
       "Input2.text",
       "Select1.selectedOptionLabel",
       "appsmith.store.temp_application_id",
-      "new Date().toLocaleString()",
+      "new Date(new Date().getTime() + (5.5*60 * 60 * 1000))",
       "upload_corp_kyb.data.signedUrl.substring(0,upload_corp_kyb.data.signedUrl.indexOf(\"?X-Amz\")).toLowerCase()"
     ],
     "userSetOnLoad": false,

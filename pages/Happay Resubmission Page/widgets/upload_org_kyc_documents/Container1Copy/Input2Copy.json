@@ -9,11 +9,14 @@
     "leftColumn": 16,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "validation"},
+        {"key": "errorMessage"}
     ],
     "labelStyle": "BOLD",
     "inputType": "TEXT",
     "isDisabled": false,
+    "validation": "{{(Select1Copy.selectedOptionValue==='pan' && (get_org_constitution.data[0].constitution==='85 - Private Limited Company' || get_org_constitution.data[0].constitution==='86 - Public Limited Company'))?((Input2Copy.text.length==10)&&(/[A-Z]{3}[C]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}$/.test(Input2Copy.text))):(Select1Copy.selectedOptionValue==='pan' && (get_org_constitution.data[0].constitution==='53 - PARTNERSHIP FIRMS' || get_org_constitution.data[0].constitution==='89 - Limited Liability Partnership'))?((Input2Copy.text.length==10)&&(/[A-Z]{3}[F]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}$/.test(Input2Copy.text))):(Select1Copy.selectedOptionValue==='pan' && get_org_constitution.data[0].constitution==='84 - Sole Proprietorship')?((Input2Copy.text.length==10)&&(/[A-Z]{3}[P]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}$/.test(Input2Copy.text))):'false'}}",
     "isRequired": true,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -48,6 +51,7 @@
     "isDeprecated": false,
     "rightColumn": 32,
     "widgetId": "40mxd498yy",
+    "errorMessage": "{{Select1Copy.selectedOptionValue=='pan' && Input2Copy.isValid==false?\"Length/Format of Individual PAN is Invalid. If entered in lower character please erase and enter in upper character\":\"\"}}",
     "minWidth": 450,
     "label": "Document Number",
     "parentId": "pqidu0s8n7",

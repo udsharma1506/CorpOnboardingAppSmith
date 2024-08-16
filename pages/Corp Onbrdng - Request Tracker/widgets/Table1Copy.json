@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
-    "topRow": 101,
+    "topRow": 102,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -73,7 +73,7 @@
     ],
     "dynamicPropertyPathList": [],
     "displayName": "Table",
-    "bottomRow": 129,
+    "bottomRow": 130,
     "columnWidthMap": {
         "Requestor_Email": 243,
         "Iteration_Count": 196,
@@ -85,7 +85,7 @@
     "hideCard": false,
     "mobileRightColumn": 37,
     "parentColumnSpace": 12.609375,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "primaryColumns.customColumn1.onClick"}],
     "borderWidth": "1",
     "primaryColumns": {
         "Requestor_Email": {
@@ -211,6 +211,7 @@
         "customColumn1": {
             "boxShadow": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
             "computedValue": "",
+            "onClick": "{{storeValue('temp_corp_detail_view_sbm', Table1Copy.triggeredRow[\"Request ID\"]).then(() => {\n  navigateTo('Corporate Detailed View - SBM', {}, 'SAME_WINDOW');\n});}}",
             "buttonColor": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
             "isEditable": false,
             "alias": "Action",

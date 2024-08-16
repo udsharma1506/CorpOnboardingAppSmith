@@ -103,6 +103,10 @@
     {
       "id": "Corp Onbrdng - Request Tracker",
       "isDefault": false
+    },
+    {
+      "id": "Corporate Detailed View - SBM",
+      "isDefault": false
     }
   ],
   "viewMode": false,

@@ -27,7 +27,7 @@
         {"key": "isDisabled"}
     ],
     "text": "Save",
-    "isDisabled": "{{Select1Copy.selectedOptionLabel!=''?Input2Copy.text!=\"\"?FilePicker1Copy.files[0]!=undefined?false:true:true:true}}",
+    "isDisabled": "{{Select1Copy.selectedOptionLabel!=''?(Input2Copy.text!=\"\" && Input2Copy.isValid)?FilePicker1Copy.files[0]!=undefined?false:true:true:true}}",
     "key": "fcp1vxzufo",
     "isDeprecated": false,
     "rightColumn": 63,

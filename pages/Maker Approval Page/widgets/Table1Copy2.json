@@ -206,7 +206,7 @@
         "customColumn1": {
             "boxShadow": "{{Table1Copy2.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
             "computedValue": "{{Table1Copy2.processedTableData.map((currentRow, currentIndex) => ( get_corporate_signed_url.data))}}",
-            "onClick": "{{get_corporate_signed_url.run().then(() => {\n  showModal('corporate_modal');\n});}}",
+            "onClick": "{{get_bank_doc_signed_url.run().then(() => {\n  showModal('bank_doc_modal');\n});}}",
             "buttonColor": "{{Table1Copy2.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
             "isEditable": false,
             "alias": "Document Viewer",

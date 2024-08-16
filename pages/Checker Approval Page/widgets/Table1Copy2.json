@@ -202,7 +202,7 @@
         "customColumn1": {
             "boxShadow": "{{Table1Copy2.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
             "computedValue": "{{Table1Copy2.processedTableData.map((currentRow, currentIndex) => ( get_corporate_signed_url.data))}}",
-            "onClick": "{{get_corporate_signed_url.run().then(() => {\n  showModal('corporate_modal');\n});}}",
+            "onClick": "{{get_sbm_doc_signed_url.run().then(() => {\n  showModal('sbm_doc_modal');\n});}}",
             "buttonColor": "{{Table1Copy2.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
             "isEditable": false,
             "alias": "Document Viewer",
@@ -295,7 +295,7 @@
                 },
                 "menuItem6vvitxdxbv": {
                     "backgroundColor": "#15803d",
-                    "onClick": "{{storeValue('temp_approve_kyc_id', Table1Copy2.triggeredRow[\"Doc ID\"]).then(() => {\n  approve_kyc.run().then(() => {\n    get_org_kyc_docs.run();\n    scrutiny_summary_count_non_sbm.run();\n  }).catch(() => {\n    showAlert('Failed to update. Please try again after sometime.', 'error');\n  });\n  show_kyb_docs.run();\n  scrutiny_summary_count_sbm_doc.run();\n  approve_kyc.run();\n}).catch(() => {\n  showAlert('Failed to update. Please try again after sometime.', 'error');\n});}}",
+                    "onClick": "{{storeValue('temp_approve_kyc_id', Table1Copy2.triggeredRow[\"Doc ID\"]).then(() => {\n  approve_kyc.run().then(() => {\n    get_org_kyc_docs.run();\n    scrutiny_summary_count_non_sbm.run();\n  }).catch(() => {\n    showAlert('Failed to update. Please try again after sometime.', 'error');\n  });\n  show_kyb_docs.run();\n  scrutiny_summary_count_sbm_doc.run();\n  approve_kyc.run();\n  show_kyb_docs.run();\n}).catch(() => {\n  showAlert('Failed to update. Please try again after sometime.', 'error');\n});}}",
                     "widgetId": "e3vwztyitm",
                     "iconColor": "",
                     "index": 0,

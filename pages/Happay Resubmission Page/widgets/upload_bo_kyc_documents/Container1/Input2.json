@@ -9,11 +9,14 @@
     "leftColumn": 13,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "validation"},
+        {"key": "errorMessage"}
     ],
     "labelStyle": "BOLD",
     "inputType": "TEXT",
     "isDisabled": false,
+    "validation": "{{Select1.selectedOptionValue==='aadhaar_card_front'?(Input2.text.length==4 && Input2.text.isNAN):Select1.selectedOptionValue==='aadhaar_card_back'?(Input2.text.length==4 && Input2.text.isNAN):Select1.selectedOptionValue=='pan'?(Input2.text.length==10)&&(/[A-Z]{3}[P]{1}[A-Z]{1}[0-9]{4}[A-Z]{1}$/.test(Input2.text)):''}}",
     "isRequired": true,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -48,6 +51,7 @@
     "isDeprecated": false,
     "rightColumn": 30,
     "widgetId": "sv1anebnxg",
+    "errorMessage": "{{Select1.selectedOptionValue==='aadhaar_card_front'?\"Only Last 4 Digits of Aadhaar is Allowed\":Select1.selectedOptionValue==='aadhaar_card_back'?\"Only Last 4 Digits of Aadhaar is Allowed\":(Select1.selectedOptionValue==='pan' && Input2.isValid==false)?\"Length/Format of Individual PAN is Invalid. If entered in lower character please erase and enter in upper character\":''}}",
     "minWidth": 450,
     "label": "Document Number",
     "parentId": "067k9472x6",

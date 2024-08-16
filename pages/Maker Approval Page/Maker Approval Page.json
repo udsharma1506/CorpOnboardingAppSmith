@@ -126,6 +126,19 @@
               ],
               "timeoutInMillisecond": 60000
             }
+          ],
+          [
+            {
+              "id": "Maker Approval Page_get_bank_doc_signed_url",
+              "name": "get_bank_doc_signed_url",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.mkr_app_id.toLowerCase()",
+                "Table1Copy2.triggeredRow[\"Document Link\"]"
+              ],
+              "timeoutInMillisecond": 60000
+            }
           ]
         ],
         "layoutOnLoadActionErrors": [],

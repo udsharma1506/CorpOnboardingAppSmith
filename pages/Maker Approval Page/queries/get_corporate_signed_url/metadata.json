@@ -43,11 +43,12 @@
           },
           "where": {
             "data": {
-              "condition": "AND",
+              "condition": "OR",
               "children": [
                 {
                   "condition": "EQ",
-                  "value": "sbm_appsmith_test/{{Table1.triggeredRow[\"Document Link\"]}}"
+                  "value": "sbm_appsmith_test/{{Table1.triggeredRow[\"Document Link\"]}}",
+                  "key": "fileName"
                 }
               ]
             }

@@ -1,0 +1,9 @@
+update kyc_docs set updated_at = '{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}', comment = '{{Table1Copy1.triggeredRow["Checker Comment"]}}', status_metadata = jsonb_set(
+    status_metadata,
+    '{checker}',
+    '{
+        "status": "rejected",
+        "updated_at": "{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}",
+        "remarks": "{{Table1Copy1.triggeredRow["Checker Comment"]}}"
+    }'::jsonb
+) where id = '{{Table1Copy1.triggeredRow["Doc ID"]}}'
