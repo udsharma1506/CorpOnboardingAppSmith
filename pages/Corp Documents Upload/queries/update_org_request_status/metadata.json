@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update new_org_requests\nset status = 'Pending At Maker', status_metadata = '{\n        \"{{get_org_data.data[0].updated_count}}\": {\n        \"happay\": {\n            \"status\": \"submitted\",\n            \"remarks\": \"submitted\",\n            \"updated_at\": \"{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}\"\n        \t}\n    \t}\n    }'::jsonb\nwhere application_id = '{{appsmith.store.temp_application_id}}'",
+      "body": "update new_org_requests\nset status = 'Pending At Maker',updated_at = '{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}', , status_metadata['{{get_org_data.data[0].updated_count}}']['happay'] = '{\"Status\": \"submitted\",\"remarks\": \"submitted\",\"updated_at\": \"{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}\"}'\nwhere application_id = '{{appsmith.store.temp_application_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

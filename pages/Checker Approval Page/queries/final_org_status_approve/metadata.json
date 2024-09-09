@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update new_org_requests\nset status = 'Approved', status_metadata['{{get_org_data.data[0].updated_count}}']['checker'] = '{\"Status\": \"approved\",\"remarks\": \"approved\",\"updated_at\": \"{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}\"}' where application_id = '{{appsmith.store.chkr_app_id}}'",
+      "body": "update new_org_requests\nset status = 'Approved', updated_at = '{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}', status_metadata['{{get_org_data.data[0].updated_count}}']['checker'] = '{\"Status\": \"approved\",\"remarks\": \"approved\",\"updated_at\": \"{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}\"}' where application_id = '{{appsmith.store.chkr_app_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

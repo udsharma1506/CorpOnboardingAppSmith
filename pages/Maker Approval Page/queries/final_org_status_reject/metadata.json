@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update new_org_requests\nset status = 'Pending At Checker', reason = '{{Input1Copy.text}}', status_metadata['{{get_org_data.data[0].updated_count}}']['maker'] = '{\"Status\": \"rejected\",\"remarks\": \"{{Input1Copy.text}}\",\"updated_at\": \"{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}\"}'\nwhere application_id = '{{appsmith.store.mkr_app_id}}'",
+      "body": "update new_org_requests\nset status = 'Pending At Checker', updated_at = '{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}', reason = '{{Input1Copy.text}}', status_metadata['{{get_org_data.data[0].updated_count}}']['maker'] = '{\"Status\": \"rejected\",\"remarks\": \"{{Input1Copy.text}}\",\"updated_at\": \"{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}\"}'\nwhere application_id = '{{appsmith.store.mkr_app_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

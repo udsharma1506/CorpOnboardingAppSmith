@@ -1,3 +1,4 @@
 update new_org_requests
-set status = 'Pending At Maker'
+set status = 'Pending At Maker', updated_at = '{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}', 
+status_metadata['{{get_org_data.data[0].updated_count}}']['happay'] = '{"Status": "submitted","remarks": "submitted","updated_at": "{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}"}'
 where application_id = '{{appsmith.store.temp_hpy_saved_req_id}}'

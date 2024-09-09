@@ -1,3 +1,3 @@
 update new_org_requests
-set status = 'Pending At Checker', reason = '{{Input1Copy.text}}', status_metadata['{{get_org_data.data[0].updated_count}}']['maker'] = '{"Status": "rejected","remarks": "{{Input1Copy.text}}","updated_at": "{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}"}'
+set status = 'Pending At Checker', updated_at = '{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}', reason = '{{Input1Copy.text}}', status_metadata['{{get_org_data.data[0].updated_count}}']['maker'] = '{"Status": "rejected","remarks": "{{Input1Copy.text}}","updated_at": "{{new Date(new Date().getTime() + (5.5*60 * 60 * 1000))}}"}'
 where application_id = '{{appsmith.store.mkr_app_id}}'
