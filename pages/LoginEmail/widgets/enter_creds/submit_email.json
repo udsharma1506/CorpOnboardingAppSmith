@@ -1,27 +1,39 @@
 {
-    "resetFormOnClick": true,
-    "boxShadow": "none",
-    "widgetName": "submit_email",
-    "onClick": "{{(() => {\n\tgenerate_token.run(() => {\n\nstoreValue(\"EMP_ID\",generate_token.data.res_data[\"EMP-ID\"]);\nstoreValue(\"OPS_TOKEN\",generate_token.data.res_data[\"OPS-TOKEN\"]);\t\t\n\t\tset_token_expiry.run();\n\t\t\t\t\t navigateTo('Landing Page', {});\n\t},() => {\t\tshowAlert(generate_token.data[\"res_str\"],'error');\n\t});\n})()}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "topRow": 43,
-    "bottomRow": 49,
-    "type": "FORM_BUTTON_WIDGET",
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 25,
-    "dynamicBindingPathList": [{"key": "buttonColor"}],
-    "text": "Next",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 41,
-    "isDefaultClickDisabled": true,
-    "widgetId": "xc9khnr13c",
-    "isVisible": true,
-    "version": 1,
-    "recaptchaType": "V3",
-    "parentId": "k1hymf7gq9",
-    "isLoading": false,
-    "disabledWhenInvalid": false,
-    "borderRadius": "0px",
-    "buttonVariant": "PRIMARY"
+  "borderRadius": "0px",
+  "bottomRow": 49,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isLoading": false,
+  "isVisible": true,
+  "labelTextSize": "0.875rem",
+  "leftColumn": 25,
+  "onClick": "{{(() => {\n\tgenerate_token.run(() => {\n\nstoreValue(\"EMP_ID\",generate_token.data.res_data[\"EMP-ID\"]);\nstoreValue(\"OPS_TOKEN\",generate_token.data.res_data[\"OPS-TOKEN\"]);\t\t\n\t\tset_token_expiry.run();\n\t\t\t\t\t navigateTo('Landing Page', {});\n\t},() => {\t\tshowAlert(generate_token.data[\"res_str\"],'error');\n\t});\n})()}}",
+  "parentId": "k1hymf7gq9",
+  "recaptchaType": "V3",
+  "resetFormOnClick": true,
+  "rightColumn": 41,
+  "text": "Next",
+  "topRow": 43,
+  "type": "FORM_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "xc9khnr13c",
+  "widgetName": "submit_email"
 }

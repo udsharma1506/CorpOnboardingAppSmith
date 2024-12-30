@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "641c69093c6870012197ccbd_6451040159e2da0c4ccc20bf",
+  "id": "Failed Transactions_SessionToken_OnPageLoad",
   "unpublishedCollection": {
     "name": "SessionToken_OnPageLoad",
     "pageId": "Failed Transactions",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Failed Transactions_SessionToken_OnPageLoad",
-  "deleted": false,
-  "gitSyncId": "641c69093c6870012197ccbd_6451040159e2da0c4ccc20bf"
+    "variables": []
+  }
 }

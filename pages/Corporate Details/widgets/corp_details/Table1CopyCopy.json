@@ -1,174 +1,202 @@
 {
-    "boxShadow": "none",
-    "widgetName": "Table1CopyCopy",
-    "defaultPageSize": 0,
-    "columnOrder": [
-        "crp_id",
-        "crp_name",
-        "customColumn1"
-    ],
-    "isVisibleDownload": true,
-    "dynamicPropertyPathList": [{"key": "primaryColumns.customColumn1.onClick"}],
-    "displayName": "Table",
-    "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "topRow": 8,
-    "bottomRow": 59,
-    "isSortable": true,
-    "parentRowSpace": 10,
-    "type": "TABLE_WIDGET",
-    "defaultSelectedRow": "0",
-    "hideCard": false,
-    "parentColumnSpace": 10.28125,
-    "dynamicTriggerPathList": [{"key": "primaryColumns.customColumn1.onClick"}],
-    "dynamicBindingPathList": [
-        {"key": "derivedColumns.customColumn1.menuButtonLabel"},
-        {"key": "primaryColumns.customColumn1.menuButtonLabel"},
-        {"key": "derivedColumns.customColumn1.buttonLabel"},
-        {"key": "primaryColumns.customColumn1.buttonLabel"},
-        {"key": "primaryColumns.crp_name.computedValue"},
-        {"key": "primaryColumns.crp_id.computedValue"},
-        {"key": "accentColor"},
-        {"key": "tableData"}
-    ],
-    "leftColumn": 2,
-    "primaryColumns": {
-        "crp_id": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.crp_id))}}",
-            "textSize": "0.875rem",
-            "index": 20,
-            "isVisible": true,
-            "label": "crp_id",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "crp_id",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "customColumn1": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": true,
-            "computedValue": "",
-            "onClick": "{{org_data.run(() => finding_org_id.run(() => get_org_details_v2.run(() => fetch_user_details.run(() => fetch_txn_details.run(() => user_count_corp.run(() => card_count_corp.run(() => corp_data.run(() => closeModal('corp_details'), () => {}), () => {}), () => {}), () => {}), () => {}), () => {}), () => {}), () => {})}}",
-            "menuButtonLabel": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( 'Open Org'))}}",
-            "iconName": "search",
-            "buttonColor": "#2E3D49",
-            "buttonStyle": "rgb(3, 179, 101)",
-            "menuItems": {"menuItem16gigl6pkd": {
-                "widgetId": "je4p1u5q6g",
-                "id": "menuItem16gigl6pkd",
-                "label": "Menu Item 1",
-                "isDisabled": false,
-                "isVisible": true
-            }},
-            "index": 1,
-            "isVisible": true,
-            "label": "Action",
-            "buttonLabel": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( 'Show Org Details'))}}",
-            "columnType": "button",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "customColumn1",
-            "isDisabled": false,
-            "buttonLabelColor": "#FFFFFF"
-        },
-        "crp_name": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.crp_name))}}",
-            "textSize": "0.875rem",
-            "index": 21,
-            "isVisible": true,
-            "label": "crp_name",
-            "columnType": "text",
-            "horizontalAlignment": "CENTER",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "crp_name",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "borderRadius": "0px",
+  "bottomRow": 59,
+  "boxShadow": "none",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "delimiter": ",",
-    "key": "zt688el3kt",
-    "derivedColumns": {"customColumn1": {
-        "isCellVisible": true,
-        "boxShadow": "none",
-        "isDerived": true,
-        "computedValue": "",
-        "menuButtonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Open Org'))}}",
-        "iconName": "search",
-        "buttonColor": "#2E3D49",
-        "buttonStyle": "rgb(3, 179, 101)",
-        "index": 1,
-        "isVisible": true,
-        "label": "Action",
-        "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Show Org Details'))}}",
-        "columnType": "button",
-        "borderRadius": "0px",
-        "width": 150,
-        "enableFilter": true,
-        "enableSort": true,
-        "id": "customColumn1",
-        "isDisabled": false,
-        "buttonLabelColor": "#FFFFFF"
-    }},
-    "labelTextSize": "0.875rem",
-    "rightColumn": 62,
-    "textSize": "0.875rem",
-    "widgetId": "nsjl6ug4bd",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisibleFilters": true,
-    "tableData": "{{search_corp.data}}",
-    "isVisible": true,
-    "label": "Data",
-    "searchKey": "",
-    "version": 3,
-    "totalRecordsCount": 0,
-    "parentId": "m0ki4q9yee",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "horizontalAlignment": "LEFT",
-    "isVisibleSearch": true,
-    "childStylesheet": {
-        "button": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "iconButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "menuButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "borderRadius": "0px",
-    "isVisiblePagination": true,
-    "verticalAlignment": "CENTER",
-    "columnSizeMap": {
-        "app_name": 318,
-        "task": 245,
-        "crp_id": 273,
-        "name": 624,
-        "step": 62,
-        "crp_name": 363,
-        "status": 75
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     }
+  },
+  "columnOrder": [
+    "crp_id",
+    "crp_name",
+    "customColumn1"
+  ],
+  "columnSizeMap": {
+    "app_name": 318,
+    "crp_id": 273,
+    "crp_name": 363,
+    "name": 624,
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "0",
+  "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "buttonColor": "#2E3D49",
+      "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Show Org Details'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "iconName": "search",
+      "id": "customColumn1",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Action",
+      "menuButtonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Open Org'))}}",
+      "width": 150
+    }
+  },
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "derivedColumns.customColumn1.menuButtonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuButtonLabel"
+    },
+    {
+      "key": "derivedColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.crp_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.crp_id.computedValue"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "zt688el3kt",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "parentColumnSpace": 10.28125,
+  "parentId": "m0ki4q9yee",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "crp_id": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.crp_id))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "crp_id",
+      "index": 20,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "crp_id",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "crp_name": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( currentRow.crp_name))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "crp_name",
+      "index": 21,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "crp_name",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "buttonColor": "#2E3D49",
+      "buttonLabel": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( 'Show Org Details'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "iconName": "search",
+      "id": "customColumn1",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Action",
+      "menuButtonLabel": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( 'Open Org'))}}",
+      "menuItems": {
+        "menuItem16gigl6pkd": {
+          "id": "menuItem16gigl6pkd",
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item 1",
+          "widgetId": "je4p1u5q6g"
+        }
+      },
+      "onClick": "{{org_data.run(() => finding_org_id.run(() => get_org_details_v2.run(() => fetch_user_details.run(() => fetch_txn_details.run(() => user_count_corp.run(() => card_count_corp.run(() => corp_data.run(() => closeModal('corp_details'), () => {}), () => {}), () => {}), () => {}), () => {}), () => {}), () => {}), () => {})}}",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "searchKey": "",
+  "tableData": "{{search_corp.data}}",
+  "textSize": "0.875rem",
+  "topRow": 8,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "nsjl6ug4bd",
+  "widgetName": "Table1CopyCopy"
 }

@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_655b333133f2bd4cbe013a84",
+  "id": "BO Addition_generate_uuid_for_doc",
   "unpublishedCollection": {
     "name": "generate_uuid_for_doc",
     "pageId": "BO Addition",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "BO Addition_generate_uuid_for_doc",
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_655b333133f2bd4cbe013a84"
+    "variables": []
+  }
 }

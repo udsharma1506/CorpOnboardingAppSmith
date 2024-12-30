@@ -1,46 +1,58 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "widgetName": "Button7Copy",
-    "onClick": "{{DatePicker1.selectedDate.substring(0,10)==\"\"?showAlert(\"Please select the form date\"):DatePicker2.selectedDate.substring(0,10)==\"\"?showAlert(\"Please select the to date\"):download_txn_data.run(()=>showAlert(download_txn_data.data.res_str),()=>{})}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 207,
-    "bottomRow": 211,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 25.0625,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 49,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "Export Transaction Data",
-    "isDisabled": false,
-    "key": "wqltmzao7s",
-    "isDeprecated": false,
-    "rightColumn": 62,
-    "isDefaultClickDisabled": true,
-    "widgetId": "lrbhtp0s37",
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 207,
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 211,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 211,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wqltmzao7s",
+  "leftColumn": 49,
+  "onClick": "{{DatePicker1.selectedDate.substring(0,10)==\"\"?showAlert(\"Please select the form date\"):DatePicker2.selectedDate.substring(0,10)==\"\"?showAlert(\"Please select the to date\"):download_txn_data.run(()=>showAlert(download_txn_data.data.res_str),()=>{})}}",
+  "originalBottomRow": 211,
+  "originalTopRow": 207,
+  "parentColumnSpace": 25.0625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "rightColumn": 62,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "Export Transaction Data",
+  "topRow": 207,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "lrbhtp0s37",
+  "widgetName": "Button7Copy"
 }

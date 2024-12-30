@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_655e339633f2bd4cbe013b57",
+  "id": "Saved Orgs Corp Docs Upload_generate_uuid_for_doc",
   "unpublishedCollection": {
     "name": "generate_uuid_for_doc",
     "pageId": "Saved Orgs Corp Docs Upload",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Saved Orgs Corp Docs Upload_generate_uuid_for_doc",
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_655e339633f2bd4cbe013b57"
+    "variables": []
+  }
 }

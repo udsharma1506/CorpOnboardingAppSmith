@@ -1,64 +1,80 @@
 {
-    "boxShadow": "none",
-    "dateFormat": "DD-MM-YYYY",
-    "iconSVG": "/static/media/icon.c0c4b770ee1862b73198267331d1611c.svg",
-    "topRow": 1,
-    "labelWidth": 5,
-    "type": "DATE_PICKER_WIDGET2",
-    "animateLoading": true,
-    "leftColumn": 33,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "maxDate"},
-        {"key": "defaultDate"}
-    ],
-    "labelStyle": "BOLD",
-    "isDisabled": false,
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "datePickerType": "DATE_PICKER",
-    "version": 2,
-    "tags": ["Inputs"],
-    "isLoading": false,
-    "timePrecision": "None",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "closeOnSelection": true,
-    "mobileBottomRow": 14,
-    "widgetName": "DatePicker1",
-    "minDate": "1920-12-31T18:30:00.000Z",
-    "dynamicPropertyPathList": [
-        {"key": "maxDate"},
-        {"key": "defaultDate"}
-    ],
-    "displayName": "DatePicker",
-    "searchTags": ["calendar"],
-    "bottomRow": 8,
-    "shortcuts": false,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 56,
-    "parentColumnSpace": 8.740234375,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Top",
-    "key": "q8hg4rpkir",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "defaultDate": "{{Date()}}",
-    "widgetId": "l3zc0ncqln",
-    "minWidth": 450,
-    "label": "Date of Birth:",
-    "parentId": "rbd0e1x8xk",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 7,
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 36,
-    "maxDynamicHeight": 9000,
-    "firstDayOfWeek": 0,
-    "maxDate": "{{Date()}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "closeOnSelection": true,
+  "dateFormat": "DD-MM-YYYY",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{Date()}}",
+  "displayName": "DatePicker",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "maxDate"
+    },
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "maxDate"
+    },
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "firstDayOfWeek": 0,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.c0c4b770ee1862b73198267331d1611c.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "q8hg4rpkir",
+  "label": "Date of Birth:",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 33,
+  "maxDate": "{{Date()}}",
+  "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 7,
+  "parentColumnSpace": 8.740234375,
+  "parentId": "rbd0e1x8xk",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "searchTags": [
+    "calendar"
+  ],
+  "shortcuts": false,
+  "tags": [
+    "Inputs"
+  ],
+  "timePrecision": "None",
+  "topRow": 1,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "l3zc0ncqln",
+  "widgetName": "DatePicker1"
 }

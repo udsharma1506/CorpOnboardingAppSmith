@@ -1,123 +1,32 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_655dbea533f2bd4cbe013acd",
   "unpublishedPage": {
-    "name": "Happay Resubmission Page",
-    "slug": "happay-resubmission-page",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 2740,
-          "containerStyle": "none",
-          "snapRows": 64,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 660,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Happay Resubmission Page_get_org_constitution",
-              "name": "get_org_constitution",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_hpy_resubmit_req_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Happay Resubmission Page_get_org_data",
-              "name": "get_org_data",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_hpy_resubmit_req_id"
-              ],
-              "timeoutInMillisecond": 60000
-            }
-          ],
-          [
-            {
-              "id": "Happay Resubmission Page_get_bo_details",
-              "name": "get_bo_details",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_hpy_resubmit_req_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Happay Resubmission Page_get_org_kyc_docs",
-              "name": "get_org_kyc_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_hpy_resubmit_req_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Happay Resubmission Page_list_of_corp_docs",
-              "name": "list_of_corp_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "(get_org_constitution.data[0].constitution===\"85 - Private Limited Company\" || get_org_constitution.data[0].constitution===\"86 - Public Limited Company\")?\"list_of_corp_docs_Private/Publc/OPC Limited\":get_org_constitution.data[0].constitution===\"89 - Limited Liability Partnership\"?\"list_of_corp_docs_LLP\":get_org_constitution.data[0].constitution===\"53 - PARTNERSHIP FIRMS\"?\"list_of_corp_docs_partnership\":get_org_constitution.data[0].constitution===\"84 - Sole Proprietorship\"?\"list_of_corp_docs_sole_proprietor\":\"\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Happay Resubmission Page_scrutiny_summary_count",
-              "name": "scrutiny_summary_count",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_hpy_resubmit_req_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Happay Resubmission Page_get_corporate_signed_url",
-              "name": "get_corporate_signed_url",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_hpy_resubmit_req_id.toLowerCase()",
-                "Table1.triggeredRow[\"Document Link\"]"
-              ],
-              "timeoutInMillisecond": 60000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Happay Resubmission Page",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 64,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_655dbea533f2bd4cbe013acd"
+    "name": "Happay Resubmission Page",
+    "slug": "happay-resubmission-page"
+  }
 }

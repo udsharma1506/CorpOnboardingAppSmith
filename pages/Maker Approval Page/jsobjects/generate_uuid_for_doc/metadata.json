@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_668ce15f3f30011fa354bcb1",
+  "id": "Maker Approval Page_generate_uuid_for_doc",
   "unpublishedCollection": {
     "name": "generate_uuid_for_doc",
     "pageId": "Maker Approval Page",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Maker Approval Page_generate_uuid_for_doc",
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_668ce15f3f30011fa354bcb1"
+    "variables": []
+  }
 }

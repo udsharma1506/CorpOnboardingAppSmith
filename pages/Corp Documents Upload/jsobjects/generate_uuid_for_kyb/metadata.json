@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_6502f2c033f2bd4cbe013672",
+  "id": "Corp Documents Upload_generate_uuid_for_kyb",
   "unpublishedCollection": {
     "name": "generate_uuid_for_kyb",
     "pageId": "Corp Documents Upload",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Corp Documents Upload_generate_uuid_for_kyb",
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_6502f2c033f2bd4cbe013672"
+    "variables": []
+  }
 }

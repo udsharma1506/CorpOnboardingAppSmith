@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_655dd92633f2bd4cbe013af2",
+  "id": "Happay Resubmission Page_generate_uuid_for_kyc",
   "unpublishedCollection": {
     "name": "generate_uuid_for_kyc",
     "pageId": "Happay Resubmission Page",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Happay Resubmission Page_generate_uuid_for_kyc",
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_655dd92633f2bd4cbe013af2"
+    "variables": []
+  }
 }

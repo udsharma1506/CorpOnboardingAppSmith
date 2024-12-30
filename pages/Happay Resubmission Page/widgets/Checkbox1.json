@@ -1,52 +1,66 @@
 {
-    "mobileBottomRow": 40,
-    "widgetName": "Checkbox1",
-    "dynamicPropertyPathList": [{"key": "defaultCheckedState"}],
-    "displayName": "Checkbox",
-    "iconSVG": "/static/media/icon.7b004ee098ca948e952234e7baec6d11.svg",
-    "searchTags": ["boolean"],
-    "topRow": 60,
-    "bottomRow": 64,
-    "parentRowSpace": 10,
-    "type": "CHECKBOX_WIDGET",
-    "alignWidget": "LEFT",
-    "hideCard": false,
-    "mobileRightColumn": 53,
-    "animateLoading": true,
-    "parentColumnSpace": 19.8125,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "defaultCheckedState"}
-    ],
-    "labelPosition": "Right",
-    "labelStyle": "BOLD",
-    "isDisabled": true,
-    "key": "o89t97e8xu",
-    "labelTextSize": "1rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 26,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "rigg63vbug",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "minWidth": 450,
-    "isVisible": true,
-    "label": "Is Communication Address Same as Permanent Address?",
-    "version": 1,
-    "parentId": "0",
-    "tags": ["Toggles"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 36,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 60,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 41,
-    "defaultCheckedState": "{{get_org_data.data[0].check_perm_with_comm_address}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 66,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 64,
+  "defaultCheckedState": "{{get_org_data.data[0].check_perm_with_comm_address}}",
+  "displayName": "Checkbox",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7b004ee098ca948e952234e7baec6d11.svg",
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "o89t97e8xu",
+  "label": "Is Communication Address Same as Permanent Address?",
+  "labelPosition": "Right",
+  "labelStyle": "BOLD",
+  "labelTextSize": "1rem",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 53,
+  "mobileTopRow": 36,
+  "originalBottomRow": 66,
+  "originalTopRow": 60,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "searchTags": [
+    "boolean"
+  ],
+  "tags": [
+    "Toggles"
+  ],
+  "topRow": 60,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "rigg63vbug",
+  "widgetName": "Checkbox1"
 }

@@ -1,48 +1,62 @@
 {
-    "resetFormOnClick": true,
-    "boxShadow": "none",
-    "mobileBottomRow": 37,
-    "widgetName": "Button9",
-    "onClick": "{{home_addr_pincode_check.data[0]===undefined?mailing_addr_pincode_check.data[0]===undefined?(insert_BO.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  view_BO.run();\n  storeValue('temp_bo_id', 'bo_' + Text4Copy.text);\n  showModal('kyc_documents');\n  resetWidget(\"Form1\", true);\n  show_details_of_particular_bo.run();\n  show_kyc_docs.run();\n  closeModal('details_modal');\n}).catch(() => {\n  showAlert(insert_BO.data, 'error');\n})):showAlert(\"The Mailing Address belongs to the blocked regions of SBM list and cannot proceed with onboarding\",'error'):showAlert(\"The Home Address belongs to the blocked regions of SBM list and cannot proceed with onboarding\",'error')}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 104,
-    "bottomRow": 108,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 62,
-    "animateLoading": true,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 50,
-    "dynamicBindingPathList": [{"key": "buttonColor"}],
-    "text": "Submit",
-    "isDisabled": false,
-    "key": "ndu2pgsnhk",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "isDefaultClickDisabled": true,
-    "widgetId": "9k5kfay3j7",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "rbd0e1x8xk",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 33,
-    "responsiveBehavior": "hug",
-    "originalTopRow": 85,
-    "disabledWhenInvalid": true,
-    "borderRadius": "1.5rem",
-    "mobileLeftColumn": 46,
-    "originalBottomRow": 89,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 108,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ndu2pgsnhk",
+  "leftColumn": 50,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "onClick": "{{home_addr_pincode_check.data[0]===undefined?mailing_addr_pincode_check.data[0]===undefined?(insert_BO.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  view_BO.run();\n  storeValue('temp_bo_id', 'bo_' + Text4Copy.text);\n  showModal('kyc_documents');\n  resetWidget(\"Form1\", true);\n  show_details_of_particular_bo.run();\n  show_kyc_docs.run();\n  closeModal('details_modal');\n}).catch(() => {\n  showAlert(insert_BO.data, 'error');\n})):showAlert(\"The Mailing Address belongs to the blocked regions of SBM list and cannot proceed with onboarding\",'error'):showAlert(\"The Home Address belongs to the blocked regions of SBM list and cannot proceed with onboarding\",'error')}}",
+  "originalBottomRow": 89,
+  "originalTopRow": 85,
+  "parentId": "rbd0e1x8xk",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": true,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Submit",
+  "topRow": 104,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "9k5kfay3j7",
+  "widgetName": "Button9"
 }

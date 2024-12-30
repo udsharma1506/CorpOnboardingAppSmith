@@ -1,40 +1,50 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "mobileBottomRow": 39,
-    "widgetName": "Iframe1Copy",
-    "displayName": "Iframe",
-    "iconSVG": "/static/media/icon.a84667dbdc548d14f7c83df551151550.svg",
-    "searchTags": ["embed"],
-    "topRow": 7,
-    "bottomRow": 57,
-    "parentRowSpace": 10,
-    "source": "{{get_bo_signed_url.data[0].signedUrl}}",
-    "type": "IFRAME_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 29,
-    "borderOpacity": 100,
-    "animateLoading": true,
-    "parentColumnSpace": 6.9375,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 5,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "source"}
-    ],
-    "borderWidth": 1,
-    "key": "z5xwphcjeu",
-    "isDeprecated": false,
-    "rightColumn": 59,
-    "widgetId": "1or2kwitdb",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "qtpzngfpxb",
-    "tags": ["Display"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 7,
-    "responsiveBehavior": "fill",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 5
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 57,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "displayName": "Iframe",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "source"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a84667dbdc548d14f7c83df551151550.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "z5xwphcjeu",
+  "leftColumn": 5,
+  "mobileBottomRow": 39,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 7,
+  "parentColumnSpace": 6.9375,
+  "parentId": "qtpzngfpxb",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 59,
+  "searchTags": [
+    "embed"
+  ],
+  "source": "{{get_bo_signed_url.data[0].signedUrl}}",
+  "tags": [
+    "Display"
+  ],
+  "topRow": 7,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "1or2kwitdb",
+  "widgetName": "Iframe1Copy"
 }

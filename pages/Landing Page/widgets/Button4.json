@@ -1,40 +1,48 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "widgetName": "Button4",
-    "onClick": "{{navigateTo('LoginEmail', {}, 'SAME_WINDOW')}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 4,
-    "bottomRow": 8,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 22.875,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 51,
-    "dynamicBindingPathList": [{"key": "buttonColor"}],
-    "text": "Logout",
-    "isDisabled": false,
-    "key": "fm7pzbzy9i",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "isDefaultClickDisabled": true,
-    "widgetId": "b5uc34h6d8",
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "disabledWhenInvalid": false,
-    "borderRadius": "1.5rem",
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "fm7pzbzy9i",
+  "leftColumn": 51,
+  "onClick": "{{navigateTo('LoginEmail', {}, 'SAME_WINDOW')}}",
+  "parentColumnSpace": 22.875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "rightColumn": 63,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "Logout",
+  "topRow": 4,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "b5uc34h6d8",
+  "widgetName": "Button4"
 }

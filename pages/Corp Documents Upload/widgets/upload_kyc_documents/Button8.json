@@ -1,53 +1,67 @@
 {
-    "resetFormOnClick": true,
-    "boxShadow": "none",
-    "mobileBottomRow": 22,
-    "widgetName": "Button8",
-    "onClick": "{{insert_corp_kyb.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  closeModal('upload_kyc_documents');\n  resetWidget(\"Container1\", true);\n  show_kyb_docs.run();\n  uploaded_doc_count.run();\n}).catch(() => {\n  showAlert(insert_corp_kyb.data, 'error');\n});}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "isDisabled"}],
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 16,
-    "bottomRow": 21,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 59,
-    "animateLoading": true,
-    "parentColumnSpace": 12.40625,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 43,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "isDisabled"}
-    ],
-    "text": "Save",
-    "isDisabled": "{{Select1.selectedOptionLabel!=''?(Input2.text!=\"\" && Input2.isValid)?FilePicker1.files[0]!=undefined?false:true:true:true}}",
-    "key": "fcp1vxzufo",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "isDefaultClickDisabled": true,
-    "widgetId": "bz0x9pi5qo",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "2pw2h2k2i5",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 18,
-    "responsiveBehavior": "hug",
-    "originalTopRow": 16,
-    "disabledWhenInvalid": false,
-    "borderRadius": "1.5rem",
-    "mobileLeftColumn": 43,
-    "originalBottomRow": 21,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": "{{Select1.selectedOptionLabel!=''?(Input2.text!=\"\" && Input2.isValid)?FilePicker1.files[0]!=undefined?false:true:true:true}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "fcp1vxzufo",
+  "leftColumn": 43,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 18,
+  "onClick": "{{insert_corp_kyb.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  closeModal('upload_kyc_documents');\n  resetWidget(\"Container1\", true);\n  show_kyb_docs.run();\n  uploaded_doc_count.run();\n}).catch(() => {\n  showAlert(insert_corp_kyb.data, 'error');\n});}}",
+  "originalBottomRow": 21,
+  "originalTopRow": 16,
+  "parentColumnSpace": 12.40625,
+  "parentId": "2pw2h2k2i5",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": true,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Save",
+  "topRow": 16,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "bz0x9pi5qo",
+  "widgetName": "Button8"
 }

@@ -1,161 +1,32 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_6556079833f2bd4cbe0137f1",
   "unpublishedPage": {
-    "name": "Saved Orgs BO Addition",
-    "slug": "saved-orgs-bo-addition",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 640,
-          "containerStyle": "none",
-          "snapRows": 64,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 660,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Saved Orgs BO Addition_generate_uuid_for_bo.generateUUID",
-              "name": "generate_uuid_for_bo.generateUUID",
-              "collectionId": "Saved Orgs BO Addition_generate_uuid_for_bo",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Saved Orgs BO Addition_view_BO",
-              "name": "view_BO",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_hpy_saved_req_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Saved Orgs BO Addition_bo_employment_type",
-              "name": "bo_employment_type",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Saved Orgs BO Addition_bo_gender",
-              "name": "bo_gender",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Saved Orgs BO Addition_bo_gross_income",
-              "name": "bo_gross_income",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Saved Orgs BO Addition_bo_marital_status",
-              "name": "bo_marital_status",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Saved Orgs BO Addition_bo_occupation",
-              "name": "bo_occupation",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Saved Orgs BO Addition_bo_qualification",
-              "name": "bo_qualification",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Saved Orgs BO Addition_show_kyc_docs",
-              "name": "show_kyc_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_bo_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Saved Orgs BO Addition_show_details_of_particular_bo",
-              "name": "show_details_of_particular_bo",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_bo_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Saved Orgs BO Addition_get_pincode_details_mailing",
-              "name": "get_pincode_details_mailing",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Input19Copy1CopyCopyCopy.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Saved Orgs BO Addition_get_pincode_details_home",
-              "name": "get_pincode_details_home",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Input19Copy1CopyCopy2.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Saved Orgs BO Addition",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 64,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_6556079833f2bd4cbe0137f1"
+    "name": "Saved Orgs BO Addition",
+    "slug": "saved-orgs-bo-addition"
+  }
 }

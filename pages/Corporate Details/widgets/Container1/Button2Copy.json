@@ -1,41 +1,53 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "widgetName": "Button2Copy",
-    "onClick": "{{get_org_docs.run(()=>showModal('org_docs_and_details'),()=>{})}}",
-    "buttonColor": "#60a5fa",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 48,
-    "bottomRow": 52,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 23.18359375,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 7,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "text": "Click to See Detaiils",
-    "isDisabled": false,
-    "key": "zebizybvce",
-    "isDeprecated": false,
-    "rightColumn": 15,
-    "isDefaultClickDisabled": true,
-    "widgetId": "8bucdiq5nx",
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "omj2enn432",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 52,
+  "boxShadow": "none",
+  "buttonColor": "#60a5fa",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "zebizybvce",
+  "leftColumn": 7,
+  "onClick": "{{get_org_docs.run(()=>showModal('org_docs_and_details'),()=>{})}}",
+  "parentColumnSpace": 23.18359375,
+  "parentId": "omj2enn432",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "rightColumn": 15,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "Click to See Detaiils",
+  "topRow": 48,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "8bucdiq5nx",
+  "widgetName": "Button2Copy"
 }

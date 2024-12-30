@@ -1,73 +1,32 @@
 {
+  "gitSyncId": "63bc466c42a8cf4350317eb0_63bc466e42a8cf4350317ecc",
   "unpublishedPage": {
-    "name": "User Details",
-    "slug": "user-details",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1072,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 1580,
-          "containerStyle": "none",
-          "snapRows": 86,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 870,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "User Details_transaction_logs",
-              "name": "transaction_logs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table1Copy1.selectedRow.id",
-                "Table1Copy1Copy.selectedRow.id",
-                "Table1Copy2.selectedRow.id",
-                "Table1Copy3.selectedRow.id",
-                "Table1CopyCopy.selectedRow.id",
-                "Table1CopyCopyCopy.selectedRow.id"
-              ],
-              "timeoutInMillisecond": 60000
-            }
-          ],
-          [
-            {
-              "id": "User Details_card_type",
-              "name": "card_type",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "cardlist.selectedRow.kit_id"
-              ],
-              "timeoutInMillisecond": 1000000000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "User Details",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1072,
+          "snapColumns": 64,
+          "snapRows": 86,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "63bc466c42a8cf4350317eb0_63bc466e42a8cf4350317ecc"
+    "name": "User Details",
+    "slug": "user-details"
+  }
 }

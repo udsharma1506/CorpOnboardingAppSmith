@@ -1,47 +1,55 @@
 {
-    "widgetName": "Text22Copy1Copy2Copy1",
-    "displayName": "Text",
-    "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-    "searchTags": [
-        "typography",
-        "paragraph",
-        "label"
-    ],
-    "topRow": 31,
-    "bottomRow": 35,
-    "parentRowSpace": 10,
-    "type": "TEXT_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "overflow": "NONE",
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 19.21875,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 12,
-    "dynamicBindingPathList": [
-        {"key": "truncateButtonColor"},
-        {"key": "fontFamily"},
-        {"key": "borderRadius"},
-        {"key": "text"}
-    ],
-    "shouldTruncate": false,
-    "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{get_limits.data.block_config[0].location==='DOM'?get_limits.data.block_config[0].channel==='POS'?get_limits.data.block_config[0].txn_mode==='CONTACTLESS'?get_limits.data.block_config[0].allow:'':'':''}}{{get_limits.data.block_config[1].location==='DOM'?get_limits.data.block_config[1].channel==='POS'?get_limits.data.block_config[1].txn_mode==='CONTACTLESS'?get_limits.data.block_config[1].allow:'':'':''}}{{get_limits.data.block_config[2].location==='DOM'?get_limits.data.block_config[2].channel==='POS'?get_limits.data.block_config[2].txn_mode==='CONTACTLESS'?get_limits.data.block_config[2].allow:'':'':''}}{{get_limits.data.block_config[3].location==='DOM'?get_limits.data.block_config[3].channel==='POS'?get_limits.data.block_config[3].txn_mode==='CONTACTLESS'?get_limits.data.block_config[3].allow:'':'':''}}{{get_limits.data.block_config[4].location==='DOM'?get_limits.data.block_config[4].channel==='POS'?get_limits.data.block_config[4].txn_mode==='CONTACTLESS'?get_limits.data.block_config[4].allow:'':'':''}}{{get_limits.data.block_config[5].location==='DOM'?get_limits.data.block_config[5].channel==='POS'?get_limits.data.block_config[5].txn_mode==='CONTACTLESS'?get_limits.data.block_config[5].allow:'':'':''}}{{get_limits.data.block_config[6].location==='DOM'?get_limits.data.block_config[6].channel==='POS'?get_limits.data.block_config[6].txn_mode==='CONTACTLESS'?get_limits.data.block_config[6].allow:'':'':''}}{{get_limits.data.block_config[7].location==='DOM'?get_limits.data.block_config[7].channel==='POS'?get_limits.data.block_config[7].txn_mode==='CONTACTLESS'?get_limits.data.block_config[7].allow:'':'':''}}",
-    "key": "8o9iqm0kfg",
-    "isDeprecated": false,
-    "rightColumn": 15,
-    "textAlign": "LEFT",
-    "dynamicHeight": "FIXED",
-    "widgetId": "ltrun6j1s6",
-    "isVisible": true,
-    "fontStyle": "BOLD",
-    "textColor": "#fafafa",
-    "version": 1,
-    "parentId": "9h15sv0eo7",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "fontSize": "1rem",
-    "minDynamicHeight": 4
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 35,
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "8o9iqm0kfg",
+  "leftColumn": 12,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 19.21875,
+  "parentId": "9h15sv0eo7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 15,
+  "searchTags": [
+    "typography",
+    "paragraph",
+    "label"
+  ],
+  "shouldTruncate": false,
+  "text": "{{get_limits.data.block_config[0].location==='DOM'?get_limits.data.block_config[0].channel==='POS'?get_limits.data.block_config[0].txn_mode==='CONTACTLESS'?get_limits.data.block_config[0].allow:'':'':''}}{{get_limits.data.block_config[1].location==='DOM'?get_limits.data.block_config[1].channel==='POS'?get_limits.data.block_config[1].txn_mode==='CONTACTLESS'?get_limits.data.block_config[1].allow:'':'':''}}{{get_limits.data.block_config[2].location==='DOM'?get_limits.data.block_config[2].channel==='POS'?get_limits.data.block_config[2].txn_mode==='CONTACTLESS'?get_limits.data.block_config[2].allow:'':'':''}}{{get_limits.data.block_config[3].location==='DOM'?get_limits.data.block_config[3].channel==='POS'?get_limits.data.block_config[3].txn_mode==='CONTACTLESS'?get_limits.data.block_config[3].allow:'':'':''}}{{get_limits.data.block_config[4].location==='DOM'?get_limits.data.block_config[4].channel==='POS'?get_limits.data.block_config[4].txn_mode==='CONTACTLESS'?get_limits.data.block_config[4].allow:'':'':''}}{{get_limits.data.block_config[5].location==='DOM'?get_limits.data.block_config[5].channel==='POS'?get_limits.data.block_config[5].txn_mode==='CONTACTLESS'?get_limits.data.block_config[5].allow:'':'':''}}{{get_limits.data.block_config[6].location==='DOM'?get_limits.data.block_config[6].channel==='POS'?get_limits.data.block_config[6].txn_mode==='CONTACTLESS'?get_limits.data.block_config[6].allow:'':'':''}}{{get_limits.data.block_config[7].location==='DOM'?get_limits.data.block_config[7].channel==='POS'?get_limits.data.block_config[7].txn_mode==='CONTACTLESS'?get_limits.data.block_config[7].allow:'':'':''}}",
+  "textAlign": "LEFT",
+  "textColor": "#fafafa",
+  "topRow": 31,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "ltrun6j1s6",
+  "widgetName": "Text22Copy1Copy2Copy1"
 }

@@ -1,100 +1,32 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_6502ddda33f2bd4cbe013651",
   "unpublishedPage": {
-    "name": "Corp Documents Upload",
-    "slug": "corp-documents-upload",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 980,
-          "containerStyle": "none",
-          "snapRows": 133,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 1350,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Corp Documents Upload_get_org_data",
-              "name": "get_org_data",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_application_id"
-              ],
-              "timeoutInMillisecond": 60000
-            },
-            {
-              "id": "Corp Documents Upload_show_kyb_docs",
-              "name": "show_kyb_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_application_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corp Documents Upload_get_org_constitution",
-              "name": "get_org_constitution",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_application_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Documents Upload_uploaded_doc_count",
-              "name": "uploaded_doc_count",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_application_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corp Documents Upload_list_of_corp_docs",
-              "name": "list_of_corp_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "(get_org_constitution.data[0].constitution===\"85 - Private Limited Company\" || get_org_constitution.data[0].constitution===\"86 - Public Limited Company\")?\"list_of_corp_docs_Private/Publc/OPC Limited\":get_org_constitution.data[0].constitution===\"89 - Limited Liability Partnership\"?\"list_of_corp_docs_LLP\":get_org_constitution.data[0].constitution===\"53 - PARTNERSHIP FIRMS\"?\"list_of_corp_docs_partnership\":get_org_constitution.data[0].constitution===\"84 - Sole Proprietorship\"?\"list_of_corp_docs_sole_proprietor\":\"\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Corp Documents Upload",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 133,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_6502ddda33f2bd4cbe013651"
+    "name": "Corp Documents Upload",
+    "slug": "corp-documents-upload"
+  }
 }

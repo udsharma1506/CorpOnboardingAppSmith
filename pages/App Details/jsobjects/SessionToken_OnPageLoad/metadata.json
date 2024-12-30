@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "641c69093c6870012197ccbd_645103f059e2da0c4ccc20bb",
+  "id": "App Details_SessionToken_OnPageLoad",
   "unpublishedCollection": {
     "name": "SessionToken_OnPageLoad",
     "pageId": "App Details",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "App Details_SessionToken_OnPageLoad",
-  "deleted": false,
-  "gitSyncId": "641c69093c6870012197ccbd_645103f059e2da0c4ccc20bb"
+    "variables": []
+  }
 }

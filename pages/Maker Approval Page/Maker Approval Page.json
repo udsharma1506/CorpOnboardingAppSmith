@@ -1,158 +1,32 @@
 {
+  "gitSyncId": "64ad1c8cc2866666ed2960be_64b1308fc2866666ed297e03",
   "unpublishedPage": {
-    "name": "Maker Approval Page",
-    "slug": "maker-approval-page",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 3610,
-          "containerStyle": "none",
-          "snapRows": 64,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 660,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Maker Approval Page_get_org_data",
-              "name": "get_org_data",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.mkr_app_id"
-              ],
-              "timeoutInMillisecond": 60000
-            }
-          ],
-          [
-            {
-              "id": "Maker Approval Page_get_bo_details",
-              "name": "get_bo_details",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.mkr_app_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Maker Approval Page_get_org_kyc_docs",
-              "name": "get_org_kyc_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.mkr_app_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Maker Approval Page_list_of_bank_uploads",
-              "name": "list_of_bank_uploads",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Maker Approval Page_show_kyb_docs",
-              "name": "show_kyb_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.mkr_app_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Maker Approval Page_scrutiny_summary_count_non_sbm",
-              "name": "scrutiny_summary_count_non_sbm",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.mkr_app_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Maker Approval Page_scrutiny_summary_count_sbm_doc",
-              "name": "scrutiny_summary_count_sbm_doc",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.mkr_app_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Maker Approval Page_get_bo_complete_details",
-              "name": "get_bo_complete_details",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table1Copy.triggeredRow[\"BO ID\"]"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Maker Approval Page_get_corporate_signed_url",
-              "name": "get_corporate_signed_url",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.mkr_app_id.toLowerCase()",
-                "Table1.triggeredRow[\"Document Link\"]"
-              ],
-              "timeoutInMillisecond": 60000
-            }
-          ],
-          [
-            {
-              "id": "Maker Approval Page_get_bank_doc_signed_url",
-              "name": "get_bank_doc_signed_url",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.mkr_app_id.toLowerCase()",
-                "Table1Copy2.triggeredRow[\"Document Link\"]"
-              ],
-              "timeoutInMillisecond": 60000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Maker Approval Page",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 64,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "64ad1c8cc2866666ed2960be_64b1308fc2866666ed297e03"
+    "name": "Maker Approval Page",
+    "slug": "maker-approval-page"
+  }
 }

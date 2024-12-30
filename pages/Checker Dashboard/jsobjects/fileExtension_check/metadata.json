@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "641c69093c6870012197ccbd_6480260c1aab8461d1192870",
+  "id": "Checker Dashboard_fileExtension_check",
   "unpublishedCollection": {
     "name": "fileExtension_check",
     "pageId": "Checker Dashboard",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Checker Dashboard_fileExtension_check",
-  "deleted": false,
-  "gitSyncId": "641c69093c6870012197ccbd_6480260c1aab8461d1192870"
+    "variables": []
+  }
 }

@@ -1,94 +1,33 @@
 {
+  "gitSyncId": "63bc466c42a8cf4350317eb0_63bc467442a8cf4350317f2a",
   "unpublishedPage": {
-    "name": "App Details",
-    "slug": "app-details",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1297,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 1620,
-          "containerStyle": "none",
-          "snapRows": 129,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 80,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
           "minHeight": 1820,
           "parentColumnSpace": 1,
-          "dynamicTriggerPathList": [],
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "App Details_Fetch_Session_Token",
-              "name": "Fetch_Session_Token",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.EMP_ID"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "App Details_SessionToken_OnPageLoad.SessionActive",
-              "name": "SessionToken_OnPageLoad.SessionActive",
-              "collectionId": "App Details_SessionToken_OnPageLoad",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n    navigateTo('LoginEmail');\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "App Details_session_token_check.SessionActive",
-              "name": "session_token_check.SessionActive",
-              "collectionId": "App Details_session_token_check",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  setInterval(async function () {\n    await Fetch_Session_Token.run();\n    if (Fetch_Session_Token.data[0]['result'] == appsmith.store.OPS_TOKEN) {} else {\n      (navigateTo('LoginEmail'), showAlert('Session Expired! Please re-login.'));\n    }\n  }, 120000);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "App Details_user_count_app",
-              "name": "user_count_app",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table1Copy.selectedRow.app_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "App Details",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1297,
+          "snapColumns": 64,
+          "snapRows": 129,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "63bc466c42a8cf4350317eb0_63bc467442a8cf4350317f2a"
+    "name": "App Details",
+    "slug": "app-details"
+  }
 }

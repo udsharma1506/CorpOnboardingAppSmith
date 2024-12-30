@@ -1,185 +1,32 @@
 {
+  "gitSyncId": "64ad1c8cc2866666ed2960be_64b0fcbec2866666ed297b02",
   "unpublishedPage": {
-    "name": "Corp Registration For Scrutiny",
-    "slug": "corp-registration-for-scrutiny",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 1730,
-          "containerStyle": "none",
-          "snapRows": 64,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 660,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Corp Registration For Scrutiny_business_category",
-              "name": "business_category",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "Select4.filterText",
-                "Select4.filterText ? \"Category Value\" : \"\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Registration For Scrutiny_business_type",
-              "name": "business_type",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "Select11.filterText",
-                "Select11.filterText ? \"Category Value\" : \"\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Registration For Scrutiny_constitution",
-              "name": "constitution",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Registration For Scrutiny_generate_uuid.generateUUID",
-              "name": "generate_uuid.generateUUID",
-              "collectionId": "Corp Registration For Scrutiny_generate_uuid",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  function create_UUID() {\n    var dt = new Date().getTime();\n    var uuid = ('xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx').replace(/[xy]/g, function (c) {\n      var r = (dt + Math.random() * 16) % 16 | 0;\n      dt = Math.floor(dt / 16);\n      return (c == 'x' ? r : r & 0x3 | 0x8).toString(16);\n    });\n    return uuid;\n  }\n  return create_UUID();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Registration For Scrutiny_networth",
-              "name": "networth",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "Select10.filterText ? \"Category Value\" : \"\"",
-                "Select10.filterText"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Registration For Scrutiny_related_type",
-              "name": "related_type",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "Select2.filterText ? \"Category Value\" : \"\"",
-                "Select2.filterText"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Registration For Scrutiny_sector",
-              "name": "sector",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Registration For Scrutiny_sub_sector",
-              "name": "sub_sector",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "Select8.filterText",
-                "Select8.filterText ? \"Category Value\" : \"\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Registration For Scrutiny_type_of_industry",
-              "name": "type_of_industry",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "Select3.filterText",
-                "Select3.filterText ? \"Category Value\" : \"\""
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corp Registration For Scrutiny_comm_addr_pincode_check",
-              "name": "comm_addr_pincode_check",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "Input19Copy1CopyCopyCopy.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corp Registration For Scrutiny_get_pincode_details_comm",
-              "name": "get_pincode_details_comm",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Input19Copy1CopyCopyCopy.text"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corp Registration For Scrutiny_reg_addr_pincode_check",
-              "name": "reg_addr_pincode_check",
-              "confirmBeforeExecute": false,
-              "pluginType": "SAAS",
-              "jsonPathKeys": [
-                "Input19Copy1CopyCopy.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corp Registration For Scrutiny_get_pincode_details_registered",
-              "name": "get_pincode_details_registered",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Input19Copy1CopyCopy.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Corp Registration For Scrutiny",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 64,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "64ad1c8cc2866666ed2960be_64b0fcbec2866666ed297b02"
+    "name": "Corp Registration For Scrutiny",
+    "slug": "corp-registration-for-scrutiny"
+  }
 }

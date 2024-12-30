@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_66bcc0553f30011fa354c2c4",
+  "id": "Corporate Detailed View - SBM_formatjsonb",
   "unpublishedCollection": {
     "name": "formatjsonb",
     "pageId": "Corporate Detailed View - SBM",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Corporate Detailed View - SBM_formatjsonb",
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_66bcc0553f30011fa354c2c4"
+    "variables": []
+  }
 }

@@ -1,34 +1,46 @@
 {
-    "boxShadow": "0px 0px 4px 3px rgba(0, 0, 0, 0.25)",
-    "widgetName": "IconButton1Copy",
-    "onClick": "{{navigateTo('User Details', {}, 'SAME_WINDOW')}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"}
-    ],
-    "displayName": "Icon Button",
-    "iconSVG": "/static/media/icon.1a0c634a.svg",
-    "topRow": 22,
-    "bottomRow": 39,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "parentColumnSpace": 17.9375,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [{"key": "buttonColor"}],
-    "isDisabled": false,
-    "key": "l2t2n70sre",
-    "labelTextSize": "0.875rem",
-    "rightColumn": 13,
-    "iconName": "user",
-    "widgetId": "k01s89rscx",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "borderRadius": "9999px",
-    "buttonVariant": "PRIMARY"
+  "borderRadius": "9999px",
+  "bottomRow": 39,
+  "boxShadow": "0px 0px 4px 3px rgba(0, 0, 0, 0.25)",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Icon Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "user",
+  "iconSVG": "/static/media/icon.1a0c634a.svg",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "l2t2n70sre",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "onClick": "{{navigateTo('User Details', {}, 'SAME_WINDOW')}}",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 13,
+  "topRow": 22,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "k01s89rscx",
+  "widgetName": "IconButton1Copy"
 }

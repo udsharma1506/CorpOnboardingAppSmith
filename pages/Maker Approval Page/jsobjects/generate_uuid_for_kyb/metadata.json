@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_668ce1713f30011fa354bcb7",
+  "id": "Maker Approval Page_generate_uuid_for_kyb",
   "unpublishedCollection": {
     "name": "generate_uuid_for_kyb",
     "pageId": "Maker Approval Page",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Maker Approval Page_generate_uuid_for_kyb",
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_668ce1713f30011fa354bcb7"
+    "variables": []
+  }
 }

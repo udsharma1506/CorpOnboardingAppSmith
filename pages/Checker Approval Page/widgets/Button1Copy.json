@@ -1,55 +1,67 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 80,
-    "widgetName": "Button1Copy",
-    "onClick": "{{Select1Copy.selectedOptionValue==\"Approve\"?final_org_status_approve.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch():((scrutiny_summary_count_non_sbm.data[0].Rejected-scrutiny_summary_count_non_sbm.data[0].Resubmitted)>0?(final_org_status_reject_happay.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch()):(final_org_status_reject_maker.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch()))}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [
-        {"key": "isDisabled"},
-        {"key": "onClick"}
-    ],
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 355,
-    "bottomRow": 361,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 39,
-    "animateLoading": true,
-    "parentColumnSpace": 12.609375,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 44,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "isDisabled"}
-    ],
-    "text": "Submit",
-    "isDisabled": "{{(scrutiny_summary_count_non_sbm.data[0].Pending+scrutiny_summary_count_sbm_doc.data[0].Pending)>0?\"true\":((Select1Copy.selectedOptionValue==\"Reject\")&&(Input1Copy.text==\"\"))}}",
-    "key": "6jpdl7k8it",
-    "isDeprecated": false,
-    "rightColumn": 60,
-    "isDefaultClickDisabled": true,
-    "widgetId": "o3upht4lv5",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 76,
-    "responsiveBehavior": "hug",
-    "originalTopRow": 290,
-    "disabledWhenInvalid": false,
-    "borderRadius": "1.5rem",
-    "mobileLeftColumn": 23,
-    "originalBottomRow": 296,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 361,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": "{{(scrutiny_summary_count_non_sbm.data[0].Pending+scrutiny_summary_count_sbm_doc.data[0].Pending)>0?\"true\":((Select1Copy.selectedOptionValue==\"Reject\")&&(Input1Copy.text==\"\"))}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "6jpdl7k8it",
+  "leftColumn": 44,
+  "minWidth": 120,
+  "mobileBottomRow": 80,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 39,
+  "mobileTopRow": 76,
+  "onClick": "{{Select1Copy.selectedOptionValue==\"Approve\"?final_org_status_approve.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch():((scrutiny_summary_count_non_sbm.data[0].Rejected-scrutiny_summary_count_non_sbm.data[0].Resubmitted)>0?(final_org_status_reject_happay.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch()):(final_org_status_reject_maker.run().then(resetWidget('Input1Copy').then(navigateTo('Corp Reg Req-Checker View', {}, 'SAME_WINDOW'))).catch()))}}",
+  "originalBottomRow": 296,
+  "originalTopRow": 290,
+  "parentColumnSpace": 12.609375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 60,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "Submit",
+  "topRow": 355,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "o3upht4lv5",
+  "widgetName": "Button1Copy"
 }

@@ -1,49 +1,57 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 19,
-    "widgetName": "Button9",
-    "onClick": "{{limit_update_history_API.run().then(() => {\n  showModal('Limit_Update_History');\n}).catch(() => {\n  showAlert('Something went wrong. Please try again later!', '');\n});}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 7,
-    "bottomRow": 11,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 39,
-    "animateLoading": true,
-    "parentColumnSpace": 11.924999999999999,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 49,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "View Update History",
-    "isDisabled": false,
-    "key": "rdor2fbaxk",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "isDefaultClickDisabled": true,
-    "widgetId": "uajjjp4ifb",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "qrwkrd6mhc",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 15,
-    "responsiveBehavior": "hug",
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 23,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rdor2fbaxk",
+  "leftColumn": 49,
+  "minWidth": 120,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 39,
+  "mobileTopRow": 15,
+  "onClick": "{{limit_update_history_API.run().then(() => {\n  showModal('Limit_Update_History');\n}).catch(() => {\n  showAlert('Something went wrong. Please try again later!', '');\n});}}",
+  "parentColumnSpace": 11.924999999999999,
+  "parentId": "qrwkrd6mhc",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "View Update History",
+  "topRow": 7,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "uajjjp4ifb",
+  "widgetName": "Button9"
 }

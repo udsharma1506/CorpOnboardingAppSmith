@@ -1,48 +1,62 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 37,
-    "widgetName": "Button2",
-    "onClick": "{{reg_addr_pincode_check.data[0]===undefined?comm_addr_pincode_check.data[0]===undefined?(insert_value.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  navigateTo('BO Addition', {}, 'SAME_WINDOW');\n  storeValue('temp_application_id', Text1Copy.text);\n}).catch(() => {\n  showAlert(insert_value.data, 'error');\n})):showAlert(\"The Communication Address belongs to be blocked regions of SBM list and cannot proceed for onboarding\",'error'):showAlert(\"The registered Address belongs to be blocked regions of SBM list and cannot proceed for onboarding\",'error')}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 141,
-    "bottomRow": 145,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 62,
-    "animateLoading": true,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 47,
-    "dynamicBindingPathList": [{"key": "buttonColor"}],
-    "text": "Submit",
-    "isDisabled": false,
-    "key": "qkatlah3r2",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "isDefaultClickDisabled": true,
-    "widgetId": "fxnc5gw8l7",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "bkscj2iujp",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 33,
-    "responsiveBehavior": "hug",
-    "originalTopRow": 141,
-    "disabledWhenInvalid": true,
-    "borderRadius": "1.5rem",
-    "mobileLeftColumn": 46,
-    "originalBottomRow": 145,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 145,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "qkatlah3r2",
+  "leftColumn": 47,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "onClick": "{{reg_addr_pincode_check.data[0]===undefined?comm_addr_pincode_check.data[0]===undefined?(insert_value.run().then(() => {\n  showAlert('Successfully Saved', 'success');\n  navigateTo('BO Addition', {}, 'SAME_WINDOW');\n  storeValue('temp_application_id', Text1Copy.text);\n}).catch(() => {\n  showAlert(insert_value.data, 'error');\n})):showAlert(\"The Communication Address belongs to be blocked regions of SBM list and cannot proceed for onboarding\",'error'):showAlert(\"The registered Address belongs to be blocked regions of SBM list and cannot proceed for onboarding\",'error')}}",
+  "originalBottomRow": 145,
+  "originalTopRow": 141,
+  "parentId": "bkscj2iujp",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Submit",
+  "topRow": 141,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "fxnc5gw8l7",
+  "widgetName": "Button2"
 }

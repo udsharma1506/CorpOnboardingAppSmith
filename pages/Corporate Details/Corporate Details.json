@@ -1,81 +1,33 @@
 {
+  "gitSyncId": "63bc466c42a8cf4350317eb0_63bdb1fc42a8cf4350317fea",
   "unpublishedPage": {
-    "name": "Corporate Details",
-    "slug": "corporate-details",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1297,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 2860,
-          "containerStyle": "none",
-          "snapRows": 129,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
           "minHeight": 1820,
           "parentColumnSpace": 1,
-          "dynamicTriggerPathList": [],
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Corporate Details_card_details_query",
-              "name": "card_details_query",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "org_data.data[0].corp_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corporate Details_corp_data",
-              "name": "corp_data",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Text1Copy1.text"
-              ],
-              "timeoutInMillisecond": 1000000000
-            }
-          ],
-          [
-            {
-              "id": "Corporate Details_user_count_corp",
-              "name": "user_count_corp",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "finding_org_id.data[0]['org_id']"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Corporate Details",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1297,
+          "snapColumns": 64,
+          "snapRows": 129,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "63bc466c42a8cf4350317eb0_63bdb1fc42a8cf4350317fea"
+    "name": "Corporate Details",
+    "slug": "corporate-details"
+  }
 }

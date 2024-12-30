@@ -1,217 +1,245 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "Table3",
-    "defaultPageSize": 0,
-    "columnOrder": [
-        "fileName",
-        "url",
-        "customColumn2",
-        "customColumn1"
-    ],
-    "isVisibleDownload": false,
-    "dynamicPropertyPathList": [{"key": "primaryColumns.customColumn1.onClick"}],
-    "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "displayName": "Table",
-    "topRow": 25,
-    "bottomRow": 90,
-    "isSortable": true,
-    "parentRowSpace": 10,
-    "type": "TABLE_WIDGET",
-    "defaultSelectedRow": "0",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 16.03125,
-    "dynamicTriggerPathList": [
-        {"key": "onRowSelected"},
-        {"key": "primaryColumns.customColumn1.onClick"}
-    ],
-    "dynamicBindingPathList": [
-        {"key": "tableData"},
-        {"key": "primaryColumns.customColumn1.buttonColor"},
-        {"key": "primaryColumns.customColumn1.buttonLabel"},
-        {"key": "accentColor"},
-        {"key": "boxShadow"},
-        {"key": "primaryColumns.fileName.computedValue"},
-        {"key": "primaryColumns.url.computedValue"},
-        {"key": "primaryColumns.customColumn2.computedValue"},
-        {"key": "derivedColumns.customColumn2.computedValue"},
-        {"key": "derivedColumns.customColumn1.buttonLabel"}
-    ],
-    "leftColumn": 33,
-    "delimiter": ",",
-    "primaryColumns": {
-        "fileName": {
-            "isCellVisible": true,
-            "isDerived": false,
-            "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.fileName))}}",
-            "textSize": "0.875rem",
-            "index": 0,
-            "isVisible": false,
-            "label": "fileName",
-            "textColor": "",
-            "columnType": "text",
-            "horizontalAlignment": "CENTER",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "fileName",
-            "isDisabled": false,
-            "cellBackground": "",
-            "verticalAlignment": "CENTER"
-        },
-        "customColumn1": {
-            "isCellVisible": true,
-            "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-            "isDerived": true,
-            "computedValue": "",
-            "onClick": "{{download_card_balances_file.run(\n()=>{download(atob(download_card_balances_file.data.fileData),Table3.selectedRow.fileName.split(\"/\").pop())})}}",
-            "buttonColor": "{{Table3.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
-            "iconName": "",
-            "buttonStyle": "rgb(3, 179, 101)",
-            "index": 7,
-            "isVisible": true,
-            "label": "Action",
-            "labelColor": "#FFFFFF",
-            "buttonLabel": "{{Table3.sanitizedTableData.map((currentRow) => ( 'Download'))}}",
-            "columnType": "button",
-            "horizontalAlignment": "CENTER",
-            "borderRadius": "1.5rem",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "customColumn1",
-            "isDisabled": false
-        },
-        "customColumn2": {
-            "isCellVisible": true,
-            "isDerived": true,
-            "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow[\"fileName\"].substring(17)))}}",
-            "buttonStyle": "rgb(3, 179, 101)",
-            "index": 3,
-            "isVisible": true,
-            "label": "File Name",
-            "labelColor": "#FFFFFF",
-            "columnType": "text",
-            "horizontalAlignment": "CENTER",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "customColumn2",
-            "isDisabled": false
-        },
-        "url": {
-            "isCellVisible": true,
-            "isDerived": false,
-            "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.url))}}",
-            "textSize": "0.875rem",
-            "index": 1,
-            "isVisible": false,
-            "label": "url",
-            "textColor": "",
-            "columnType": "text",
-            "horizontalAlignment": "CENTER",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "url",
-            "isDisabled": false,
-            "cellBackground": "",
-            "verticalAlignment": "CENTER"
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 90,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "onRowSelected": "",
-    "key": "aj3n1sftly",
-    "derivedColumns": {
-        "customColumn1": {
-            "isCellVisible": true,
-            "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-            "isDerived": true,
-            "computedValue": "",
-            "onClick": "{{UserDetailsApp.run(() => closeModal('user_pan'), () => showAlert('Please Retry','error'))}}",
-            "buttonColor": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
-            "iconName": "",
-            "buttonStyle": "rgb(3, 179, 101)",
-            "index": 7,
-            "isVisible": true,
-            "label": "Action",
-            "labelColor": "#FFFFFF",
-            "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Download'))}}",
-            "columnType": "button",
-            "horizontalAlignment": "CENTER",
-            "borderRadius": "1.5rem",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "customColumn1",
-            "isDisabled": false
-        },
-        "customColumn2": {
-            "isCellVisible": true,
-            "isDerived": true,
-            "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow[\"fileName\"].substring(17)))}}",
-            "buttonStyle": "rgb(3, 179, 101)",
-            "index": 3,
-            "isVisible": true,
-            "label": "File Name",
-            "labelColor": "#FFFFFF",
-            "columnType": "text",
-            "horizontalAlignment": "CENTER",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "customColumn2",
-            "isDisabled": false
-        }
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "textSize": "0.875rem",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "uiu690ko2i",
-    "isVisibleFilters": false,
-    "tableData": "{{card_balances.data}}",
-    "isVisible": true,
-    "label": "Data",
-    "searchKey": "",
-    "enableClientSideSearch": true,
-    "version": 3,
-    "totalRecordsCount": 0,
-    "parentId": "0",
-    "isLoading": false,
-    "renderMode": "CANVAS",
-    "horizontalAlignment": "CENTER",
-    "isVisibleSearch": true,
-    "childStylesheet": {
-        "button": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "iconButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "menuButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "fileName",
+    "url",
+    "customColumn2",
+    "customColumn1"
+  ],
+  "columnSizeMap": {
+    "app_name": 169,
+    "corporate_name": 142,
+    "customColumn2": 515,
+    "email": 115,
+    "first_name": 117,
+    "id": 61,
+    "last_name": 105,
+    "mobile": 116,
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "0",
+  "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "borderRadius": "1.5rem",
+      "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "buttonColor": "{{Table1CopyCopy.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
+      "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Download'))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "iconName": "",
+      "id": "customColumn1",
+      "index": 7,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Action",
+      "labelColor": "#FFFFFF",
+      "onClick": "{{UserDetailsApp.run(() => closeModal('user_pan'), () => showAlert('Please Retry','error'))}}",
+      "width": 150
     },
-    "borderRadius": "0.375rem",
-    "isVisiblePagination": true,
-    "columnSizeMap": {
-        "app_name": 169,
-        "task": 245,
-        "mobile": 116,
-        "last_name": 105,
-        "corporate_name": 142,
-        "step": 62,
-        "id": 61,
-        "customColumn2": 515,
-        "first_name": 117,
-        "email": 115,
-        "status": 75
+    "customColumn2": {
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow[\"fileName\"].substring(17)))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "customColumn2",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "File Name",
+      "labelColor": "#FFFFFF",
+      "width": 150
+    }
+  },
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
     },
-    "verticalAlignment": "CENTER"
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.fileName.computedValue"
+    },
+    {
+      "key": "primaryColumns.url.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn2.computedValue"
+    },
+    {
+      "key": "derivedColumns.customColumn2.computedValue"
+    },
+    {
+      "key": "derivedColumns.customColumn1.buttonLabel"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "hideCard": false,
+  "horizontalAlignment": "CENTER",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": false,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "aj3n1sftly",
+  "label": "Data",
+  "leftColumn": 33,
+  "onRowSelected": "",
+  "parentColumnSpace": 16.03125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "customColumn1": {
+      "borderRadius": "1.5rem",
+      "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "buttonColor": "{{Table3.sanitizedTableData.map((currentRow) => ( appsmith.theme.colors.primaryColor))}}",
+      "buttonLabel": "{{Table3.sanitizedTableData.map((currentRow) => ( 'Download'))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "iconName": "",
+      "id": "customColumn1",
+      "index": 7,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Action",
+      "labelColor": "#FFFFFF",
+      "onClick": "{{download_card_balances_file.run(\n()=>{download(atob(download_card_balances_file.data.fileData),Table3.selectedRow.fileName.split(\"/\").pop())})}}",
+      "width": 150
+    },
+    "customColumn2": {
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow[\"fileName\"].substring(17)))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "customColumn2",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "File Name",
+      "labelColor": "#FFFFFF",
+      "width": 150
+    },
+    "fileName": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.fileName))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "fileName",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "fileName",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "url": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.url))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "url",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "url",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "searchKey": "",
+  "tableData": "{{card_balances.data}}",
+  "textSize": "0.875rem",
+  "topRow": 25,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "uiu690ko2i",
+  "widgetName": "Table3"
 }

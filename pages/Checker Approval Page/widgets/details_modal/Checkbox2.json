@@ -1,52 +1,66 @@
 {
-    "mobileBottomRow": 219,
-    "widgetName": "Checkbox2",
-    "dynamicPropertyPathList": [{"key": "defaultCheckedState"}],
-    "displayName": "Checkbox",
-    "iconSVG": "/static/media/icon.7b004ee098ca948e952234e7baec6d11.svg",
-    "searchTags": ["boolean"],
-    "topRow": 98,
-    "bottomRow": 102,
-    "parentRowSpace": 10,
-    "type": "CHECKBOX_WIDGET",
-    "alignWidget": "LEFT",
-    "hideCard": false,
-    "mobileRightColumn": 14,
-    "animateLoading": true,
-    "parentColumnSpace": 17.5,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "defaultCheckedState"}
-    ],
-    "labelPosition": "Right",
-    "labelStyle": "BOLD",
-    "isDisabled": true,
-    "key": "zshwk83jty",
-    "labelTextSize": "1.25rem",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 52,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "okzx48prw8",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "minWidth": 450,
-    "isVisible": true,
-    "label": "Is Mailing Address Same As Home Address?",
-    "version": 1,
-    "parentId": "hb0ygklxhl",
-    "tags": ["Toggles"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 215,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 98,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 2,
-    "defaultCheckedState": "{{get_bo_complete_details.data[0].check_mailing_with_home_address}}",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 102,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 102,
+  "defaultCheckedState": "{{get_bo_complete_details.data[0].check_mailing_with_home_address}}",
+  "displayName": "Checkbox",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7b004ee098ca948e952234e7baec6d11.svg",
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "zshwk83jty",
+  "label": "Is Mailing Address Same As Home Address?",
+  "labelPosition": "Right",
+  "labelStyle": "BOLD",
+  "labelTextSize": "1.25rem",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 219,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 215,
+  "originalBottomRow": 102,
+  "originalTopRow": 98,
+  "parentColumnSpace": 17.5,
+  "parentId": "hb0ygklxhl",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 52,
+  "searchTags": [
+    "boolean"
+  ],
+  "tags": [
+    "Toggles"
+  ],
+  "topRow": 98,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "okzx48prw8",
+  "widgetName": "Checkbox2"
 }

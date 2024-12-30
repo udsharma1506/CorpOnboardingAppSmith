@@ -1,49 +1,57 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 15,
-    "widgetName": "Button11",
-    "onClick": "{{showModal('New_Limit_Update');}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "displayName": "Button",
-    "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 7,
-    "bottomRow": 11,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 49,
-    "animateLoading": true,
-    "parentColumnSpace": 11.924999999999999,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 34,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "Update Limit",
-    "isDisabled": false,
-    "key": "cn2321k0rf",
-    "isDeprecated": false,
-    "rightColumn": 48,
-    "isDefaultClickDisabled": true,
-    "widgetId": "i2hokel8pj",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "qrwkrd6mhc",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 11,
-    "responsiveBehavior": "hug",
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 33,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "cn2321k0rf",
+  "leftColumn": 34,
+  "minWidth": 120,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 49,
+  "mobileTopRow": 11,
+  "onClick": "{{showModal('New_Limit_Update');}}",
+  "parentColumnSpace": 11.924999999999999,
+  "parentId": "qrwkrd6mhc",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 48,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "text": "Update Limit",
+  "topRow": 7,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "i2hokel8pj",
+  "widgetName": "Button11"
 }

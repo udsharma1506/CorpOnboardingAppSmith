@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_6556079933f2bd4cbe013805",
+  "id": "Saved Orgs BO Addition_generate_uuid_for_kyc",
   "unpublishedCollection": {
     "name": "generate_uuid_for_kyc",
     "pageId": "Saved Orgs BO Addition",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Saved Orgs BO Addition_generate_uuid_for_kyc",
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_6556079933f2bd4cbe013805"
+    "variables": []
+  }
 }

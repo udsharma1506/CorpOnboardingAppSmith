@@ -1,161 +1,32 @@
 {
+  "gitSyncId": "64f8568385ebf35f63123db3_66bc4c843f30011fa354c150",
   "unpublishedPage": {
-    "name": "Corporate Detailed View - SBM",
-    "slug": "corporate-detailed-view-sbm",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 4050,
-          "containerStyle": "none",
-          "snapRows": 64,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 660,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Corporate Detailed View - SBM_formatjsonb.formatdata",
-              "name": "formatjsonb.formatdata",
-              "collectionId": "Corporate Detailed View - SBM_formatjsonb",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "function transformJSONBToTable(jsonData) {\n  const tableData = [];\n  Object.keys(jsonData).forEach(index => {\n    const record = jsonData[index];\n    Object.keys(record).forEach(role => {\n      tableData.push({\n        index: index,\n        role: role,\n        status: record[role].Status || record[role].status,\n        remarks: record[role].remarks,\n        updated_at: new Date(record[role].updated_at).toLocaleString()\n      });\n    });\n  });\n  return tableData;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corporate Detailed View - SBM_get_org_data",
-              "name": "get_org_data",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_corp_detail_view_sbm"
-              ],
-              "timeoutInMillisecond": 60000
-            }
-          ],
-          [
-            {
-              "id": "Corporate Detailed View - SBM_get_bo_details",
-              "name": "get_bo_details",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_corp_detail_view_sbm"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corporate Detailed View - SBM_get_org_kyc_docs",
-              "name": "get_org_kyc_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_corp_detail_view_sbm"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Corporate Detailed View - SBM_show_kyb_docs",
-              "name": "show_kyb_docs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_corp_detail_view_sbm"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corporate Detailed View - SBM_scrutiny_summary_count_non_sbm",
-              "name": "scrutiny_summary_count_non_sbm",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_corp_detail_view_sbm"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corporate Detailed View - SBM_iteration_details",
-              "name": "iteration_details",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_corp_detail_view_sbm"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corporate Detailed View - SBM_get_bo_complete_details",
-              "name": "get_bo_complete_details",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table1Copy.triggeredRow[\"BO ID\"]"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Corporate Detailed View - SBM_get_corporate_signed_url",
-              "name": "get_corporate_signed_url",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_corp_detail_view_sbm.toLowerCase()",
-                "Table1.triggeredRow[\"Document Link\"]"
-              ],
-              "timeoutInMillisecond": 60000
-            }
-          ],
-          [
-            {
-              "id": "Corporate Detailed View - SBM_get_sbm_doc_signed_url",
-              "name": "get_sbm_doc_signed_url",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.temp_corp_detail_view_sbm.toLowerCase()",
-                "Table1Copy2.triggeredRow[\"Document Link\"]"
-              ],
-              "timeoutInMillisecond": 60000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Corporate Detailed View - SBM",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 64,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "64f8568385ebf35f63123db3_66bc4c843f30011fa354c150"
+    "name": "Corporate Detailed View - SBM",
+    "slug": "corporate-detailed-view-sbm"
+  }
 }

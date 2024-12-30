@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "641c69093c6870012197ccbd_64802fde1aab8461d1192879",
+  "id": "Corporate Details_Input_file_check",
   "unpublishedCollection": {
     "name": "Input_file_check",
     "pageId": "Corporate Details",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Corporate Details_Input_file_check",
-  "deleted": false,
-  "gitSyncId": "641c69093c6870012197ccbd_64802fde1aab8461d1192879"
+    "variables": []
+  }
 }
